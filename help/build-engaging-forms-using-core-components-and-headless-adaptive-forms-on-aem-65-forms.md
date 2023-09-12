@@ -188,7 +188,7 @@ AEM 6.5 Forms 환경에 대해 숙지하십시오.
 
    * **AEM_URL**: 의 URL 지정 **게시** 인스턴스. 예, `https://localhost:4502/`
 
-   * **AEM_ADAPTIVE_FORM**: 양식 이름을 지정합니다. (예: `contact-us`)
+   * **AEM_ADAPTIVE_FORM**: 양식 이름을 지정합니다. 예: `contact-us`
 
    </br>
 
