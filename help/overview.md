@@ -9,10 +9,10 @@ level: Beginner, Intermediate
 keywords: Headless CMS, 적응형 양식, Headless UI, Headful CMS, 음성 도우미, alexa, 챗봇, WhatsApp 아키텍처
 hide: false
 exl-id: 3b5b955b-d59c-43d9-9cc4-3244a08f80dc
-source-git-commit: 47ac7d03c8c4fa18ac3bdcef04352fdd1cad1b16
+source-git-commit: a88f2dab6fda61b674300e1d6a6c4f495ba85c97
 workflow-type: tm+mt
-source-wordcount: '400'
-ht-degree: 11%
+source-wordcount: '353'
+ht-degree: 12%
 
 ---
 
@@ -37,6 +37,9 @@ Headless 적응형 양식은 다음에 도움이 됩니다.
 
 Headless 적응형 양식을 개발하기 위해 Adobe Experience Manager에 대한 사전 지식이 필요하지 않습니다.
 
-## 얼리 어답터 프로그램에 가입하는 방법? {#how-to-join-early-adopter-forms}
+<!-- 
+## How to join the early adopter program? {#how-to-join-early-adopter-forms}
 
-이 서비스는 AEM Forms as a Cloud Service 및 AEM 6.5.16.0 Forms 이상 On-Premise 기간제 고객 및 Adobe 관리 서비스 기업 고객에게 제공됩니다. 다음으로 이메일 보내기 [headlessadaptiveforms@adobe.com](mailto:headlessadaptiveforms@adobe.com) 얼리어답터 프로그램에 참여하려면 공식 이메일 ID에서 을(를) 전송하십시오.
+The service is available for AEM Forms as a Cloud Service and AEM 6.5.16.0 Forms or later On-Premise term customers and Adobe-Managed Service enterprise customers. Send an email to [headlessadaptiveforms@adobe.com](mailto:headlessadaptiveforms@adobe.com) from your official email ID to join the early adopter program. 
+
+-->
