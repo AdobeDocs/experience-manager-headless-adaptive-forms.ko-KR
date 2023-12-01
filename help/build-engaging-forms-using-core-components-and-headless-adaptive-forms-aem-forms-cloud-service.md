@@ -6,10 +6,10 @@ seo-description: Build Engaging Forms Using Core Components and Headless
 topic-tags: develop
 hide: true
 hidefromtoc: true
-exl-id: d0ca7389-9a7a-421e-ab6b-7845813d860e
-source-git-commit: f489a2ba818db44ccd92df80a177f0e9f3a1bc2c
+exl-id: ef99ffe9-4a37-4f0a-a4d3-78976c92220f
+source-git-commit: 2332af82ea221086c3b014989651e34726040ba2
 workflow-type: tm+mt
-source-wordcount: '2479'
+source-wordcount: '2480'
 ht-degree: 90%
 
 ---
@@ -38,7 +38,7 @@ AEM Forms를 사용하여 AEM Sites와 일치하는 최신 핵심 구성 요소�
 
 * 설치 [Node.js 16.13.0 이상](https://nodejs.org/en/download/). Node.js를 처음 사용하는 경우 [Node.js 설치 방법](https://nodejs.dev/en/learn/how-to-install-nodejs).
 
-* [Headless 적응형 Forms 활성화](enable-headless-adaptive-forms-and-core-components-on-forms-cloud-service.md) AEM Forms as a Cloud Service 환경용입니다.
+* [적응형 Forms 핵심 구성 요소 활성화](enable-headless-adaptive-forms-and-core-components-on-forms-cloud-service.md) AEM Forms as a Cloud Service 환경용입니다.
 
 * 설치 [Microsoft Visual Studio 코드](https://code.visualstudio.com/download) 또는 일반 텍스트 편집기입니다. 문서의 예제에서는 Microsoft Visual Studio 코드를 사용합니다.
 
