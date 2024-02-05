@@ -4,17 +4,15 @@ seo-title: Build Engaging Forms Using Core Components and Headless
 description: 핵심 구성 요소 및 Headless를 사용하여 매력적인 양식 작성
 seo-description: Build Engaging Forms Using Core Components and Headless
 topic-tags: develop
-hide: true
-hidefromtoc: true
 exl-id: ef99ffe9-4a37-4f0a-a4d3-78976c92220f
-source-git-commit: 2332af82ea221086c3b014989651e34726040ba2
+source-git-commit: 428416d61f236396449d26df208bf284a1ad162f
 workflow-type: tm+mt
-source-wordcount: '2480'
-ht-degree: 90%
+source-wordcount: '2452'
+ht-degree: 86%
 
 ---
 
-# 핵심 구성 요소 및 Headless를 사용하여 매력적인 양식 작성 AEM Forms as a Cloud Service의 적응형 Forms {#build-engaging-forms-using-core-components-and-headless}
+# AEM Forms as a Cloud Service에서 핵심 구성 요소 및 Headless 적응형 Forms을 사용하여 매력적인 Forms 구축 {#build-engaging-forms-using-core-components-and-headless}
 
 ## 랩 개요 {#lab-overview}
 
@@ -36,7 +34,7 @@ AEM Forms를 사용하여 AEM Sites와 일치하는 최신 핵심 구성 요소�
 
 * 설치 [git 최신 릴리스](https://git-scm.com/downloads). Git을 처음 사용하는 경우 다음을 참조하십시오 [Git 설치](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git).
 
-* 설치 [Node.js 16.13.0 이상](https://nodejs.org/en/download/). Node.js를 처음 사용하는 경우 [Node.js 설치 방법](https://nodejs.dev/en/learn/how-to-install-nodejs).
+* 설치 [Node.js 16.13.0 이상](https://nodejs.org/en/download/). Node.js를 처음 사용하는 경우 [Node.js 설치 방법](https://nodejs.org/en/learn/getting-started/how-to-install-nodejs).
 
 * [적응형 Forms 핵심 구성 요소 활성화](enable-headless-adaptive-forms-and-core-components-on-forms-cloud-service.md) AEM Forms as a Cloud Service 환경용입니다.
 
@@ -60,14 +58,15 @@ AEM Forms as a Cloud Service 환경을 숙지합니다.
    [https://author-p105303-e986623.adobeaemcloud.com/ui#/aem/aem/start.html](https://author-p105303-e986623.adobeaemcloud.com/ui%23/aem/aem/start.html)
 
 1. Cloud Service 작성자 환경에 로그인합니다.
+   ![](/help/assets/screenshot2028113829.png){width="50%" align="left"}
 
 1. AEM Forms UI로 이동하려면 **Forms > Forms 및 문서**.
 
-   ![](/help/assets/screenshot2028113829.png){width="50%" align="left"}
+
 
    ![](/help/assets/screenshot2028113929.png){width="50%" align="left"}
 
-   환경 설정 또는 정보와 관련된 모든 팝업을 닫습니다. 사용 가능한 모든 양식이 표시됩니다.
+   환경 설정 또는 정보와 관련된 팝업을 모두 닫습니다. 사용 가능한 모든 양식이 표시됩니다.
 
 
 ## 수업 2
@@ -134,9 +133,9 @@ AEM Forms as a Cloud Service 환경을 숙지합니다.
 
    1. 최종 사용자 관점에서 양식을 미리 보려면 **미리보기**&#x200B;를 클릭합니다.
 
-   1. 더미 데이터로 양식 채우기.
+   1. 더미 데이터로 양식을 채우십시오.
 
-   1. 양식 제출.
+   1. 양식을 제출합니다.
       ![](/help/assets/screenshot2028125729.png)
 
    1. bin 요청 탭에서 제출된 데이터를 확인합니다.
@@ -224,6 +223,13 @@ AEM Forms as a Cloud Service 환경을 숙지합니다.
 
      ![](/help/assets/screenshot2028116429.png){width="50%" align="left"}
 
+1. AEM 환경에서 로컬 사용자를 만듭니다.
+
+   >[!NOTE]
+   > 로컬 사용자를 만들려면 다음 작업을 수행하십시오.
+   > 다음으로 이동 `AEM Home` > `Tools` > `Security` > `Users`
+   > 사용자가 forms-users 그룹의 멤버인지 확인합니다.
+
 
 1. 명령 프롬프트 창에서 다음 명령을 실행합니다.
 
@@ -246,7 +252,10 @@ AEM Forms as a Cloud Service 환경을 숙지합니다.
 
    ![](/help/assets/screenshot2028117229.png)
 
-   위 명령이 실행되면 `webpack compiled` 메시지를 기다립니다. 양식이 브라우저 탭에 표시됩니다.
+   위의 명령이 실행되면 다음을 기다립니다. `webpack compiled` 메시지와 함께 AEM 로그인 페이지로 리디렉션됩니다.
+
+1. 클릭 **로컬로 로그인(관리 작업만 해당)** AEM 로그인 페이지에서 참조할 수 있습니다.
+1. 생성된 로컬 사용자의 자격 증명을 입력하면 양식이 브라우저 탭에 표시됩니다.
 
    >[!NOTE]
    >
