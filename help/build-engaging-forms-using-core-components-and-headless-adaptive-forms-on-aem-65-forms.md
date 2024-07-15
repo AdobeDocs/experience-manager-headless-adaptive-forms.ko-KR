@@ -10,15 +10,15 @@ role: Admin, Developer
 level: Beginner, Intermediate
 topic-tags: develop
 hide: true
-exl-id: 46df943c-0622-4b3b-a802-85c39ac6a734
-source-git-commit: 47ac7d03c8c4fa18ac3bdcef04352fdd1cad1b16
+exl-id: 07a71aac-de38-4839-b8d6-b47c3f575eb3
+source-git-commit: 999c3d092d03d7a82363bc94ce79ceb33bf0df7e
 workflow-type: tm+mt
-source-wordcount: '2189'
-ht-degree: 62%
+source-wordcount: '2130'
+ht-degree: 57%
 
 ---
 
-# 핵심 구성 요소 및 Headless를 사용하여 매력적인 양식 작성 AEM 6.5 Forms의 적응형 Forms {#build-engaging-forms-using-core-components-and-headless}
+# AEM 6.5 Forms에서 핵심 구성 요소 및 Headless 적응형 Forms을 사용하여 매력적인 Forms 구축 {#build-engaging-forms-using-core-components-and-headless}
 
 ## 랩 개요 {#lab-overview}
 
@@ -38,13 +38,13 @@ AEM Forms을 사용하여 AEM Sites과 일치하는 최신 핵심 구성 요소�
 
 랩에서 이 핸즈를 사용하려면:
 
-* 설치 [git 최신 릴리스](https://git-scm.com/downloads). Git을 처음 사용하는 경우 다음을 참조하십시오 [Git 설치](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git).
+* Git의 [최신 릴리스](https://git-scm.com/downloads)를 설치합니다. Git을 처음 사용하는 경우 [Git 설치](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git)를 참조하십시오.
 
-* 설치 [Node.js 16.13.0 이상](https://nodejs.org/en/download/). Node.js를 처음 사용하는 경우 [Node.js 설치 방법](https://nodejs.dev/en/learn/how-to-install-nodejs).
+* [Node.js 16.13.0 이상](https://nodejs.org/en/download/)을(를) 설치합니다. Node.js를 처음 사용하는 경우 [Node.js 설치 방법](https://nodejs.dev/en/learn/how-to-install-nodejs)을 참조하세요.
 
-* [Headless 적응형 Forms 활성화](enable-headless-adaptive-forms-and-core-components.md) AEM 6.5 Forms 환경에서.
+* AEM 6.5 Forms 환경에서 [Headless 적응형 Forms 사용](enable-headless-adaptive-forms-and-core-components.md).
 
-* 설치 [Microsoft Visual Studio 코드](https://code.visualstudio.com/download) 또는 일반 텍스트 편집기입니다. 문서의 예제에서는 Microsoft Visual Studio 코드를 사용합니다.
+* [Microsoft Visual Studio Code](https://code.visualstudio.com/download) 또는 일반 텍스트 편집기를 설치합니다. 문서의 예제에서는 Microsoft Visual Studio 코드를 사용합니다.
 
 ## 수업 1 {#lesson-1}
 
@@ -58,7 +58,7 @@ AEM 6.5 Forms 환경에 대해 숙지하십시오.
 
 ### 연습 {#lesson-1-excercise}
 
-1. 브라우저를 열고 작성자 환경의 URL을 입력합니다. 예:
+1. 브라우저를 열고 작성 환경의 URL을 입력합니다. 예:
    [https://localhost:4502](https://localhost:4502).
 
 1. 로그인한 후 AEM Forms UI로 이동합니다. **Forms**&#x200B;를 클릭합니다.
@@ -97,20 +97,20 @@ AEM 6.5 Forms 환경에 대해 숙지하십시오.
 
 1. 적응형 양식 작성:
 
-   1. 단원 1에 사용된 브라우저 탭에서 AEM Forms 웹 인터페이스로 이동하여 로 이동합니다. **Forms** > **Forms 및 문서**.
+   1. 1단원에서 사용하는 브라우저 탭에서 AEM Forms 웹 인터페이스로 이동하여 **Forms** > **Forms 및 문서**&#x200B;로 이동합니다.
 
    1. **만들기**를 클릭하고 적응형 양식을 선택합니다.
       ![](/help/assets/creating-adaptive-form-6-5.png){width="50%" align="left"}
 
-   1. 다음 항목 선택 **핵심 구성 요소가 포함된 빈 항목** 아래 표시된 템플릿 선택 화면에서 템플릿을 선택하고 **다음**.
+   1. 아래 표시된 템플릿 선택 화면에서 **핵심 구성 요소로 빈 항목** 템플릿을 선택하고 **다음**을 클릭합니다.
       ![](/help/assets/creating-adaptive-form-6-5-select-blank-template.png){width="50%" align="left"}
 
-   1. 지정 `Contact us` (으)로 **제목** 형식. 다음을 확인합니다. **이름** 이(가) `contact-us`.
+   1. `Contact us`을(를) 양식의 **제목**(으)로 지정하십시오. 양식의 **Name**&#x200B;이(가) `contact-us`인지 확인하십시오.
       ![](/help/assets/creating-adaptive-form-65-specify-title.png){width="50%" align="left"}
 
    1. **만들기**&#x200B;를 클릭합니다. 대화 상자가 표시됩니다.
 
-   1. 대화 상자에서 **편집**. 양식이 적응형 양식 편집기에서 열립니다. 환경 설정 또는 정보와 관련된 모든 팝업이나 대화 상자를 닫습니다.
+   1. 대화 상자에서 **편집**&#x200B;을 클릭합니다. 양식이 적응형 양식 편집기에서 열립니다. 환경 설정 또는 정보에 대한 팝업이나 대화 상자를 모두 닫습니다.
 
    1. 구성 요소 브라우저를 열고 패널 구성 요소를 화면 가운데로 끌어서 놓습니다.
 
@@ -121,15 +121,15 @@ AEM 6.5 Forms 환경에 대해 숙지하십시오.
       ![](/help/assets/contact-us-headless-adaptive-form.png){width="50%" align="left"}
 
 
-   1. 컨텐츠 브라우저를 열고 가이드 컨테이너 속성 아이콘을 클릭한 다음 **제출** 탭. 다음 항목 선택 **REST 끝점에 제출** 작업 제출, 다음 항목 선택 **POST 요청 활성화** 옵션을 선택하고 의 2단원에서 만든 REST 끝점을 지정합니다. **POST 요청용 URL** 텍스트 상자를 클릭하고 **완료** 아이콘.
+   1. 콘텐츠 브라우저를 열고 가이드 컨테이너 속성 아이콘을 클릭한 다음 **제출** 탭을 엽니다. **REST 끝점에 제출** 제출 액션을 선택하고 **POST 요청 활성화** 옵션을 선택한 다음 **POST 요청에 대한 URL** 텍스트 상자에서 2단원에서 만든 REST 끝점을 지정하고 **완료** 아이콘을 클릭합니다.
 
       ![](/help/assets/configure-submit-action.png){width="50%" align="left"}
 
-1. 적응형 양식 게시:
+1. 적응형 양식 Publish:
 
-   1. AEM UI를 열고 다음으로 이동 **Forms** > **Forms 및 문서**. 이전 단계에서 만든 양식을 선택하고 **게시**.
+   1. AEM UI를 열고 **Forms** > **Forms 및 문서**&#x200B;로 이동합니다. 이전 단계에서 만든 양식을 선택하고 **Publish**&#x200B;을(를) 클릭합니다.
 
-   1. 에셋 게시 대화 상자에서 **게시**. 성공 메시지가 표시됩니다.
+   1. Publish Assets 대화 상자에서 **Publish**&#x200B;을 클릭합니다. 성공 메시지가 표시됩니다.
 
 ## 수업 3
 
@@ -155,7 +155,7 @@ AEM 6.5 Forms 환경에 대해 숙지하십시오.
    cd git
    ```
 
-   폴더가 없으면 `md git` 생성 명령입니다.
+   폴더가 없으면 `md git` 명령을 사용하여 폴더를 만드십시오.
 
 1. 다음 명령을 사용하여 테마 프론트엔드 코드를 복제합니다.
 
@@ -176,7 +176,7 @@ AEM 6.5 Forms 환경에 대해 숙지하십시오.
 
    ![](/help/assets/screenshot2028116229.png){width="50%" align="left"}
 
-1. 이름 바꾸기 `env_template` 파일을 .env로 변환  파일 이름을 바꾸려면 **env_template** 파일을 마우스 오른쪽 버튼으로 클릭하고 **이름 바꾸기** 옵션을 선택합니다.
+1. `env_template` 파일의 이름을 .env로 바꿉니다.  파일 이름을 바꾸려면 **env_template** 파일을 마우스 오른쪽 버튼으로 클릭하고 **이름 바꾸기** 옵션을 선택합니다.
 
    ![](/help/assets/screenshot2028116429.png){width="30%" align="left"}
 
@@ -186,7 +186,7 @@ AEM 6.5 Forms 환경에 대해 숙지하십시오.
 
 1. .env 파일의 변수에 대해 다음 값을 설정하고 파일을 저장합니다.
 
-   * **AEM_URL**: 의 URL 지정 **게시** 인스턴스. 예, `https://localhost:4502/`
+   * **AEM_URL**: **게시** 인스턴스의 URL을 지정하십시오. 예, `https://localhost:4502/`
 
    * **AEM_ADAPTIVE_FORM**: 양식 이름을 지정합니다. 예: `contact-us`
 
@@ -300,9 +300,9 @@ React 스타터 프로젝트를 사용하여 로컬 저장소 설정:
 
 1. .env 파일의 변수에 대해 다음 값을 설정합니다. 변수를 업데이트한 후 파일을 저장합니다.
 
-   * **AEM_URL**: 게시 환경의 URL을 지정합니다. 예, `https://localhost:4503/`
+   * **AEM_URL**: 게시 환경의 URL을 지정하십시오. 예, `https://localhost:4503/`
 
-   * **AEM_FORM_PATH**: 이전 단원에서 만든 적응형 양식의 경로를 지정합니다. 예, `/content/forms/af/contact-us/`
+   * **AEM_FORM_PATH**: 이전 단원에서 만든 적응형 양식의 경로를 지정하십시오. 예, `/content/forms/af/contact-us/`
 
    </br>
 
@@ -336,25 +336,25 @@ React 스타터 프로젝트를 사용하여 로컬 저장소 설정:
 
 비즈니스 사용자로서 서버의 양식을 변경하고 자동으로 Headless 양식에 반영된 변경 사항을 확인해 보겠습니다.
 
-1. 브라우저에서 AEM Forms 관리 인터페이스를 엽니다. 예를 들어, [http://localhost:4502/aem/forms.html/content/dam/formsanddocuments](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments).
+1. 브라우저에서 AEM Forms 관리 인터페이스를 엽니다. 예: [http://localhost:4502/aem/forms.html/content/dam/formsanddocuments](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments).
 
-1. 다음 항목 선택 **연락처** 양식 및 클릭 **편집.** 적응형 Forms 편집기에서 양식이 열립니다.
+1. **문의하기** 양식을 선택하고 **편집을 클릭합니다.** 적응형 Forms 편집기에서 양식을 엽니다.
 
 
-1. 다음 항목 선택 **연락처 번호** 필드를 클릭하고 **편집 아이콘(연필 아이콘)** 을 클릭합니다. 팝업 도구 모음이 보이지 않으면 오른쪽 상단에서 **미리보기** 버튼 왼쪽에 있는 **편집** 버튼을 클릭하여 편집 모드로 전환합니다.
+1. **연락처 번호** 필드를 선택하고 도구 모음에서 **편집 아이콘(연필 아이콘)을 클릭합니다**. 팝업 도구 모음이 보이지 않으면 오른쪽 상단에서 **미리보기** 버튼 왼쪽에 있는 **편집** 버튼을 클릭하여 편집 모드로 전환합니다.
 
    ![](/help/assets/change-field-title.png){width="50%" align="left"}
 
-1. 레이블을 다음으로 변경 **모바일 번호**. 양식의 빈 공간을 클릭하면 양식의 변경 사항이 저장됩니다.
+1. 레이블을 **휴대폰 번호**(으)로 변경하십시오. 양식의 빈 공간을 클릭하면 양식의 변경 사항이 저장됩니다.
 
 변경 사항을 게시 환경에 전파하기 위해 업데이트된 양식을 게시해 보겠습니다.
 
-1. AEM Forms 관리 인터페이스 탭에서 연락처 양식을 선택하고 **게시 취소**. **게시 취소** 버튼이 표시되지 않으면 3단계로 건너뛰어 변경 사항을 직접 게시합니다.
+1. AEM Forms 관리 인터페이스 탭에서 연락처 양식을 선택하고 **게시 취소**&#x200B;를 클릭합니다. **게시 취소** 버튼이 표시되지 않으면 3단계로 건너뛰어 변경 사항을 직접 게시합니다.
 
 
 1. **게시 취소**&#x200B;를 클릭합니다. 각 대화 상자에서 **닫기**&#x200B;를 클릭합니다.
 
-1. 브라우저를 새로 고친 후 연락처 양식을 선택하고 을(를) 클릭합니다. **게시**.
+1. 브라우저를 새로 고친 후 연락처 양식을 선택하고 **Publish**&#x200B;을(를) 클릭합니다.
 
 
 1. **게시**&#x200B;를 클릭합니다. 각 대화 상자에서 **닫기**&#x200B;를 클릭합니다.
@@ -426,9 +426,9 @@ Material UI 스타터 프로젝트를 사용하여 로컬 저장소 설정:
 
 1. .env 파일의 변수에 대해 다음 값을 설정합니다. 변수를 업데이트한 후 파일을 저장합니다. **CTRL + S** 스위치 조합을 사용하여 파일을 저장합니다.
 
-   * **AEM_URL**: 게시 환경의 URL을 지정합니다. 예를 들어, [https://localhost:4503](https://localhost:4503)
+   * **AEM_URL**: 게시 환경의 URL을 지정하십시오. 예: [https://localhost:4503](https://localhost:4503)
 
-   * **AEM_FORM_PATH**: 이전 단원에서 만든 적응형 양식의 경로를 지정합니다. 예: /content/forms/af/contact-us/
+   * **AEM_FORM_PATH**: 이전 단원에서 만든 적응형 양식의 경로를 지정하십시오. 예: /content/forms/af/contact-us/
 
 
 1. 명령 창을 열고 현재 위치가 **react-starter-kit-aem-headless-forms** 디렉터리인지 확인한 후 다음 명령을 실행합니다.
@@ -447,7 +447,7 @@ Material UI 스타터 프로젝트를 사용하여 로컬 저장소 설정:
 
    ![](/help/assets/lab65-mui-starter-kit-start.png)
 
-   위 명령은 로컬 개발 서버를 시작하고 Google Material UI 프론트엔드 라이브러리를 사용하여 Headless 방식으로 AEM에서 가져온 양식 정의를 렌더링합니다.
+   이 명령은 로컬 개발 서버를 시작하고 Google Material UI 프론트엔드 라이브러리를 사용하여 AEM에서 가져온 양식 정의를 headless 방식으로 렌더링합니다.
 
    >[!NOTE]
    >
@@ -471,13 +471,13 @@ Headless 프로젝트의 구성 요소 변형을 업데이트합니다. Material
 
 1. Visual Code에서 `src/components/textinput/index.tsx`에 있는 `index.tsx` 파일을 열어 텍스트 입력 구성 요소로 이동합니다.
 
-1. 코드 104행의 시작 부분에 `//`를 추가합니다. 이렇게 하면 줄이 주석으로 변환됩니다.
+1. 코드 줄 104의 시작 부분에 `//`을(를) 추가합니다. 이렇게 하면 줄이 주석으로 변환됩니다.
 
    ```Shell
    //const Cmp = \'outlined\' === appliedCssClassNames ? OutlinedInput: Input;
    ```
 
-1. 구성 요소의 다른 변형을 사용하고 파일을 저장하려면 105행에 다음을 추가합니다. **CTRL + S** 스위치 조합을 사용하여 파일을 저장합니다.
+1. 다른 구성 요소 변형을 사용하려면 105행에 다음을 추가하고 파일을 저장합니다. **CTRL + S** 스위치 조합을 사용하여 파일을 저장합니다.
 
    ```Shell
    const Cmp = OutlinedInput;

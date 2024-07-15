@@ -11,7 +11,7 @@ hide: false
 exl-id: 11960e91-6c09-48d4-9d57-37537f808cd4
 source-git-commit: 47ac7d03c8c4fa18ac3bdcef04352fdd1cad1b16
 workflow-type: tm+mt
-source-wordcount: '206'
+source-wordcount: '189'
 ht-degree: 0%
 
 ---
@@ -35,12 +35,12 @@ Adobe provides an extension for Microsoft&reg; Visual Studio Code to make it eas
 
 ## 사전 요구 사항
 
-* 다운로드 및 설치 [Microsoft Visual Studio Code 1.62.0 이상](https://code.visualstudio.com/docs/supporting/FAQ#_how-do-i-find-the-version). 이전 버전이 있거나 설치된 버전이 없는 경우에서 최신 버전을 다운로드하십시오. [Microsoft 웹 사이트](https://code.visualstudio.com/docs/setup/setup-overview). Apple macOS의 명령줄에서 Visual Studio를 사용하려면 [명령줄에서 실행](https://code.visualstudio.com/docs/setup/mac#_launching-from-the-command-line).
-* 다운로드 [적응형 양식 빌더 확장](/help/assets/adaptive-form-builder-0.12.0.vsix).
+* [Microsoft Visual Studio Code 1.62.0 이상](https://code.visualstudio.com/docs/supporting/FAQ#_how-do-i-find-the-version)을 다운로드하여 설치하십시오. 이전 버전이 있거나 설치된 버전이 없는 경우 [Microsoft 웹 사이트](https://code.visualstudio.com/docs/setup/setup-overview)에서 최신 버전을 다운로드하십시오. Apple macOS의 명령줄에서 Visual Studio를 사용하려면 [명령줄에서 시작](https://code.visualstudio.com/docs/setup/mac#_launching-from-the-command-line)을 참조하십시오.
+* [적응형 양식 빌더 확장](/help/assets/adaptive-form-builder-0.12.0.vsix)을 다운로드하십시오.
 
 ## 확장 설치
 
-1. 명령 프롬프트를 열고 다운로드한 확장 파일이 포함된 디렉토리로 이동합니다. *적응형 양식 빌더-[버전].v6*.
+1. 명령 프롬프트를 열고 다운로드한 확장 파일 *적응형 양식 빌더-[버전].vsix*&#x200B;이 포함된 디렉터리로 이동합니다.
 
 1. 다음 명령을 실행하여 확장을 설치합니다.
 
@@ -48,7 +48,7 @@ Adobe provides an extension for Microsoft&reg; Visual Studio Code to make it eas
 
    <br>
 
-   ![확장 설치 중](/help/assets/install-extension.png)
+   ![확장 설치](/help/assets/install-extension.png)
 
 
-   .vsix 파일에 대한 자세한 내용은 [Microsoft Visual Studio 코드 도움말](https://code.visualstudio.com/docs/editor/extension-marketplace#_install-from-a-vsix).
+   .vsix 파일에 대한 자세한 내용은 [Microsoft Visual Studio 코드 도움말](https://code.visualstudio.com/docs/editor/extension-marketplace#_install-from-a-vsix)을 참조하십시오.

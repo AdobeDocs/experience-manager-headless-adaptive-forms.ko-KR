@@ -12,7 +12,7 @@ ht-degree: 85%
 
 ---
 
-# AEM Forms as a Cloud Service에서 핵심 구성 요소 및 Headless 적응형 Forms을 사용하여 매력적인 Forms 구축 {#build-engaging-forms-using-core-components-and-headless}
+# AEM Formsas a Cloud Service 에서 핵심 구성 요소 및 Headless 적응형 Forms을 사용하여 Forms 구축 {#build-engaging-forms-using-core-components-and-headless}
 
 ## 랩 개요 {#lab-overview}
 
@@ -32,13 +32,13 @@ AEM Forms를 사용하여 AEM Sites와 일치하는 최신 핵심 구성 요소�
 
 랩에서 이 핸즈를 사용하려면:
 
-* 설치 [git 최신 릴리스](https://git-scm.com/downloads). Git을 처음 사용하는 경우 다음을 참조하십시오 [Git 설치](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git).
+* Git의 [최신 릴리스](https://git-scm.com/downloads)를 설치합니다. Git을 처음 사용하는 경우 [Git 설치](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git)를 참조하십시오.
 
-* 설치 [Node.js 16.13.0 이상](https://nodejs.org/en/download/). Node.js를 처음 사용하는 경우 [Node.js 설치 방법](https://nodejs.org/en/learn/getting-started/how-to-install-nodejs).
+* [Node.js 16.13.0 이상](https://nodejs.org/en/download/)을(를) 설치합니다. Node.js를 처음 사용하는 경우 [Node.js 설치 방법](https://nodejs.org/en/learn/getting-started/how-to-install-nodejs)을 참조하세요.
 
-* [적응형 Forms 핵심 구성 요소 활성화](enable-headless-adaptive-forms-and-core-components-on-forms-cloud-service.md) AEM Forms as a Cloud Service 환경용입니다.
+* AEM Forms as a Cloud Service 환경에 대해 [적응형 Forms 코어 구성 요소 사용](enable-headless-adaptive-forms-and-core-components-on-forms-cloud-service.md)
 
-* 설치 [Microsoft Visual Studio 코드](https://code.visualstudio.com/download) 또는 일반 텍스트 편집기입니다. 문서의 예제에서는 Microsoft Visual Studio 코드를 사용합니다.
+* [Microsoft Visual Studio Code](https://code.visualstudio.com/download) 또는 일반 텍스트 편집기를 설치합니다. 문서의 예제에서는 Microsoft Visual Studio 코드를 사용합니다.
 
 
 
@@ -60,7 +60,7 @@ AEM Forms as a Cloud Service 환경을 숙지합니다.
 1. Cloud Service 작성자 환경에 로그인합니다.
    ![](/help/assets/screenshot2028113829.png){width="50%" align="left"}
 
-1. AEM Forms UI로 이동하려면 **Forms > Forms 및 문서**.
+1. AEM Forms UI로 이동하려면 **Forms > Forms 및 문서**&#x200B;를 클릭합니다.
 
 
 
@@ -103,12 +103,12 @@ AEM Forms as a Cloud Service 환경을 숙지합니다.
    1. **스타일** 탭을 클릭하고 아래와 같이 **wknd-theme** 테마를 선택합니다.
       ![](/help/assets/screenshot202023-03-0120at206.09.2320pm.png)
 
-   1. 다음을 클릭합니다. **제출** 탭을 클릭하고 다음을 선택합니다. **REST 끝점에 제출** 카드 및 의 공용 저장소를 지정합니다. **POST 요청용 URL** 아래에 표시된 필드:
+   1. **제출** 탭을 클릭하고 **REST 끝점에 제출** 카드를 선택한 다음 아래와 같이 POST 요청에 대한 **URL** 필드에 공개 BIN을 지정합니다.
       ![](/help/assets/screenshot202023-03-0120at206.09.5320pm.png)
 
-   1. **만들기**&#x200B;를 클릭합니다. 양식에 이름 및 제목을 지정합니다. 예를 들어, **등록**. **만들기**&#x200B;를 클릭합니다.
+   1. **만들기**&#x200B;를 클릭합니다. 양식에 이름 및 제목을 지정합니다. 예: **등록**. **만들기**&#x200B;를 클릭합니다.
 
-   1. 적응형 양식 편집기가 열립니다. 환경 설정 또는 정보와 관련된 모든 팝업이나 대화 상자를 닫습니다. 왼쪽 레일에서 구성 요소 브라우저를 클릭하고 **머리글** 및 **바닥글** 구성 요소를 추가합니다.
+   1. 적응형 양식 편집기가 열립니다. 환경 설정 또는 정보와 관련된 모든 팝업이나 대화 상자를 닫습니다. 왼쪽 레일에서 구성 요소 브라우저를 클릭하고 빈 양식의 맨 위와 맨 아래에 각각 **머리글** 및 **바닥글** 구성 요소를 추가합니다.
       ![](/help/assets/screenshot2028121929.png)
 
    1. 구성 요소 브라우저에서 구성 요소를 드래그 앤 드롭하여 다음과 같이 양식을 만듭니다.
@@ -138,13 +138,13 @@ AEM Forms as a Cloud Service 환경을 숙지합니다.
 
 1. 규칙이 있는 양식에 대화형 작업 추가:
 
-   1. 다음을 클릭합니다. **5% 할인을 받으려면 상자를 선택합니다.** 구성 요소. 옵션 도구 모음에서 규칙 아이콘을 클릭합니다. 규칙 편집기 옵션이 열립니다.
+   1. **5% 할인** 구성 요소를 받으려면 확인란을 클릭하십시오. 옵션 도구 모음에서 규칙 아이콘을 클릭합니다. 규칙 편집기 옵션이 열립니다.
 
-   1. 다음과 같은 경우 규칙을 만듭니다. **5% 할인을 받으려면 상자를 선택합니다.** 옵션을 선택하면 신용 카드 적용 옵션이 비활성화됩니다.
+   1. 규칙을 만듭니다. **5% 할인을 받으려면 확인란 선택** 옵션을 선택하면 신용 카드 적용 옵션이 비활성화됩니다.
 
-1. 양식을 게시합니다.
+1. 양식 Publish.
 
-   1. AEM Forms 관리 인터페이스(예: ) 열기 `https://author-p105303-e986623.adobeaemcloud.com/ui%23/aem/aem/forms.html/content/dam/formsanddocuments`을 누르고 양식을 선택합니다.
+   1. AEM Forms 관리 인터페이스(예: `https://author-p105303-e986623.adobeaemcloud.com/ui%23/aem/aem/forms.html/content/dam/formsanddocuments`)를 열고 양식을 선택합니다.
 
    1. **게시**&#x200B;를 클릭합니다.
 
@@ -222,7 +222,7 @@ AEM Forms as a Cloud Service 환경을 숙지합니다.
 
    >[!NOTE]
    > 로컬 사용자를 만들려면 다음 작업을 수행하십시오.
-   > 다음으로 이동 `AEM Home` > `Tools` > `Security` > `Users`
+   > `AEM Home` > `Tools` > `Security` > `Users`(으)로 이동
    > 사용자가 forms-users 그룹의 멤버인지 확인합니다.
 
 
@@ -236,7 +236,7 @@ AEM Forms as a Cloud Service 환경을 숙지합니다.
 
    >[!NOTE]
    >
-   > * 를 통해 npm을 업데이트하라는 메시지가 표시되는 경우 `npm notice Run npm nstall -g npm@9.6.0` 명령, 메시지를 무시합니다.
+   > * `npm notice Run npm nstall -g npm@9.6.0` 명령을 통해 npm을 업데이트하라는 메시지가 표시되면 메시지를 무시합니다.
    > * 통합 문서에서 지시하지 않는 한 다른 npm 명령은 실행하지 않습니다.
 
 1. 이제 다음 명령을 실행하여 양식을 미리 봅니다.
@@ -247,9 +247,9 @@ AEM Forms as a Cloud Service 환경을 숙지합니다.
 
    ![](/help/assets/screenshot2028117229.png)
 
-   위의 명령이 실행되면 다음을 기다립니다. `webpack compiled` 메시지와 함께 AEM 로그인 페이지로 리디렉션됩니다.
+   위의 명령이 실행되면 `webpack compiled` 메시지를 기다린 후 AEM 로그인 페이지로 리디렉션됩니다.
 
-1. 클릭 **로컬로 로그인(관리 작업만 해당)** AEM 로그인 페이지에서 참조할 수 있습니다.
+1. AEM 로그인 페이지에서 **로컬로 로그인(관리 작업만 해당)**&#x200B;을 클릭합니다.
 1. 생성된 로컬 사용자의 자격 증명을 입력하면 양식이 브라우저 탭에 표시됩니다.
 
    >[!NOTE]
@@ -382,7 +382,7 @@ React 스타터 프로젝트를 사용하여 로컬 저장소 설정:
 
 1. 브라우저에서 AEM Forms 관리 인터페이스를 엽니다. 예: [https://author-p105303-e986623.adobeaemcloud.com/ui#/aem/aem/forms.html/content/dam/formsanddocuments](https://author-p105303-e986623.adobeaemcloud.com/ui%23/aem/aem/forms.html/content/dam/formsanddocuments).
 
-1. 다음 항목 선택 **접촉선** 양식 및 클릭 **편집.** 적응형 양식 편집기에서 양식이 열립니다.
+1. **연락처** 양식을 선택하고 **편집을 클릭합니다.** 적응형 양식 편집기에서 양식이 열립니다.
 
 
 1. **전화번호** 필드를 선택하고 도구 모음에서 **편집 아이콘(연필 아이콘)**&#x200B;을 클릭합니다. 팝업 도구 모음이 보이지 않으면 오른쪽 상단에서 **미리보기** 버튼 왼쪽에 있는 **편집** 버튼을 클릭하여 편집 모드로 전환합니다.

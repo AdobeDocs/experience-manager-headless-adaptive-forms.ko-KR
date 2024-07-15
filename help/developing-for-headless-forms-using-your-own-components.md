@@ -12,4 +12,4 @@ ht-degree: 0%
 
 # 자체 구성 요소를 사용하여 Headless 양식용 개발 {#developing-for-headless-forms-using-your-own-components}
 
-<span class="preview"> (이)는 **진행 중인 작업** 기사.</span>
+<span class="preview"> **진행 중인 작업** 문서입니다.</span>

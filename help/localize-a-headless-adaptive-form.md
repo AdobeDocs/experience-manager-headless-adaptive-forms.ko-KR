@@ -12,4 +12,4 @@ ht-degree: 0%
 
 # Headless 적응형 양식 현지화 {#localize-a-headless-adaptive-form}
 
-<span class="preview"> (이)는 **진행 중인 작업** 기사.</span>
+<span class="preview"> **진행 중인 작업** 문서입니다.</span>

@@ -5,8 +5,8 @@ keywords: 헤드리스, 적응형 양식, 알려진 문제
 hide: true
 source-git-commit: 0127f8ddede38083f0932b0e8d7efdd0dd77c3a6
 workflow-type: tm+mt
-source-wordcount: '102'
-ht-degree: 10%
+source-wordcount: '111'
+ht-degree: 1%
 
 ---
 
