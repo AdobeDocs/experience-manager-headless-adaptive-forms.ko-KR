@@ -9,7 +9,7 @@ level: Beginner, Intermediate
 keywords: headless, 적응형 양식, FAQ
 hide: false
 exl-id: 5bfc307d-96a3-4007-b65f-32176ecdb710
-source-git-commit: 47ac7d03c8c4fa18ac3bdcef04352fdd1cad1b16
+source-git-commit: c46ac28e490a09d6f563c4b5673d30a53c277a69
 workflow-type: tm+mt
 source-wordcount: '423'
 ht-degree: 1%
@@ -46,7 +46,7 @@ archetype project to deploy the finished Headless adaptive forms and correspondi
 
 ## 사용자 정의 프레임워크에서 Headless 적응형 양식을 사용할 수 있습니까?
 
-Headless 적응형 양식은 [표준 사양](/help/assets/Headless-Adaptive-Form-Specification.pdf)을 기반으로 합니다. 사양을 확장하여 사용자 정의 구성 요소를 빌드하는 데 사용할 수 있습니다. 예를 들어, Chakra UI, Vue.js 등에 대한 구성 요소입니다.
+Headless 적응형 양식은 [표준 사양](/help/assets/headless-adaptive-forms-specification.pdf)을 기반으로 합니다. 사양을 확장하여 사용자 정의 구성 요소를 빌드하는 데 사용할 수 있습니다. 예를 들어, Chakra UI, Vue.js 등에 대한 구성 요소입니다.
 
 ## Headless 적응형 양식은 계단식 필드를 지원합니까?
 
@@ -63,7 +63,7 @@ At this moment, you use the Adaptive Form Editor to specify the JSON structure a
 
 ## Angular SPA에서 Headless 적응형 양식을 사용할 수 있습니까?
 
-Web SDK를 사용하여 Headless 적응형 양식을 Angular SPA과 통합할 수 있습니다. 모든 프레임워크와 독립적입니다. React SDK를 참조로 사용할 수 있습니다.
+웹 SDK을 사용하여 Headless 적응형 양식을 Angular SPA과 통합할 수 있습니다. 모든 프레임워크와 독립적입니다. React SDK을 참조로 사용할 수 있습니다.
 
 <!-- ## Should the `-r prerelease` switch be used every time to start the AEM SDK instance or only for the first time?
 
@@ -86,4 +86,4 @@ You do not require a license.properties file to run AEM Cloud Service SDK.
 
 ## Headless 적응형 양식을 CRM에 연결하여 데이터를 읽거나 쓸 수 있습니까?
 
-Microsoft Dynamics 및 Salesforce를 사용하여 Headless 적응형 양식을 제출하거나 미리 채울 수 있습니다. CRM 외에도 Headless 적응형 양식은 REST 엔드포인트, 이메일 및 사용자 지정 제출 액션을 사용하여 제출 또는 미리 채우기를 지원합니다.
+Microsoft Dynamics 및 Salesforce을 사용하여 Headless 적응형 양식을 제출하거나 미리 채울 수 있습니다. CRM 외에도 Headless 적응형 양식은 REST 엔드포인트, 이메일 및 사용자 지정 제출 액션을 사용하여 제출 또는 미리 채우기를 지원합니다.
