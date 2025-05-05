@@ -27,7 +27,7 @@ ht-degree: 4%
 + 시작 키트 사용 시작{#get-started}
    + [스타터 키트를 사용하여 Headless 양식 만들기 및 게시](create-and-publish-a-headless-form.md)
    + [사용자 지정 React 라이브러리를 사용하여 Headless 양식 렌더링](use-google-material-ui-react-components-to-render-a-headless-form.md)
-+ Headless 적응형 양식 {#authoring-headless-adaptive-forms} 만들기
++ Headless 적응형 양식 만들기 {#authoring-headless-adaptive-forms}
    + [적응형 Forms 편집기를 사용하여 Headless 적응형 양식 만들기](create-a-headless-adaptive-form.md)
 + 개발자 참조 {#developer-reference}
    + [개발자 포털](https://experienceleague.adobe.com/landing/aem-headless-forms/developer.html?lang=en)

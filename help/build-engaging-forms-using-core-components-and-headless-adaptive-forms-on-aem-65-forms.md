@@ -88,9 +88,11 @@ AEM 6.5 Forms 환경에 대해 숙지하십시오.
 1. 양식의 제출 엔드포인트를 만듭니다.
 
    1. 새 브라우저 탭에서 <https://requestbin.com/>을 엽니다.
+
       ![](/help/assets/screenshot2028114329.png){width="50%" align="left"}
 
-   1. **공개 bin 만들기**를 클릭하고 엔드포인트 URL을 복사합니다.
+   1. **공개 bin 만들기**&#x200B;를 클릭하고 엔드포인트 URL을 복사합니다.
+
       ![](/help/assets/screenshot202023-03-0120at206.10.0020pm.png){width="50%" align="left"}
 
    이 특정 끝점은 데이터를 제출하고 볼 수 있는 예제입니다. 실제 프로덕션에서는 자체 엔드포인트 또는 데이터 소스를 사용하여 캡처된 데이터를 저장합니다.
@@ -99,13 +101,16 @@ AEM 6.5 Forms 환경에 대해 숙지하십시오.
 
    1. 1단원에서 사용하는 브라우저 탭에서 AEM Forms 웹 인터페이스로 이동하여 **Forms** > **Forms 및 문서**&#x200B;로 이동합니다.
 
-   1. **만들기**를 클릭하고 적응형 양식을 선택합니다.
+   1. **만들기**&#x200B;를 클릭하고 적응형 양식을 선택합니다.
+
       ![](/help/assets/creating-adaptive-form-6-5.png){width="50%" align="left"}
 
-   1. 아래 표시된 템플릿 선택 화면에서 **핵심 구성 요소로 빈 항목** 템플릿을 선택하고 **다음**을 클릭합니다.
+   1. 아래 표시된 템플릿 선택 화면에서 **핵심 구성 요소로 빈 항목** 템플릿을 선택하고 **다음**&#x200B;을 클릭합니다.
+
       ![](/help/assets/creating-adaptive-form-6-5-select-blank-template.png){width="50%" align="left"}
 
    1. `Contact us`을(를) 양식의 **제목**(으)로 지정하십시오. 양식의 **Name**&#x200B;이(가) `contact-us`인지 확인하십시오.
+
       ![](/help/assets/creating-adaptive-form-65-specify-title.png){width="50%" align="left"}
 
    1. **만들기**&#x200B;를 클릭합니다. 대화 상자가 표시됩니다.
