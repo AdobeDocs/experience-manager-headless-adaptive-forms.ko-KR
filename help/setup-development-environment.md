@@ -75,7 +75,7 @@ AEM as a Cloud Service SDK(AEM SDK)는 개발자에게 Headless 적응형 양식
 
    >[!NOTE]
    >
-   > .jar 파일을 두 번 클릭하여 시작하지 마십시오. [오류](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/aem-runtime.html?lang=en#troubleshooting-double-click)가 발생합니다.
+   > .jar 파일을 두 번 클릭하여 시작하지 마십시오. [오류](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/aem-runtime.html?lang=ko#troubleshooting-double-click)가 발생합니다.
 
 1. 명령 프롬프트를 엽니다.
    * Windows에서는 **관리자 권한으로 실행** 옵션을 사용하여 관리자 모드로 명령 프롬프트를 엽니다.

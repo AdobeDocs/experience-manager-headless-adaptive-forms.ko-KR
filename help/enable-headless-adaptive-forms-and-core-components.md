@@ -23,7 +23,7 @@ AEM Archetype 41 이상 기반 프로젝트를 AEM 6.5 Forms 인스턴스에 배
 
 AEM 6.5 Forms 환경에서 Headless 적응형 Forms을 활성화하기 전에
 
-* [AEM 6.5 Forms 서비스 팩 16(6.5.16.0) 이상으로 업그레이드](https://experienceleague.adobe.com/docs/experience-manager-65/release-notes/aem-forms-current-service-pack-installation-instructions.html).
+* [AEM 6.5 Forms 서비스 팩 16(6.5.16.0) 이상으로 업그레이드](https://experienceleague.adobe.com/docs/experience-manager-65/release-notes/aem-forms-current-service-pack-installation-instructions.html?lang=ko).
 
 * [Apache Maven](https://maven.apache.org/download.cgi)의 최신 릴리스를 설치하십시오.
 
@@ -115,7 +115,7 @@ AEM Archetype 41 또는 [이후](https://github.com/adobe/aem-project-archetype)
 
    AEM Archetype 프로젝트가 성공적으로 빌드되면 AEM 패키지가 생성됩니다. 패키지는 [AEM Archetype 프로젝트 폴더]\all\target\[appid].all-[버전].zip에서 찾을 수 있습니다.
 
-1. [패키지 관리자](https://experienceleague.adobe.com/docs/experience-manager-65/administering/contentmanagement/package-manager.html?lang=en)를 사용하여 모든 작성자 및 Publish 인스턴스에 [AEM Archetype 프로젝트 폴더]\all\target\[appid].all-[버전].zip 패키지를 배포하십시오.
+1. [패키지 관리자](https://experienceleague.adobe.com/docs/experience-manager-65/administering/contentmanagement/package-manager.html?lang=ko)를 사용하여 모든 작성자 및 Publish 인스턴스에 [AEM Archetype 프로젝트 폴더]\all\target\[appid].all-[버전].zip 패키지를 배포하십시오.
 
 >[!NOTE]
 >

@@ -76,7 +76,7 @@ Forms Web SDK은 양식의 다양한 필드에 적용된 제한을 확인하는 
 
 이러한 모든 구성 요소는 AEM Archetype에 포함됩니다. Headless 적응형 양식용 AEM Archetype 37 이상 프로젝트를 만들면 위에 나열된 라이브러리의 최신 버전이 프로젝트에 포함됩니다.
 
-* **코드 플레이그라운드**: [코드 플레이그라운드](https://experienceleague.adobe.com/landing/aem-headless-forms/developer/code.html?lang=en)는 개발자가 Headless 적응형 Forms의 기능을 실험하고, 배우고, 테스트할 수 있도록 설계된 대화형 환경입니다.
+* **코드 플레이그라운드**: [코드 플레이그라운드](https://experienceleague.adobe.com/landing/aem-headless-forms/developer/code.html?lang=ko)는 개발자가 Headless 적응형 Forms의 기능을 실험하고, 배우고, 테스트할 수 있도록 설계된 대화형 환경입니다.
 
 **응용 프로그램 시작**: Adobe은 Headless 적응형 양식을 빠르게 시작하는 데 도움이 되는 시작 응용 프로그램도 발표했습니다.
 

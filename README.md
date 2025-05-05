@@ -15,13 +15,13 @@ Adobe는 문서 팀의 외부 직원뿐만 아니라 커뮤니티로부터의 �
 
 ## Adobe 콘텐츠에 대한 귀하의 기여 관련 정보
 
-[Adobe 문서 기여자 안내서](https://experienceleague.adobe.com/docs/contributor/contributor-guide/introduction.html)를 참조하십시오.
+[Adobe 문서 기여자 안내서](https://experienceleague.adobe.com/docs/contributor/contributor-guide/introduction.html?lang=ko)를 참조하십시오.
 
 기여하는 방식은 사용자의 신분과 사용자가 기여하고 싶은 변경 내용의 종류에 따라 다릅니다.
 
 ### 부분 변경 사항
 
-부분 업데이트에 선의로 기여하려는 경우 문서를 방문하여 문서 내의 **편집** 링크를 클릭하면 문서에 해당하는 GitHub 소스로 이동하게 됩니다. 그런 다음 GitHub UI를 사용하여 업데이트하십시오. 자세한 내용은 일반 [Adobe 문서 기여자 안내서](https://experienceleague.adobe.com/docs/contributor/contributor-guide/introduction.html)를 참조하십시오.
+부분 업데이트에 선의로 기여하려는 경우 문서를 방문하여 문서 내의 **편집** 링크를 클릭하면 문서에 해당하는 GitHub 소스로 이동하게 됩니다. 그런 다음 GitHub UI를 사용하여 업데이트하십시오. 자세한 내용은 일반 [Adobe 문서 기여자 안내서](https://experienceleague.adobe.com/docs/contributor/contributor-guide/introduction.html?lang=ko)를 참조하십시오.
 
 이 저장소의 설명서 및 코드 샘플에 대해 사용자가 제출하는 부분 수정 또는 설명은 Adobe 사용 약관의 적용을 받습니다.
 
@@ -43,7 +43,7 @@ Adobe Experience Cloud 솔루션을 위한 제품 팀의 기술 작가, 프로�
 
 커뮤니티 기여자는 기본 편집에 GitHub UI를 사용하거나 저장소를 포크하여 주요 콘텐츠를 제공할 수 있습니다.
 
-자세한 내용은 [Adobe 문서 기여자 안내서](https://experienceleague.adobe.com/docs/contributor/contributor-guide/introduction.html)를 참조하십시오.
+자세한 내용은 [Adobe 문서 기여자 안내서](https://experienceleague.adobe.com/docs/contributor/contributor-guide/introduction.html?lang=ko)를 참조하십시오.
 
 ## 마크다운을 사용하여 주제 형식을 지정하는 방법
 

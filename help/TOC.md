@@ -30,8 +30,8 @@ ht-degree: 4%
 + Headless 적응형 양식 만들기 {#authoring-headless-adaptive-forms}
    + [적응형 Forms 편집기를 사용하여 Headless 적응형 양식 만들기](create-a-headless-adaptive-form.md)
 + 개발자 참조 {#developer-reference}
-   + [개발자 포털](https://experienceleague.adobe.com/landing/aem-headless-forms/developer.html?lang=en)
-   + [코드 플레이그라운드](https://experienceleague.adobe.com/landing/aem-headless-forms/developer/code.html?lang=en)
+   + [개발자 포털](https://experienceleague.adobe.com/landing/aem-headless-forms/developer.html?lang=ko)
+   + [코드 플레이그라운드](https://experienceleague.adobe.com/landing/aem-headless-forms/developer/code.html?lang=ko)
    + [Headless 적응형 양식 API](https://opensource.adobe.com/aem-forms-af-runtime/api/)
 + [자주 묻는 질문](faq.md)
 + [문제 해결](troubleshooting.md)

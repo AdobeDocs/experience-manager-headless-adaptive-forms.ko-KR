@@ -27,7 +27,7 @@ Headless 적응형 양식은 다음에 도움이 됩니다.
 * 선택한 프로그래밍 언어로 고품질 다중 채널 양식 작성
 * 양식을 데스크탑 및 모바일 앱, 웹 사이트 및 채팅 애플리케이션에 기본적으로 통합
 * 양식 애플리케이션과 함께 독점 UI 구성 요소 재사용
-* [Adobe Experience Manager Forms의 기능](https://experienceleague.adobe.com/docs/experience-manager-65/forms/getting-started/introduction-aem-forms.html) 활용
+* [Adobe Experience Manager Forms의 기능](https://experienceleague.adobe.com/docs/experience-manager-65/forms/getting-started/introduction-aem-forms.html?lang=ko) 활용
 
 또한 원하는 UI 프레임워크 및 프로그래밍 언어를 사용하여 양식을 렌더링할 수 있는 자체 구성 요소를 개발할 자유가 있습니다. 즉시 사용 가능한 React 구성 요소를 사용하여 Headless 적응형 양식을 렌더링할 수도 있습니다.
 

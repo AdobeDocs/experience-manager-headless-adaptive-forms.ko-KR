@@ -304,7 +304,7 @@ AEM Forms as a Cloud Service 환경을 위한 Headless 적응형 Forms 를 활�
       git push origin
       ```
 
-1. 파일이 Git 저장소에 커밋되면 [파이프라인을 실행합니다](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/deploying-code.html).
+1. 파일이 Git 저장소에 커밋되면 [파이프라인을 실행합니다](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/deploying-code.html?lang=ko).
 
    파이프라인 실행이 성공하면 해당 환경에 맞는 적응형 양식 핵심 구성 요소가 활성화됩니다. 또한 적응형 양식(핵심 구성 요소) 템플릿 및 Canvas 3.0 테마가 Forms as a Cloud Service 환경에 추가되면 핵심 구성 요소 기반 적응형 양식을 사용자 정의하고 만들 수 있는 옵션이 제공됩니다.
 
@@ -313,7 +313,7 @@ AEM Forms as a Cloud Service 환경을 위한 Headless 적응형 Forms 를 활�
 
 ### 핵심 구성 요소란 무엇입니까? {#core-components}
 
-[핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html)는 AEM에서 개발 시간을 가속화고 웹 사이트의 유지 관리 비용을 절감할 수 있는 표준화된 웹 콘텐츠 관리(WCM) 구성 요소입니다.
+[핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=ko)는 AEM에서 개발 시간을 가속화고 웹 사이트의 유지 관리 비용을 절감할 수 있는 표준화된 웹 콘텐츠 관리(WCM) 구성 요소입니다.
 
 ### 핵심 구성 요소를 활성화하는 경우 추가되는 모든 기능은 무엇입니까? {#core-components-capabilities}
 
