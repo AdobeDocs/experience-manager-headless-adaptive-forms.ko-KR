@@ -6,16 +6,16 @@ seo-description: Learn how to enable headless adaptive forms on AEM 6.5 Forms wi
 contentOwner: Khushwant Singh
 role: Admin
 exl-id: e1a5e7e0-d445-4cca-b8d7-693d9531f075
-source-git-commit: 999c3d092d03d7a82363bc94ce79ceb33bf0df7e
+source-git-commit: d791daa149d0380b03bb6ba9776db47440feea02
 workflow-type: tm+mt
-source-wordcount: '743'
-ht-degree: 13%
+source-wordcount: '724'
+ht-degree: 12%
 
 ---
 
 # AEM 6.5 Forms에서 Headless 적응형 Forms 활성화 {#enable-headless-adaptive-forms-on-aem-65-forms}
 
-AEM 6.5 Forms 환경에서 Headless 적응형 Forms을 활성화하려면 AEM Archetype 41 이상 기반 프로젝트를 설정하고 모든 작성자 및 Publish 인스턴스에 배포합니다.
+AEM 6.5 Forms 환경에서 Headless 적응형 Forms을 활성화하려면 AEM Archetype 41 이상 기반 프로젝트를 설정하고 모든 작성 및 게시 인스턴스에 배포합니다.
 
 AEM Archetype 41 이상 기반 프로젝트를 AEM 6.5 Forms 인스턴스에 배포하면 [적응형 Forms 기반의 핵심 구성 요소를 만들 수 있습니다](create-a-headless-adaptive-form.md). 이러한 양식은 JSON 형식으로 표시되며 Headful과 Headless 적응형 Forms으로 사용되어 모바일, 웹 및 기본 앱을 비롯한 다양한 채널에서 보다 높은 유연성과 맞춤화를 가능하게 합니다.
 
@@ -23,7 +23,7 @@ AEM Archetype 41 이상 기반 프로젝트를 AEM 6.5 Forms 인스턴스에 배
 
 AEM 6.5 Forms 환경에서 Headless 적응형 Forms을 활성화하기 전에
 
-* [AEM 6.5 Forms 서비스 팩 16(6.5.16.0) 이상으로 업그레이드](https://experienceleague.adobe.com/docs/experience-manager-65/release-notes/aem-forms-current-service-pack-installation-instructions.html?lang=ko).
+* [AEM 6.5 Forms 서비스 팩 16(6.5.16.0) 이상으로 업그레이드](https://experienceleague.adobe.com/docs/experience-manager-65/release-notes/aem-forms-current-service-pack-installation-instructions.html).
 
 * [Apache Maven](https://maven.apache.org/download.cgi)의 최신 릴리스를 설치하십시오.
 
@@ -31,7 +31,7 @@ AEM 6.5 Forms 환경에서 Headless 적응형 Forms을 활성화하기 전에
 
 ## 최신 AEM Archetype 기반 프로젝트 생성 및 배포
 
-AEM Archetype 41 또는 [이후](https://github.com/adobe/aem-project-archetype) 기반 프로젝트를 만들고 모든 작성자 및 Publish 인스턴스에 배포하려면 다음을 수행하십시오.
+AEM Archetype 41 또는 [이후](https://github.com/adobe/aem-project-archetype) 기반 프로젝트를 만들어 모든 작성자 및 게시 인스턴스에 배포하려면 다음 작업을 수행하십시오.
 
 1. 컴퓨터에 로그인하여 AEM 6.5 Forms 인스턴스를 호스팅 및 실행합니다.
 1. 명령 프롬프트 또는 터미널을 엽니다.
@@ -48,7 +48,7 @@ AEM Archetype 41 또는 [이후](https://github.com/adobe/aem-project-archetype)
       -D appId="myform" ^
       -D groupId="com.myform" ^
       -D includeFormsenrollment="y" ^
-      -D aemVersion="6.5.15" 
+      -D aemVersion="6.5.23" 
    ```
 
    * Linux 또는 Apple macOS
@@ -62,14 +62,13 @@ AEM Archetype 41 또는 [이후](https://github.com/adobe/aem-project-archetype)
       -D appId="myform" \
       -D groupId="com.myform" \
       -D includeFormsenrollment="y" \
-      -D aemVersion="6.5.15" 
+      -D aemVersion="6.5.23" 
    ```
 
-   위의 명령을 실행할 때는 다음 사항을 고려해야 합니다.
+   위 명령을 실행할 때는 다음 사항을 고려해야 합니다.
 
    * appTitle, appId 및 groupId를 포함하여 환경에 대한 특정 값을 반영하도록 명령을 업데이트합니다. 또한 includeFormsenrollment의 값을 &#39;y&#39;로 설정합니다. Forms 포털을 사용하는 경우 _includeExamples=y_ 옵션을 설정하여 프로젝트에 Forms 포털 핵심 구성 요소를 포함합니다.
 
-   * &#39;aemVersion&#39;을 6.5.15.0에서 다른 버전으로 변경하지 마십시오.
 
 1. (Archetype 버전 41 기반 프로젝트만 해당) AEM Archetype 프로젝트가 생성되면 적응형 Forms 기반의 핵심 구성 요소에 대해 테마를 활성화합니다. 테마를 활성화하려면 다음을 수행하십시오.
 
@@ -94,8 +93,6 @@ AEM Archetype 41 또는 [이후](https://github.com/adobe/aem-project-archetype)
    1. 편집할 [AEM Archetype 프로젝트 폴더]/pom.xml을 엽니다.
    1. `core.forms.components.version` 및 `core.forms.components.af.version`의 버전을 [최신 Forms 핵심 구성 요소](https://github.com/adobe/aem-core-forms-components/tree/release/650) 버전으로 설정합니다.
 
-      ![최신 버전의 양식 핵심 구성 요소 멘션](/help/assets/latest-forms-component-version.png)
-
    1. 파일을 저장하고 닫습니다.
 
 
@@ -113,15 +110,15 @@ AEM Archetype 41 또는 [이후](https://github.com/adobe/aem-project-archetype)
       ![archetypebuild-success](assets/corecomponent-build-successful.png)
 
 
-   AEM Archetype 프로젝트가 성공적으로 빌드되면 AEM 패키지가 생성됩니다. 패키지는 [AEM Archetype 프로젝트 폴더]\all\target\[appid].all-[버전].zip에서 찾을 수 있습니다.
+   AEM Archetype 프로젝트가 빌드되면 AEM 패키지가 생성됩니다. 패키지는 [AEM Archetype 프로젝트 폴더]\all\target\[appid].all-[버전].zip에서 찾을 수 있습니다.
 
-1. [패키지 관리자](https://experienceleague.adobe.com/docs/experience-manager-65/administering/contentmanagement/package-manager.html?lang=ko)를 사용하여 모든 작성자 및 Publish 인스턴스에 [AEM Archetype 프로젝트 폴더]\all\target\[appid].all-[버전].zip 패키지를 배포하십시오.
+1. [패키지 관리자](https://experienceleague.adobe.com/docs/experience-manager-65/administering/contentmanagement/package-manager.html?lang=en)를 사용하여 모든 작성자 및 게시 인스턴스에 [AEM Archetype 프로젝트 폴더]\all\target\[appid].all-[버전].zip 패키지를 배포하십시오.
 
 >[!NOTE]
 >
 >
 >
->패키지 관리자를 통해 패키지를 설치하기 위해 게시 인스턴스의 로그인 대화 상자에 액세스하는 데 문제가 발생하는 경우 다음 URL을 통해 로그인해 보십시오. http://[Publish 서버 URL]:[포트]/시스템/콘솔. 이렇게 하면 Publish 인스턴스에 액세스할 수 있으므로 설치 프로세스를 진행할 수 있습니다.
+>패키지 관리자를 통해 패키지를 설치하기 위해 게시 인스턴스의 로그인 대화 상자에 액세스하는 데 문제가 발생하는 경우 다음 URL을 통해 로그인해 보십시오. http://[게시 서버 URL]:[포트]/시스템/콘솔. 게시 인스턴스에 로그인할 수 있는 액세스 권한을 부여하여 설치 프로세스를 진행할 수 있습니다.
 
 
 사용자 환경에 대해 핵심 구성 요소가 활성화됩니다. 빈 적응형 양식 템플릿 기반 핵심 구성 요소와 Canvas 3.0 테마가 환경에 배포되어 [적응형 Forms 기반 핵심 구성 요소를 만들 수 있습니다](create-a-headless-adaptive-form.md).
@@ -130,7 +127,7 @@ AEM Archetype 41 또는 [이후](https://github.com/adobe/aem-project-archetype)
 
 ### 핵심 구성 요소란 무엇입니까?
 
-[핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=ko-KR)는 AEM에서 개발 시간을 가속화고 웹 사이트의 유지 관리 비용을 절감할 수 있는 표준화된 웹 콘텐츠 관리(WCM) 구성 요소입니다.
+[핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html)는 AEM에서 개발 시간을 가속화고 웹 사이트의 유지 관리 비용을 절감할 수 있는 표준화된 웹 콘텐츠 관리(WCM) 구성 요소입니다.
 
 ### 핵심 구성 요소 활성화에 추가된 기능은 무엇입니까?
 
