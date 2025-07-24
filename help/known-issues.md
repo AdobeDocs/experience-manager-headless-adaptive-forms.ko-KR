@@ -1,12 +1,12 @@
 ---
-title: Headless 적응형 양식의 알려진 문제
-description: Headless 적응형 양식의 알려진 문제
+title: Headless 적응형 Forms의 알려진 문제
+description: Headless 적응형 양식의 알려진 문제.
 keywords: 헤드리스, 적응형 양식, 알려진 문제
 hide: true
-source-git-commit: 0127f8ddede38083f0932b0e8d7efdd0dd77c3a6
+source-git-commit: 28792fe1690e68cd301a0de2ce8bff53fae1605f
 workflow-type: tm+mt
-source-wordcount: '111'
-ht-degree: 1%
+source-wordcount: '118'
+ht-degree: 16%
 
 ---
 
@@ -20,5 +20,5 @@ ht-degree: 1%
 * 사용자 지정 속성은 동적이지 않습니다. (CQ-4342376)
 * 표현식을 사용하여 변경 이벤트 시 파일 데이터를 동적으로 변경하면 무한 루프가 발생합니다. (CQ-4342377)
 * 첨부 파일이 도움말 텍스트를 지원하지 않습니다. (CQ-4342370)
-* 필수 확인란은 선택하지 않은 경우 제출 시 오류가 표시되지 않습니다. (CQ-4342371)
+* 필수 확인란은 제출 시 선택되지 않은 경우 오류가 표시되지 않습니다. (CQ-4342371)
 * aria-label이 첨부 파일에 추가되지 않았습니다. (CQ-4341494)

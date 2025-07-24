@@ -1,5 +1,5 @@
 ---
-title: Adobe Experience Manager 적응형 Forms을 사용하여 헤드리스 양식 만들기 및 Publish | 단계별 안내서
+title: Adobe Experience Manager 적응형 Forms을 사용하여 Headless 양식 만들기 및 게시 | 단계별 안내서
 description: 이 단계별 안내서에서는 Adobe Experience Manager의 적응형 양식을 사용하여 Headless 양식을 만들고 게시하는 방법을 알아봅니다. Headless의 이점을 살펴보고 양식 작성 프로세스를 간소화할 수 있습니다. Adobe Experience Manager Headless 적응형 Forms을 사용하여 장치 간에 원활하게 작동하는 동적 반응형 양식 구축을 시작합니다.
 solution: Experience Manager Forms
 feature: Adaptive Forms
@@ -8,10 +8,10 @@ role: Admin, Developer
 level: Beginner, Intermediate
 hide: false
 exl-id: cd7c7972-376c-489f-a684-f479d92c37e7
-source-git-commit: 47ac7d03c8c4fa18ac3bdcef04352fdd1cad1b16
+source-git-commit: 28792fe1690e68cd301a0de2ce8bff53fae1605f
 workflow-type: tm+mt
-source-wordcount: '1004'
-ht-degree: 0%
+source-wordcount: '990'
+ht-degree: 1%
 
 ---
 
@@ -19,7 +19,9 @@ ht-degree: 0%
 
 # React 앱을 사용하여 Headless 양식 만들기 및 미리 보기 {#introduction}
 
-시작 키트는 React 앱을 사용하여 빠르게 시작할 수 있도록 도와줍니다. angular, Vanilla JS 및 선택한 기타 개발 환경에서 Headless 적응형 양식을 자유롭게 개발하고 사용할 수 있습니다.
+<!-- Missing image ALT image tags -->
+
+시작 키트는 React 앱을 사용하여 빠르게 시작할 수 있도록 도와줍니다. Angular, Vanilla JS 및 선택한 기타 개발 환경에서 Headless 적응형 양식을 자유롭게 개발하고 사용할 수 있습니다.
 
 Headless 적응형 양식으로 시작하는 것은 매우 쉽고 빠릅니다. 준비된 React 프로젝트를 복제하고 종속성을 설치한 다음 프로젝트를 실행합니다. React 앱 실행 및 실행에 Headless 적응형 양식이 통합되었습니다. 샘플 React 프로젝트를 사용하여 Headless 적응형 양식을 프로덕션 환경에 배포하기 전에 빌드하고 테스트할 수 있습니다.
 
@@ -36,7 +38,7 @@ React 앱을 만들고 실행하려면 컴퓨터에 다음 항목이 설치되�
 
 * Git의 [최신 릴리스](https://git-scm.com/downloads)를 설치합니다. Git을 처음 사용하는 경우 [Git 설치](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git)를 참조하십시오.
 
-* [Node.js 16.13.0 이상](https://nodejs.org/en/download/)을(를) 설치합니다. Node.js를 처음 사용하는 경우 [Node.js 설치 방법](https://nodejs.dev/en/learn/how-to-install-nodejs)을 참조하세요.
+* [Node.js 16.13.0 이상](https://nodejs.org/en/download/)을 설치하십시오. <!-- URL is 404!! If you are new to Node.js, see [How to install Node.js](https://nodejs.dev/en/learn/how-to-install-nodejs). -->
 
 ## 시작하기
 
@@ -50,7 +52,7 @@ React 앱을 만들고 실행하려면 컴퓨터에 다음 항목이 설치되�
 
 
 
-## 1. Headless 적응형 양식 시작 키트 설정 {#install}
+## &#x200B;1. Headless 적응형 양식 시작 키트 설정 {#install}
 
 스타터 키트는 샘플 Headless 적응형 양식 및 해당 라이브러리가 있는 React 앱입니다. 이 키트를 사용하여 Headless 적응형 양식 및 관련 React 구성 요소를 개발하고 테스트하십시오. 다음 명령을 실행하여 Headless 적응형 양식 시작 키트를 설정합니다.
 
@@ -81,13 +83,13 @@ React 앱을 만들고 실행하려면 컴퓨터에 다음 항목이 설치되�
    npm install
    ```
 
-   이 명령은 Headless 적응형 양식과 같이 앱을 실행하고 빌드하는 데 필요한 모든 필수 패키지 및 라이브러리를 다운로드합니다
-라이브러리(@aemforms/af-react-renderer, @aemforms/af-react-components, @adobe/react-spectrum)는 유효성 검사를 실행하고 양식 인스턴스에 대한 데이터를 유지합니다.
+   이 명령은 Headless 적응형 양식 라이브러리(@aemforms/af-react-renderer, @aemforms/af-react-components, @adobe/react-spectrum)를 포함하여 앱을 빌드하고 실행하는 데 필요한 모든 패키지 및 라이브러리를 다운로드합니다. 그런 다음 유효성 검사를 실행하고 각 양식 인스턴스에 대한 데이터를 유지합니다.
+
 
    ![](/help/assets/install-react-app-starter-kit.png)
 
 
-## 2. Headless 적응형 양식 미리 보기 {#preview}
+## &#x200B;2. Headless 적응형 양식 미리 보기 {#preview}
 
 시작 키트를 설정한 후 샘플 Headless 적응형 양식을 미리 보고 사용자 정의 양식으로 바꿀 수 있습니다. AEM Forms 서버에서 양식을 검색하도록 시작 키트를 구성할 수도 있습니다. 양식 미리 보기
 
@@ -106,19 +108,19 @@ React 앱을 만들고 실행하려면 컴퓨터에 다음 항목이 설치되�
    ```
 
 
-   이 명령은 로컬 개발 서버를 시작하고 스타터 앱에 포함된 샘플 Headless 적응형 양식을 기본 웹 브라우저에서 엽니다.
+   이 명령은 로컬 개발 서버를 시작하고 시작 앱에 포함된 샘플 Headless 적응형 양식을 기본 웹 브라우저에서 엽니다.
 
    ![Headless 양식 샘플](assets/sample-headless-adaptive-form.png)
 
-   짜잔! 사용자 정의 Headless 적응형 양식 개발을 시작하도록 모두 설정되었습니다.
+   준비 다 됐어! 사용자 지정 Headless 적응형 양식 개발을 시작할 준비가 되었습니다.
 
-   <!--  As you know, in a headless form the form data and logic are separate from the presentation layer and can be used by any client that can make HTTP requests, such as a mobile app, a static site, or a different web application. The form is often managed and stored on a server, which serves as the backend for the form. The client sends requests to the server to retrieve the form, submit data, and receive updated form data. This allows for greater flexibility and integration with different technologies. You can store and retrive a Headless adaptive form on an AEM Server  -->
+   <!--  As you know, in a headless form the form data and logic are separate from the presentation layer and can be used by any client that can make HTTP requests, such as a mobile app, a static site, or a different web application. The form is often managed and stored on a server, which serves as the backend for the form. The client sends requests to the server to retrieve the form, submit data, and receive updated form data. This allows for greater flexibility and integration with different technologies. You can store and retrive a Headless Adaptive form on an AEM Server  -->
 
-## 3. Headless 적응형 양식 만들기 및 렌더링{#custom}
+## &#x200B;3. Headless 적응형 양식 만들기 및 렌더링{#custom}
 
-Headless 적응형 양식은 양식과 해당 구성 요소(예: 필드 및 버튼)를 JSON(JavaScript 개체 표기법) 형식으로 나타냅니다. JSON 포맷을 사용하면 다양한 프로그래밍 언어에서 쉽게 구문 분석하여 사용할 수 있어 시스템 간에 양식 데이터를 편리하게 교환할 수 있는 장점이 있습니다. 앱에 포함된 샘플 Headless 적응형 양식을 보려면 `/react-starter-kit-aem-headless-forms/form-definations/form-model.json` 파일을 여십시오.
+Headless 적응형 양식은 양식과 해당 구성 요소(예: 필드 및 버튼)를 JSON(JavaScript 개체 표기법) 형식으로 나타냅니다. JSON 형식을 사용할 경우 다양한 프로그래밍 언어에서 쉽게 구문 분석하여 사용할 수 있으므로 시스템 간에 양식 데이터를 편리하게 교환할 수 있는 장점이 있습니다. 앱에 포함된 샘플 Headless 적응형 양식을 보려면 `/react-starter-kit-aem-headless-forms/form-definations/form-model.json` 파일을 여십시오.
 
-&quot;이름&quot;, &quot;이메일&quot;, &quot;연락처 번호&quot; 및 &quot;메시지&quot; 네 개의 필드가 있는 연락처 양식을 만들어 보겠습니다. 필드는 JSON 내의 오브젝트(항목)로 정의되며, 각 오브젝트(항목)에는 유형, 레이블, 이름 및 필수 속성과 같은 속성이 있습니다. 양식에는 &quot;submit&quot; 유형의 단추도 있습니다. 다음은 양식에 대한 JSON입니다.
+&quot;이름&quot;, &quot;전자 메일&quot;, &quot;연락처 번호&quot;, &quot;메시지&quot; 등 네 개의 필드가 있는 `Contact Us` 양식을 만들어 보겠습니다. 필드는 JSON 내의 오브젝트(항목)로 정의되며, 각 오브젝트(항목)에는 유형, 레이블, 이름 및 필수 속성과 같은 속성이 있습니다. 양식에는 &quot;submit&quot; 유형의 단추도 있습니다. 다음은 양식에 대한 JSON입니다.
 
 
 ```JSON
@@ -183,7 +185,7 @@ Headless 적응형 양식은 양식과 해당 구성 요소(예: 필드 및 버�
 >
 > * &quot;afModelDefinition&quot; 속성은 React 애플리케이션에만 필요하며 양식 정의의 일부가 아닙니다.
 > * 양식 JSON을 손으로 제작하거나 [AEM 적응형 양식 편집기(적응형 양식 WYSIWYG 편집기)](create-a-headless-adaptive-form.md)를 사용하여 양식 JSON을 만들고 전달할 수 있습니다. 프로덕션 환경에서는 AEM Forms을 사용하여 나중에 양식 JSON을 비롯한 다양한 정보를 제공합니다.
-> * 이 자습서에서는 https://pipedream.com/을 사용하여 양식 제출을 테스트합니다. 조직에서 승인한 자체 또는 타사 엔드포인트를 사용하여 Headless 적응형 양식에서 데이터를 수신합니다.
+> * 이 자습서에서는 https://pipedream.com/을 사용하여 양식 제출을 테스트합니다. 조직에서 승인한 자체 또는 타사 엔드포인트를 사용하여 Headless 적응형 양식에서 데이터를 받습니다.
 
 
 양식을 렌더링하려면 샘플 Headless 적응형 양식 JSON `/react-starter-kit-aem-headless-forms/form-definations/form-model.json`을(를) 위의 JSON으로 바꾸고 파일을 저장한 다음 스타터 키트가 컴파일될 때까지 기다렸다가 양식을 새로 고치십시오.
@@ -204,9 +206,9 @@ Headless 적응형 양식을 성공적으로 렌더링했습니다.
 
 ## 다음 단계
 
-기본적으로 시작 키트는 [Adobe의 Spectrum](https://spectrum.adobe.com/) 구성 요소를 사용하여 양식을 렌더링합니다. 를 사용하여 나만의 구성 요소나 서드파티 구성 요소를 만들어 사용할 수 있습니다. 예를 들어 Google Material UI 또는 Chakra UI를 사용합니다.
+기본적으로 시작 키트는 [Adobe의 Spectrum](https://spectrum.adobe.com/) 구성 요소를 사용하여 양식을 렌더링합니다. 고유한 구성 요소 또는 타사 구성 요소를 만들어 사용할 수 있습니다. 예를 들어 Google Material UI 또는 Chakra UI를 사용합니다.
 
-[Google 재질 UI를 사용](use-google-material-ui-react-components-to-render-a-headless-form.md)하여 연락처 양식을 렌더링해 보겠습니다.
+[Google Material UI를 사용](use-google-material-ui-react-components-to-render-a-headless-form.md)하여 `Contact Us` 양식을 렌더링하겠습니다.
 
 
 

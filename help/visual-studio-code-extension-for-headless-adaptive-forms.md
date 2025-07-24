@@ -9,21 +9,21 @@ level: Beginner, Intermediate
 keywords: headless, 적응형 양식, Visual Studio 코드 확장
 hide: false
 exl-id: 11960e91-6c09-48d4-9d57-37537f808cd4
-source-git-commit: 47ac7d03c8c4fa18ac3bdcef04352fdd1cad1b16
+source-git-commit: 28792fe1690e68cd301a0de2ce8bff53fae1605f
 workflow-type: tm+mt
-source-wordcount: '189'
+source-wordcount: '196'
 ht-degree: 0%
 
 ---
 
 # Headless 적응형 양식용 Microsoft Visual Studio 코드 확장
 
-Microsoft® Visual Studio 코드를 IDE로 사용하는 경우 Microsoft Visual Studio 코드용 응용 Forms 확장을 사용할 수 있습니다. 확장:
+Microsoft® Visual Studio Code를 IDE(통합 개발 환경)로 사용하는 경우 Microsoft Visual Studio Code용 응용 Forms 확장을 사용할 수 있습니다. 확장:
 
-* Visual Studio 코드에 적응형 Forms에 대한 IntelliSense 기능을 추가합니다.
-* Headless 적응형 양식 구성 요소에 대한 JSON 구문의 유효성 검사 및 자동 완성을 지원합니다.
-* Headless 적응형 양식에 대한 구조를 쉽게 탐색할 수 있는 패널을 제공합니다
-* Headless 적응형 양식 번역 지원
+* 적응형 Forms에 대한 IntelliSense 기능을 Visual Studio 코드에 추가합니다.
+* Headless 적응형 양식 구성 요소에 대한 JSON 구문의 유효성을 검사하고 자동으로 완성하는 데 도움이 됩니다.
+* 패널을 통해 Headless 적응형 양식의 구조를 쉽게 탐색할 수 있습니다.
+* Headless 적응형 양식을 번역하는 데 도움이 됩니다.
 
 <!-- 
 
@@ -51,4 +51,4 @@ Adobe provides an extension for Microsoft&reg; Visual Studio Code to make it eas
    ![확장 설치](/help/assets/install-extension.png)
 
 
-   .vsix 파일에 대한 자세한 내용은 [Microsoft Visual Studio 코드 도움말](https://code.visualstudio.com/docs/editor/extension-marketplace#_install-from-a-vsix)을 참조하십시오.
+   .vsix 파일에 대한 자세한 내용은 [Microsoft Visual Studio 코드 도움말](https://code.visualstudio.com/docs/configure/extensions/extension-marketplace#_install-from-a-vsix)을 참조하십시오.

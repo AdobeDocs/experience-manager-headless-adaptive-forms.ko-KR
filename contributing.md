@@ -1,8 +1,8 @@
 ---
-source-git-commit: 103a0312291d4831249d32e5fea7d20e0fc99d10
+source-git-commit: 28792fe1690e68cd301a0de2ce8bff53fae1605f
 workflow-type: tm+mt
-source-wordcount: '294'
-ht-degree: 100%
+source-wordcount: '276'
+ht-degree: 47%
 
 ---
 # 기여
@@ -17,7 +17,7 @@ ht-degree: 100%
 
 ## 기여자 안내서 설명서
 
-[기여자 안내서](https://experienceleague.adobe.com/docs/contributor/contributor-guide/introduction.html?lang=ko)를 참조하십시오.
+[기여자 안내서](https://experienceleague.adobe.com/ko/docs/contributor/contributor-guide/introduction)를 참조하십시오.
 
 ## 질문이 있습니까?
 
@@ -25,11 +25,11 @@ ht-degree: 100%
 
 ## 기여자 라이선스 계약
 
-본 프로젝트에 대한 모든 서드파티 기여도는 서명한 기여자 라이선스 계약을 동반해야 합니다. 이를 통해 Adobe에 프로젝트의 일부로 기여도를 재배포할 수 있는 권한을 부여합니다. [CLA에 서명](http://opensource.adobe.com/cla.html)해 주십시오. Adobe CLA를 한 번만 제출하면 됩니다. 따라서 이전에 제출했다면 이제 시작할 수 있습니다.
+기여자는 이 프로젝트에 서드파티 기여를 제출하기 전에 기여자 라이선스 계약에 서명해야 합니다. 이 계약은 Adobe에 프로젝트의 일부로 기여도를 재배포할 수 있는 권한을 부여합니다. [Adobe의 CLA에 서명](https://opensource.adobe.com/cla.html)합니다. Adobe CLA를 한 번만 제출하면 됩니다. 따라서 이전에 제출한 적이 있는 경우에는 쉽게 이동할 수 있습니다.
 
 ## 코드 검토
 
-모든 제출물은 가져오기 요청 양식으로 제공해야 하며 프로젝트 수행자가 검토해야 합니다. 가져오기 요청 전송에 대한 자세한 내용은 [GitHub의 가져오기 요청 설명서](https://help.github.com/articles/about-pull-requests/)를 참조하십시오.
+모든 기여를 끌어오기 요청으로 제출하면 프로젝트 커미터가 이를 검토해야 합니다. 가져오기 요청 전송에 대한 자세한 내용은 [GitHub의 가져오기 요청 설명서](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/about-pull-requests)를 참조하십시오.
 
 <!--
 Lastly, please follow the [pull request template](PULL_REQUEST_TEMPLATE.md) when
@@ -38,8 +38,8 @@ submitting a pull request!
 
 ## 기여자에서 커미터로
 
-커뮤니티의 콘텐츠 제공에 대해 감사하게 생각하고 있습니다! 기여자를 넘어 완전한 쓰기 권한과 프로젝트 내 발언권이 있는 커미터가 되고 싶다면 프로젝트에 초대를 받아야 합니다. 기존 커미터는 초대장이 발부되기 전에 게으른 합의(침묵이 승인)를 이뤄야 하는 내부 추천 프로세스를 사용합니다. 스스로 자격이 있다고 생각하고 더 깊이 관여하고 싶은 분은 언제든 기존 커미터에게 연락하여 대화해 보십시오.
+Adobe은 모든 기여에 대해 기쁘게 생각하며 기여를 검토합니다. 프로젝트에서 전체 쓰기 액세스 권한과 발언권을 가진 커미터가 되려면 프로젝트에 초대를 받아야 합니다. 기존 커미터는 초대장을 발행하기 전에 소극적 합의(침묵이 승인)에 도달해야 하는 내부 지명 프로세스를 사용합니다. 자격이 있다고 생각하고 더 적극적으로 참여하고자 하는 경우 현재 커미터들 중 한 명에게 연락하여 다음 단계를 논의하십시오.
 
 ## 보안 문제
 
-보안 문제는 이 문제 추적기에 보고하면 안 됩니다. 대신 [보안 전문가에게 문제를 제기](https://helpx.adobe.com/kr/security/alertus.html)합니다.
+보안 문제는 이 문제 추적기에 보고하면 안 됩니다. 대신, [Adobe 보안 전문가에게 문제를 제기하십시오](https://helpx.adobe.com/kr/security/alertus.html)

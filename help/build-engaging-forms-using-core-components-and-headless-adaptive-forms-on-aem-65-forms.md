@@ -1,8 +1,6 @@
 ---
 title: 핵심 구성 요소 및 Headless를 사용하여 매력적인 양식 작성
-seo-title: Build Engaging Forms Using Core Components and Headless
-description: 핵심 구성 요소 및 Headless를 사용하여 매력적인 양식 작성
-seo-description: Build Engaging Forms Using Core Components and Headless
+description: 핵심 구성 요소 및 Headless를 사용하여 매력적인 Forms을 구축하십시오.
 solution: Experience Manager Forms
 feature: Adaptive Forms
 topic: Headless
@@ -11,20 +9,20 @@ level: Beginner, Intermediate
 topic-tags: develop
 hide: true
 exl-id: 07a71aac-de38-4839-b8d6-b47c3f575eb3
-source-git-commit: 999c3d092d03d7a82363bc94ce79ceb33bf0df7e
+source-git-commit: 28792fe1690e68cd301a0de2ce8bff53fae1605f
 workflow-type: tm+mt
-source-wordcount: '2130'
-ht-degree: 57%
+source-wordcount: '2134'
+ht-degree: 40%
 
 ---
 
 # AEM 6.5 Forms에서 핵심 구성 요소 및 Headless 적응형 Forms을 사용하여 매력적인 Forms 구축 {#build-engaging-forms-using-core-components-and-headless}
 
+<!-- This article and many others in this entire repo are completely missing the image ALT tags (descriptions) for each added image asset. That is impacting the CQI score for Experience Manager in a negative way. Be sure you take the time to add the required missing image ALT tags.  -->
+
 ## 랩 개요 {#lab-overview}
 
-이 실습 랩에서는 다음과 같은 사항을 알아봅니다.
-
-AEM Forms을 사용하여 AEM Sites과 일치하는 최신 핵심 구성 요소를 사용하여 적응형 Forms을 손쉽게 만들고, 적응형 Forms을 headless 양식으로 웹, 모바일 및 채팅에 전달하여 옴니채널 데이터 캡처 경험을 활성화하는 방법. 또한 스타일링, 사용자 정의 및 프론트엔드 개발에 대한 모범 사례를 살펴봅니다.
+이 실습형 랩에서는 AEM Forms과 최신 핵심 구성 요소(AEM Sites과 결합)를 함께 사용하여 적응형 양식을 신속하게 만드는 방법을 알아봅니다. 웹, 모바일 및 채팅 채널에 이러한 양식을 Headless 환경으로 제공하여 원활한 옴니채널 데이터 캡처를 가능하게 합니다. 또한 스타일링, 사용자 정의 및 프론트엔드 개발에 대한 모범 사례를 살펴봅니다.
 
 ## 핵심 사항 {#key-takeaways}
 
@@ -36,21 +34,21 @@ AEM Forms을 사용하여 AEM Sites과 일치하는 최신 핵심 구성 요소�
 
 ## 시작하기 전 {#pre-requisites}
 
-랩에서 이 핸즈를 사용하려면:
+이 실습형 랩을 사용하려면
 
 * Git의 [최신 릴리스](https://git-scm.com/downloads)를 설치합니다. Git을 처음 사용하는 경우 [Git 설치](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git)를 참조하십시오.
 
-* [Node.js 16.13.0 이상](https://nodejs.org/en/download/)을(를) 설치합니다. Node.js를 처음 사용하는 경우 [Node.js 설치 방법](https://nodejs.dev/en/learn/how-to-install-nodejs)을 참조하세요.
+* [Node.js 16.13.0 이상](https://nodejs.org/en/download/)을 설치하십시오. <!-- URL IS 404! If you are new to Node.js, see [How to install Node.js](https://nodejs.dev/en/learn/how-to-install-nodejs).-->
 
-* AEM 6.5 Forms 환경에서 [Headless 적응형 Forms 사용](enable-headless-adaptive-forms-and-core-components.md).
+* AEM 6.5 Forms 환경에서 [Headless 적응형 Forms 활성화](enable-headless-adaptive-forms-and-core-components.md).
 
-* [Microsoft Visual Studio Code](https://code.visualstudio.com/download) 또는 일반 텍스트 편집기를 설치합니다. 문서의 예제에서는 Microsoft Visual Studio 코드를 사용합니다.
+* [Microsoft Visual Studio Code](https://code.visualstudio.com/download) 또는 일반 텍스트 편집기를 설치합니다. 이 문서의 예제에서는 Microsoft Visual Studio 코드를 사용합니다.
 
 ## 수업 1 {#lesson-1}
 
 ### 목표 {#lesson-1-objectives}
 
-AEM 6.5 Forms 환경에 대해 숙지하십시오.
+AEM 6.5 Forms 환경에 익숙해집니다.
 
 ### 수업 컨텍스트 {#lesson-1-context}
 
@@ -81,18 +79,16 @@ AEM 6.5 Forms 환경에 대해 숙지하십시오.
 
 ### 수업 컨텍스트
 
-이 단원에서 비즈니스 사용자는 표준화된 기본 핵심 구성 요소와 함께 적응형 Forms 편집기를 사용하여 웹, 모바일 및 채팅과 같은 여러 채널에 대한 적응형 양식을 작성하고 데이터를 캡처합니다.
+비즈니스 사용자는 적응형 Forms 편집기와 즉시 사용 가능한 핵심 구성 요소를 사용하여 적응형 양식을 작성할 것입니다. 그런 다음 웹, 모바일 및 채팅 채널에 양식을 전달하여 데이터를 캡처할 수 있습니다.
 
 ### 연습
 
 1. 양식의 제출 엔드포인트를 만듭니다.
 
-   1. 새 브라우저 탭에서 <https://requestbin.com/>을 엽니다.
-
+   1. 새 브라우저 탭에서 <https://pipedream.com/requestbin>을 엽니다.
       ![](/help/assets/screenshot2028114329.png){width="50%" align="left"}
 
-   1. **공개 bin 만들기**&#x200B;를 클릭하고 엔드포인트 URL을 복사합니다.
-
+   1. **공개 bin 만들기**를 클릭하고 엔드포인트 URL을 복사합니다.
       ![](/help/assets/screenshot202023-03-0120at206.10.0020pm.png){width="50%" align="left"}
 
    이 특정 끝점은 데이터를 제출하고 볼 수 있는 예제입니다. 실제 프로덕션에서는 자체 엔드포인트 또는 데이터 소스를 사용하여 캡처된 데이터를 저장합니다.
@@ -101,16 +97,13 @@ AEM 6.5 Forms 환경에 대해 숙지하십시오.
 
    1. 1단원에서 사용하는 브라우저 탭에서 AEM Forms 웹 인터페이스로 이동하여 **Forms** > **Forms 및 문서**&#x200B;로 이동합니다.
 
-   1. **만들기**&#x200B;를 클릭하고 적응형 양식을 선택합니다.
-
+   1. **만들기**를 클릭하고 적응형 양식을 선택합니다.
       ![](/help/assets/creating-adaptive-form-6-5.png){width="50%" align="left"}
 
-   1. 아래 표시된 템플릿 선택 화면에서 **핵심 구성 요소로 빈 항목** 템플릿을 선택하고 **다음**&#x200B;을 클릭합니다.
-
+   1. 아래 표시된 템플릿 선택 화면에서 **핵심 구성 요소로 빈 항목** 템플릿을 선택하고 **다음**을 클릭합니다.
       ![](/help/assets/creating-adaptive-form-6-5-select-blank-template.png){width="50%" align="left"}
 
    1. `Contact us`을(를) 양식의 **제목**(으)로 지정하십시오. 양식의 **Name**&#x200B;이(가) `contact-us`인지 확인하십시오.
-
       ![](/help/assets/creating-adaptive-form-65-specify-title.png){width="50%" align="left"}
 
    1. **만들기**&#x200B;를 클릭합니다. 대화 상자가 표시됩니다.
@@ -126,15 +119,19 @@ AEM 6.5 Forms 환경에 대해 숙지하십시오.
       ![](/help/assets/contact-us-headless-adaptive-form.png){width="50%" align="left"}
 
 
-   1. 콘텐츠 브라우저를 열고 가이드 컨테이너 속성 아이콘을 클릭한 다음 **제출** 탭을 엽니다. **REST 끝점에 제출** 제출 액션을 선택하고 **POST 요청 활성화** 옵션을 선택한 다음 **POST 요청에 대한 URL** 텍스트 상자에서 2단원에서 만든 REST 끝점을 지정하고 **완료** 아이콘을 클릭합니다.
+   1. 콘텐츠 브라우저를 열고 가이드 컨테이너 속성 아이콘을 클릭한 다음 **제출** 탭을 엽니다.
+
+   1. **REST 끝점에 제출** 제출 동작 선택
+
+   1. **POST 요청 활성화** 옵션을 선택하고 **POST 요청에 대한 URL** 텍스트 상자에 2단원에서 만든 REST 끝점을 지정한 다음 **완료** 아이콘을 클릭합니다.
 
       ![](/help/assets/configure-submit-action.png){width="50%" align="left"}
 
-1. 적응형 양식 Publish:
+1. 적응형 양식 게시:
 
-   1. AEM UI를 열고 **Forms** > **Forms 및 문서**&#x200B;로 이동합니다. 이전 단계에서 만든 양식을 선택하고 **Publish**&#x200B;을(를) 클릭합니다.
+   1. AEM UI를 열고 **Forms** > **Forms 및 문서**&#x200B;로 이동합니다. 이전 단계에서 만든 양식을 선택하고 **`Publish`**&#x200B;을(를) 클릭합니다.
 
-   1. Publish Assets 대화 상자에서 **Publish**&#x200B;을 클릭합니다. 성공 메시지가 표시됩니다.
+   1. **Assets 게시** 대화 상자에서 **게시**&#x200B;를 클릭합니다. 성공 메시지가 표시됩니다.
 
 ## 수업 3
 
@@ -148,7 +145,7 @@ AEM 6.5 Forms 환경에 대해 숙지하십시오.
 
 ### 연습
 
-테마의 로컬 저장소 설정:
+테마의 로컬 저장소를 설정합니다.
 
 1. 관리자 권한으로 명령 프롬프트 또는 셸 열기.
 
@@ -189,7 +186,7 @@ AEM 6.5 Forms 환경에 대해 숙지하십시오.
 
    ![](/help/assets/screenshot2028116529.png){width="50%" align="left"}
 
-1. .env 파일의 변수에 대해 다음 값을 설정하고 파일을 저장합니다.
+1. .env 파일에서 변수에 대해 다음 값을 설정하고 파일을 저장합니다.
 
    * **AEM_URL**: **게시** 인스턴스의 URL을 지정하십시오. 예, `https://localhost:4502/`
 
@@ -210,8 +207,8 @@ AEM 6.5 Forms 환경에 대해 숙지하십시오.
 
    >[!NOTE]
    >
-   > * `npm notice Run npm nstall -g npm@9.6.0` 명령을 통해 npm을 업데이트하라는 메시지가 표시되면 메시지를 무시합니다.
-   > * 통합 문서에서 지시하지 않는 한 다른 npm 명령은 실행하지 않습니다.
+   > * `npm` 명령을 통해 `npm notice Run npm nstall -g npm@9.6.0`을(를) 업데이트하라는 메시지가 표시되면 메시지를 무시합니다.
+   > * 통합 문서에서 지시하지 않은 경우 다른 `npm` 명령을 실행하지 마십시오.
 
 1. 이제 다음 명령을 실행하여 양식을 미리 봅니다.
 
@@ -225,7 +222,7 @@ AEM 6.5 Forms 환경에 대해 숙지하십시오.
 
    >[!NOTE]
    >
-   >`npm run live` 명령을 실행한 후 3~4분 이상 브라우저에 빈 화면이 표시되는 경우 브라우저 URL의 `localhost`를 127.0.0.1로 변경하고 **Enter**&#x200B;를 누릅니다.
+   >`npm run live` 명령을 3~4분 이상 실행한 후 브라우저에서 빈 화면이 나타나면 브라우저 URL의 `localhost`을(를) 127.0.0.1(으)로 변경하고 **Enter**&#x200B;를 누르십시오.
 
 
    ![](/help/assets/contact-us-headless-adaptive-form-with-canvas-theme.png){width="50%" align="left"}
@@ -241,11 +238,11 @@ AEM 6.5 Forms 환경에 대해 숙지하십시오.
 
 1. **$error** 색상을 **#5736eb**&#x200B;로 설정하고 파일을 저장합니다.
 
-1. 브라우저를 새로 고치고 양식을 제출합니다. 이에 따라 이름 필드의 오류 색상이 변경됩니다.
+1. 브라우저를 새로 고치고 양식을 제출합니다. 이름 필드의 오류 색상이 그에 따라 변경되었습니다.
 
    ![](/help/assets/error-color-after.png)
 
-1. 명령 프롬프트에서 **CTRL+C**&#x200B;를 누르고 **Y**&#x200B;를 입력한 다음 **Enter** 키를 눌러 npm 프로세스를 종료합니다. 다음 연습 세트와 충돌하지 않도록 npm 서버를 정지하는 것이 중요합니다.
+1. 명령 프롬프트에서 **CTRL+C**&#x200B;을 누르고 **Y**&#x200B;을 입력한 다음 **Enter** 키를 눌러 npm 프로세스를 종료합니다. 다음 연습 세트와 충돌하지 않도록 npm 서버를 정지하는 것이 중요합니다.
 1. Visual Studio Code 및 명령 프롬프트 창을 닫습니다.
 
 ## 수업 4
@@ -260,7 +257,7 @@ AEM 6.5 Forms 환경에 대해 숙지하십시오.
 
 ### 연습
 
-React 스타터 프로젝트를 사용하여 로컬 저장소 설정:
+React 스타터 프로젝트를 사용하여 로컬 저장소를 설정합니다.
 
 1. 관리자 권한을 사용해 명령 프롬프트를 엽니다.
 
@@ -335,7 +332,7 @@ React 스타터 프로젝트를 사용하여 로컬 저장소 설정:
    >[!NOTE]
    >
    > 
-   > `npm start` 명령을 실행한 후 3~4분 이상 브라우저에 빈 화면이 표시되는 경우 브라우저 URL의 `localhost`를 127.0.0.1로 변경하고 **Enter**&#x200B;를 누릅니다.
+   > `npm start` 명령을 3~4분 이상 실행한 후 브라우저에서 빈 화면이 나타나면 브라우저 URL의 `localhost`을(를) 127.0.0.1(으)로 변경하고 **Enter**&#x200B;를 누르십시오.
 
    ![](/help/assets/headless-adaptive-form-lab.png)
 
@@ -346,20 +343,20 @@ React 스타터 프로젝트를 사용하여 로컬 저장소 설정:
 1. **문의하기** 양식을 선택하고 **편집을 클릭합니다.** 적응형 Forms 편집기에서 양식을 엽니다.
 
 
-1. **연락처 번호** 필드를 선택하고 도구 모음에서 **편집 아이콘(연필 아이콘)을 클릭합니다**. 팝업 도구 모음이 보이지 않으면 오른쪽 상단에서 **미리보기** 버튼 왼쪽에 있는 **편집** 버튼을 클릭하여 편집 모드로 전환합니다.
+1. **연락처 번호** 필드를 선택하고 도구 모음에서 **편집 아이콘(연필 아이콘)을 클릭합니다**. 팝업 도구 모음이 표시되지 않으면 편집 모드로 전환합니다. **미리 보기** 단추 왼쪽 상단의 **편집** 단추를 클릭합니다.
 
    ![](/help/assets/change-field-title.png){width="50%" align="left"}
 
 1. 레이블을 **휴대폰 번호**(으)로 변경하십시오. 양식의 빈 공간을 클릭하면 양식의 변경 사항이 저장됩니다.
 
-변경 사항을 게시 환경에 전파하기 위해 업데이트된 양식을 게시해 보겠습니다.
+업데이트된 양식을 게시하여 변경 사항을 게시된 환경에 전파하겠습니다.
 
 1. AEM Forms 관리 인터페이스 탭에서 연락처 양식을 선택하고 **게시 취소**&#x200B;를 클릭합니다. **게시 취소** 버튼이 표시되지 않으면 3단계로 건너뛰어 변경 사항을 직접 게시합니다.
 
 
 1. **게시 취소**&#x200B;를 클릭합니다. 각 대화 상자에서 **닫기**&#x200B;를 클릭합니다.
 
-1. 브라우저를 새로 고친 후 연락처 양식을 선택하고 **Publish**&#x200B;을(를) 클릭합니다.
+1. 브라우저를 새로 고친 후 연락처 양식을 선택하고 **게시**&#x200B;를 클릭합니다.
 
 
 1. **게시**&#x200B;를 클릭합니다. 각 대화 상자에서 **닫기**&#x200B;를 클릭합니다.
@@ -385,7 +382,7 @@ Google Material UI를 사용하여 양식을 Headless 양식으로 렌더링
 
 ### 연습
 
-Material UI 스타터 프로젝트를 사용하여 로컬 저장소 설정:
+자료 UI 스타터 프로젝트를 사용하여 로컬 리포지토리를 설정합니다.
 
 1. 관리자 권한을 사용해 명령 프롬프트를 엽니다.
 
@@ -397,7 +394,7 @@ Material UI 스타터 프로젝트를 사용하여 로컬 저장소 설정:
    cd git
    ```
 
-1. 나열된 순서대로 다음 명령을 실행하여 mui라는 폴더를 만들고 다음 명령을 사용하여 mui 폴더로 이동합니다.
+1. 나열된 순서로 다음 명령을 실행하여 `mui` 폴더를 만들고 다음 명령을 사용하여 `mui` 폴더로 이동합니다.
 
    ```Shell
    mkdir mui
@@ -452,11 +449,11 @@ Material UI 스타터 프로젝트를 사용하여 로컬 저장소 설정:
 
    ![](/help/assets/lab65-mui-starter-kit-start.png)
 
-   이 명령은 로컬 개발 서버를 시작하고 Google Material UI 프론트엔드 라이브러리를 사용하여 AEM에서 가져온 양식 정의를 headless 방식으로 렌더링합니다.
+   이 명령은 로컬 개발 서버를 시작하고 AEM Material UI 프론트엔드 라이브러리를 사용하여 Headless 방식으로 Google에서 가져온 양식 정의를 렌더링합니다.
 
    >[!NOTE]
    >
-   >`npm start` 명령을 실행한 후 3~4분 이상 브라우저에 빈 화면이 표시되는 경우 브라우저 URL의 `localhost`를 127.0.0.1로 변경하고 **Enter**&#x200B;를 누릅니다.
+   >`npm start` 명령을 3~4분 이상 실행한 후 브라우저에서 빈 화면이 나타나면 브라우저 URL의 `localhost`을(를) 127.0.0.1(으)로 변경하고 **Enter**&#x200B;를 누르십시오.
 
    ![](/help/assets/google-mui-form.png)
 
@@ -468,7 +465,7 @@ Material UI 구성 요소 변형을 사용하여 Headless 형태의 대체 디�
 
 ### 수업 컨텍스트
 
-이 단원에서는 프론트엔드 개발자로서 비즈니스 사용자가 이전에 만든 적응형 양식에 대해 재료 UI를 사용하여 다양한 구성 요소의 대체 표현을 만드는 방법을 알아봅니다.
+프론트엔드 개발자는 이 단원에서 다양한 구성 요소의 대체 재질 UI 버전을 구축하는 방법을 배우게 됩니다. 비즈니스 사용자가 이전에 만든 적응형 양식에도 적용할 예정입니다.
 
 ### 연습
 
@@ -490,18 +487,18 @@ Headless 프로젝트의 구성 요소 변형을 업데이트합니다. Material
 
    ![](/help/assets/aem65-lab-code-update.png)
 
-   &#39;OutlinedInput&#39; 변형에 올바른 대소문자를 사용하는 것이 필수적입니다. 그렇게 하지 않으면 컴파일이 실패합니다. 로컬 개발 환경 컴파일은 명령 프롬프트에서 자동으로 시작됩니다. 다음 메시지가 나타날 때까지 기다립니다
+   &#39;ForendedInput&#39; 변형에 올바른 대소문자를 사용해야 합니다. 그렇지 않으면 컴파일이 실패합니다. 로컬 개발 환경 컴파일은 명령 프롬프트에서 자동으로 시작됩니다. 다음 메시지가 나타날 때까지 기다립니다
 
    `webpack 5.75.0 compiled with 3 warnings in 6659 ms`
    `inside proxy req`
    `setting new origin header`
 
-1. 브라우저가 자동으로 새로 고쳐지지 않으면 브라우저를 새로 고쳐 텍스트 입력 구성 요소가 다른 변형을 사용하는지 확인합니다.
+1. 브라우저를 자동으로 새로 고치지 않는 경우 새로 고침하여 텍스트 입력 구성 요소가 다른 변형을 사용하는지 확인합니다.
 
    ![](/help/assets/screenshot2028127729.png){width="50%" align="left"}
 
 
-   이 변경 사항은 AEM Forms Server의 양식 정의를 변경하지 않고 최종 사용자에게 발생하며, 고려 중인 Headless 채널에만 적용됩니다. 예: 이 랩의 웹 채널.
+   이 변경 사항은 AEM Forms Server의 양식 정의를 변경하지 않고 최종 사용자에게 발생하며, 고려 중인 Headless 채널에만 적용됩니다. 예를 들어 이 랩의 웹 채널.
 
    ![](/help/assets/aem65-lab-mui-style-update.png)
 
@@ -512,7 +509,7 @@ Headless 프로젝트의 구성 요소 변형을 업데이트합니다. Material
 
 +++ 핵심 구성 요소를 공개적으로 사용할 수 있습니까?
 
-예. 적응형 Forms 핵심 구성 요소는 AEM 6.5 Forms 및 Forms as Cloud Service에서 사용할 수 있습니다. 적응형 Forms 핵심 구성 요소를 사용하려면 AEM Forms 6.5 서비스 팩 16 이상이 필요합니다.
+예. 적응형 Forms 핵심 구성 요소는 AEM 6.5 Forms 및 Forms as Cloud Service과 함께 사용할 수 있습니다. 적응형 Forms 핵심 구성 요소를 사용하려면 AEM Forms 6.5 서비스 팩 16 이상이 필요합니다.
 
 +++
 
@@ -527,16 +524,16 @@ Headless 프로젝트의 구성 요소 변형을 업데이트합니다. Material
 
 ## 다음 단계
 
-Headless 양식을 사용하여 적응형 Forms을 구축하고 여러 채널에 전달하는 방법을 배웠으므로 이제 새로운 기술을 사용할 수 있습니다. 학습한 내용을 유용하게 활용하여 최종 사용자가 있는 곳에서 대규모로 뛰어난 데이터 캡처 경험을 만들고 제공해 보십시오!
+이제 Headless 양식을 사용하여 적응형 양식을 작성하고 채널 간에 전달하는 방법을 이해할 수 있습니다. 이러한 기술을 사용하여 사용자가 어디에 있든 확장 가능한 고품질의 데이터 캡처 경험을 만들 수 있습니다.
 
 ## 리소스
 
-* [적응형 양식 핵심 구성 요소 소개](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=ko)
+* [적응형 양식 핵심 구성 요소 소개](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/introduction)
 
-* [핵심 구성 요소를 사용하여 적응형 양식 만들기](https://experienceleague.corp.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/creating-adaptive-form-core-components.html)
+* [핵심 구성 요소를 사용하여 적응형 양식 만들기](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/creating-adaptive-form-core-components)
 
-* [핵심 구성 요소 기반 AF의 스타일링 업데이트](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/using-themes-in-core-components.html?lang=ko)
+* [핵심 구성 요소 기반 AF의 스타일링 업데이트](https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/using-themes-in-core-components)
 
-* [헤드리스 적응형 Forms](https://experienceleague.adobe.com/docs/experience-manager-headless-adaptive-forms/using/overview.html?lang=ko)
+* [헤드리스 적응형 Forms](https://experienceleague.adobe.com/en/docs/experience-manager-headless-adaptive-forms/using/overview)
 
-* [Headless React 스타터 키트 사용](https://experienceleague.adobe.com/docs/experience-manager-headless-adaptive-forms/using/get-started/create-and-publish-a-headless-form.html?lang=ko)
+* [Headless React 스타터 키트 사용](https://experienceleague.adobe.com/en/docs/experience-manager-headless-adaptive-forms/using/get-started/create-and-publish-a-headless-form)

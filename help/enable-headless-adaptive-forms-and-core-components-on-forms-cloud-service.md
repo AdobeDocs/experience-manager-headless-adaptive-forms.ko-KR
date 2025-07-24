@@ -1,8 +1,6 @@
 ---
-title: AEM Formsas a Cloud Service 에서 Adaptive Forms 활성화
-seo-title: Step-by-Step Guide for enabling Headless Adaptive Forms on AEM Forms as a Cloud Service
-description: 단계별 안내서를 통해 AEM Formsas a Cloud Service 에서 headless 적응형 양식을 활성화하는 방법을 알아보십시오. 튜토리얼은 이 과정에 대해 소개하고 AEM Forms 환경의 강력한 기능을 쉽게 활성화할 수 있도록 해 줍니다.
-seo-description: Learn how to enable headless adaptive forms on AEM Forms as a Cloud Service with our step-by-step guide. Our tutorial walks you through the process, making it easy to enable this powerful feature for your AEM Forms environment.
+title: AEM Forms as a Cloud Service에서 Headless 적응형 Forms 활성화
+description: AEM Forms as a Cloud Service에서 Headless 적응형 양식을 활성화하는 단계별 안내서로, 환경에서 설정 및 활성화를 단순화합니다.
 solution: Experience Manager Forms
 feature: Adaptive Forms
 topic: Headless
@@ -13,44 +11,45 @@ docset: CloudService
 hide: true
 hidefromtoc: true
 exl-id: 7afff771-1296-4162-84c5-c8266b94af2f
-source-git-commit: 999c3d092d03d7a82363bc94ce79ceb33bf0df7e
+source-git-commit: 28792fe1690e68cd301a0de2ce8bff53fae1605f
 workflow-type: tm+mt
-source-wordcount: '914'
-ht-degree: 64%
+source-wordcount: '886'
+ht-degree: 52%
 
 ---
 
-# AEM Formsas a Cloud Service 에서 Adaptive Forms 활성화 {#enable-headless-adaptive-forms-on-aem-forms-cloud-service}
+# AEM Forms as a Cloud Service에서 Headless 적응형 Forms 활성화 {#enable-headless-adaptive-forms-on-aem-forms-cloud-service}
 
-AEM Formsas a Cloud Service 에서 적응형 Forms Headless 게시를 활성화하면 AEM Forms Cloud Service 인스턴스를 사용하여 Headless Forms을 만들고 여러 채널에 전달할 수 있습니다. Headless Adaptive Forms를 사용하려면 적응형 양식 핵심 구성 요소 활성화 환경이 필요합니다.
+AEM Forms as a Cloud Service에서 Headless 적응형 Forms을 활성화하면 AEM Forms Cloud Service 인스턴스를 사용하여 Headless Forms을 만들고, 게시하고, 여러 채널에 전달할 수 있습니다. Headless Adaptive Forms를 사용하려면 적응형 양식 핵심 구성 요소 활성화 환경이 필요합니다.
 
 ## 고려 사항
 
-* 신선한 AEM Forms as a Cloud Service 프로그램을 만들 때 [Headless 적응형 Forms이 이미 환경에 대해 활성화되어 있습니다](#are-adaptive-forms-core-components-enabled-for-my-environment).
+* 새로운 AEM Forms as a Cloud Service 프로그램을 만들 때 [Headless 적응형 Forms이 이미 환경에 대해 활성화되어 있습니다](#are-adaptive-forms-core-components-enabled-for-my-environment).
 
-* 핵심 구성 요소가 [임베드되지 않은](#enable-components) 이전 Forms as a Cloud Service 프로그램이 있는 경우 AEM as a Cloud Service 저장소에 [적응형 양식 핵심 구성 요소 종속성을 추가](#enable-headless-adaptive-forms-for-an-aem-forms-as-a-cloud-service-environment)하고 Cloud Service 환경에 저장소를 배포하여 Headless 적응형 양식을 활성화할 수 있습니다.
+* 핵심 구성 요소가 [활성화되지 않음](#enable-components)인 이전 Forms as a Cloud Service 프로그램을 실행 중인 경우 먼저 [적응형 Forms 핵심 구성 요소 종속성 추가](#enable-headless-adaptive-forms-for-an-aem-forms-as-a-cloud-service-environment)를 Cloud Service 저장소에 하십시오. 업데이트된 저장소를 각 환경에 배포하여 Headless 적응형 양식을 활성화합니다.
 
-* 기존 Cloud Service 환경에서 [핵심 구성 요소 기반 적응형 Forms 만들기](create-a-headless-adaptive-form.md)에 대한 옵션을 제공하는 경우 Headless 적응형 Forms은 이미 해당 환경에 대해 활성화되어 있으며, 적응형 Forms의 Headless 표현이 필요한 모바일, 웹, 기본 앱 및 서비스와 같은 채널에 Headless 양식으로 핵심 구성 요소 기반 적응형 Forms을 제공할 수 있습니다.
-
+* Cloud Service 환경에서 [핵심 구성 요소 기반 적응형 양식을 만들 수](create-a-headless-adaptive-form.md)을(를) 이미 허용하고 있는 경우 Headless 적응형 양식이 자동으로 활성화됩니다. 그런 다음 이러한 양식을 모바일, 웹, 기본 앱 또는 이를 필요로 하는 모든 서비스에 Headless 환경으로 제공할 수 있습니다.
 
 >[!NOTE]
 >
 >
-> Adobe은 AEM Forms as a Cloud Service 환경에서 Adaptive Forms을 활성화하지 않고도 개발자가 Headless Adaptive Forms 개발을 빠르게 시작할 수 있도록 Adaptive Forms [starter kit(React 앱)](create-and-publish-a-headless-form.md)을 제공합니다. 나중에 [Headless 양식 개발을 통해 빠른 실습](create-and-publish-a-headless-form.md) 후 Forms as a Cloud Service 환경에서 Headless 적응형 Forms을 활성화할 수 있습니다.
+> Adobe은 AEM Forms as a Cloud Service 환경에서 Headless Adaptive Forms을 활성화하지 않고도 개발자가 Headless Adaptive Forms 개발을 빠르게 시작할 수 있도록 적응형 Forms [스타터 키트(React 앱)](create-and-publish-a-headless-form.md)을 제공합니다. [Headless 양식 개발을 통한 빠른 실습](create-and-publish-a-headless-form.md) 후에 Forms as a Cloud Service 환경에서 Headless 적응형 Forms을 활성화할 수 있습니다.
 
 ## AEM Forms as a Cloud Service 환경을 위한 Headless 적응형 Forms 활성화
 
-AEM Forms as a Cloud Service 환경을 위한 Headless 적응형 Forms 를 활성화하려면 나열된 순서로 다음 단계를 수행하십시오
+AEM Forms as a Cloud Service 환경을 위한 Headless 적응형 Forms을 활성화하려면 나열된 순서로 다음 단계를 수행하십시오
 
-
+<!-- Missing image ALT tag -->
 ![](/help/assets/enable-headless-adaptive-forms-on-aem-forms-cloud-service.png)
 
 
-## 1. AEM Forms as a Cloud Service Git 저장소 복제 {#clone-git-repository}
+## &#x200B;1. AEM Forms as a Cloud Service Git 저장소 복제 {#clone-git-repository}
 
 1. [Cloud Manager](https://my.cloudmanager.adobe.com/)에 로그인하고 조직과 프로그램을 선택합니다.
 
-1. **프로그램 개요** 페이지에서 **파이프라인** 카드로 이동한 다음 **저장소 정보 액세스** 버튼을 클릭하여 Git 저장소에 액세스하고 관리합니다. 페이지에는 다음 정보가 포함됩니다.
+1. **프로그램 개요** 페이지에서 **파이프라인** 카드로 이동합니다.
+
+1. Git 저장소에 액세스하고 관리하려면 **저장소 정보 액세스** 단추를 클릭하십시오. 페이지에는 다음 정보가 포함됩니다.
 
    * Cloud Manager Git 저장소의 URL.
    * Git 저장소(사용자 이름 및 암호) 및 Git 사용자 이름의 자격 증명입니다.
@@ -66,7 +65,7 @@ AEM Forms as a Cloud Service 환경을 위한 Headless 적응형 Forms 를 활�
    메시지가 표시되면 자격 증명을 제공합니다. 저장소를 로컬 컴퓨터에 복제합니다.
 
 
-## 2. Git 저장소에 적응형 양식 핵심 구성 요소 종속성 추가 {#add-adaptive-forms-core-components-dependencies}
+## &#x200B;2. Git 저장소에 적응형 양식 핵심 구성 요소 종속성 추가 {#add-adaptive-forms-core-components-dependencies}
 
 1. 일반 텍스트 코드 편집기에서 Git 저장소 폴더를 엽니다. 예: VS 코드.
 1. 편집할 `[AEM Repository Folder]\pom.xml` 페이지를 엽니다.
@@ -283,14 +282,14 @@ AEM Forms as a Cloud Service 환경을 위한 Headless 적응형 Forms 를 활�
 
 1. 파일을 저장하고 닫습니다.
 
-## 3. 최신 버전의 Forms 핵심 구성 요소를 포함하도록 프로젝트를 업데이트합니다.
+## &#x200B;3. Forms 핵심 구성 요소의 최신 버전을 포함하도록 프로젝트를 업데이트합니다.
 
 1. 편집할 [AEM Archetype 프로젝트 폴더]/pom.xml을 엽니다.
 
 
 1. 파일을 저장하고 닫습니다.
 
-## 4. Git 저장소에 업데이트를 커밋하고 파이프라인을 실행하여 저장소를 배포합니다 {#Commit-the-updates-to-your-git-repository}
+## &#x200B;4. Git 저장소에 업데이트를 커밋하고 파이프라인을 실행하여 저장소를 배포합니다 {#Commit-the-updates-to-your-git-repository}
 
 1. Git 저장소에 코드를 커밋하려면 다음을 수행하십시오.
    1. 터미널 또는 명령 프롬프트를 엽니다.
@@ -304,16 +303,16 @@ AEM Forms as a Cloud Service 환경을 위한 Headless 적응형 Forms 를 활�
       git push origin
       ```
 
-1. 파일이 Git 저장소에 커밋되면 [파이프라인을 실행합니다](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/deploying-code.html?lang=ko).
+1. 파일이 Git 저장소에 커밋되면 [파이프라인을 실행합니다](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-manager/content/using/code-deployment).
 
-   파이프라인 실행이 성공하면 해당 환경에 맞는 적응형 양식 핵심 구성 요소가 활성화됩니다. 또한 적응형 양식(핵심 구성 요소) 템플릿 및 Canvas 3.0 테마가 Forms as a Cloud Service 환경에 추가되면 핵심 구성 요소 기반 적응형 양식을 사용자 정의하고 만들 수 있는 옵션이 제공됩니다.
+   파이프라인 실행이 성공하면 해당 환경에 대해 적응형 Forms 핵심 구성 요소가 활성화됩니다. 또한 적응형 양식(핵심 구성 요소) 템플릿 및 Canvas 3.0 테마가 Forms as a Cloud Service 환경에 추가되면 핵심 구성 요소 기반 적응형 양식을 사용자 정의하고 만들 수 있는 옵션이 제공됩니다.
 
 
 ## 자주 묻는 질문 {#faq}
 
 ### 핵심 구성 요소란 무엇입니까? {#core-components}
 
-[핵심 구성 요소](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=ko)는 AEM에서 개발 시간을 가속화고 웹 사이트의 유지 관리 비용을 절감할 수 있는 표준화된 웹 콘텐츠 관리(WCM) 구성 요소입니다.
+[핵심 구성 요소](https://experienceleague.adobe.com/ko/docs/experience-manager-core-components/using/introduction)는 AEM에서 개발 시간을 단축하고 웹 사이트의 유지 관리 비용을 절감할 수 있는 표준화된 웹 콘텐츠 관리(WCM) 구성 요소입니다.
 
 ### 핵심 구성 요소를 활성화하는 경우 추가되는 모든 기능은 무엇입니까? {#core-components-capabilities}
 

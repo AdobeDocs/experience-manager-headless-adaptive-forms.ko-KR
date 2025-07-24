@@ -3,17 +3,17 @@ title: AEM Headless 적응형 양식을 위한 개발 환경 설정
 description: AEM Headless 적응형 양식을 위한 개발 환경 설정
 hide: true
 exl-id: fd92f057-1217-42f8-a454-1bc7e3827e01
-source-git-commit: 41286ff4303e0f4d404deb113fd59d1499768da5
+source-git-commit: 28792fe1690e68cd301a0de2ce8bff53fae1605f
 workflow-type: tm+mt
-source-wordcount: '686'
-ht-degree: 1%
+source-wordcount: '684'
+ht-degree: 2%
 
 ---
 
 
 # 로컬 개발 환경 설정 {#headless-adaptive-forms-setup-development-environment}
 
-로컬 개발 환경을 설정하여 로컬 컴퓨터에서 Headless 적응형 양식을 만들고 테스트할 수 있습니다. 개발 환경은 AEM SDK와 AEM SDK에 설치된 AEM Forms 기능 아카이브로 구성됩니다.
+로컬 개발 환경을 설정하여 로컬 컴퓨터에서 Headless 적응형 양식을 만들고 테스트할 수 있습니다. 개발 환경은 AEM SDK과 AEM SDK에 설치된 AEM Forms 기능 아카이브로 구성됩니다.
 <!--
  After a Headless adaptive form or related assets are ready on the local development environment, you can deploy the Headless adaptive form application to your publishing environment. -- >
 
@@ -38,19 +38,19 @@ To download the supported version of Adobe Experience Manager as a Cloud Service
 
 ## 시스템 요구 사항 {#headless-adaptive-forms-system-requirements}
 
-AEM SDK를 설치하려면 로컬 시스템이 다음 최소 요구 사항을 충족해야 합니다.
+AEM SDK을 설치하려면 로컬 시스템이 다음 최소 요구 사항을 충족해야 합니다.
 
-* [Java 개발 키트 11](https://experience.adobe.com/#/downloads/content/software-distribution/en/general.html?1_group.propertyvalues.property=.%2Fjcr%3Acontent%2Fmetadata%2Fdc%3AsoftwareType&amp;1_group.propertyvalues.operation=equals&amp;1_group.propertyvalues.0_values=software-type%3Atoling&amp;fulltext=Oracle%7E+JDK%7E+11%7E&amp;orderby=%40jcr%3Acontent%2Fjcr%3AlastModified&amp;orderby.sort=desc&amp;layout=list&amp;p.offset=0&amp;p.limit=14)
+* [Java 개발 키트 11](https://experience.adobe.com/#/downloads/content/software-distribution/en/general.html?1_group.propertyvalues.property=.%2Fjcr%3Acontent%2Fmetadata%2Fdc%3AsoftwareType&1_group.propertyvalues.operation=equals&1_group.propertyvalues.0_values=software-type%3Atoling&fulltext=Oracle%7E+JDK%7E+11%7E&orderby=%40jcr%3Acontent%2Fjcr%3AlastModified&orderby.sort=desc&layout=list&p.offset=0&p.limit=14)
 * [Git 최신 릴리스](https://git-scm.com/downloads). Git을 처음 사용하는 경우 [Git 설치](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git)를 참조하십시오.
-* [Node.js 16.13.0 이상](https://nodejs.org/en/download/). Node.js를 처음 사용하는 경우 [Node.js 설치 방법](https://nodejs.dev/en/learn/how-to-install-nodejs)을 참조하세요.
+* [Node.js 16.13.0 이상](https://nodejs.org/en/download/). <!-- URL is 404! If you are new to Node.js, see [How to install Node.js](https://nodejs.dev/en/learn/how-to-install-nodejs). -->
 * [Maven 3.6 이상](https://maven.apache.org/download.cgi) Maven을 처음 사용하는 경우 [Apache Maven 설치](https://maven.apache.org/install.html)를 참조하십시오.
 
 ## 개발 환경 설정 {#headless-adaptive-forms-procedure-to-setup-development-environment}
 
 새로운 로컬 개발 환경을 설정하고 이를 사용하여 Headless 적응형 양식을 개발 및 테스트하려면:
 
-1. [AEM as a Cloud Service SDK를 설정합니다](#setup-author-instance).
-1. [AEM SDK에 AEM Forms 아카이브(AEM Forms Cloud Service 추가 기능)를 추가](#add-forms-archive)합니다.
+1. [AEM as a Cloud Service SDK 설정](#setup-author-instance).
+1. [AEM Forms 보관(AEM Forms Cloud Service 추가 기능)을 AEM SDK에 추가](#add-forms-archive)합니다.
 
 <!--
 
@@ -59,11 +59,11 @@ AEM SDK를 설치하려면 로컬 시스템이 다음 최소 요구 사항을 �
 
 -->
 
-### 1. AEM as a Cloud Service SDK 설정 {#setup-author-instance}
+### &#x200B;1. AEM as a Cloud Service SDK 설정 {#setup-author-instance}
 
-AEM as a Cloud Service SDK(AEM SDK)는 개발자에게 Headless 적응형 양식을 만들고 테스트할 수 있는 로컬 환경을 제공합니다. AEM as a Cloud Service SDK를 사용하여 Headless 적응형 양식을 만들고 미리 볼 수 있으므로 개발과 관련된 대부분의 유효성 검사를 로컬에서 수행할 수 있습니다. 로컬 작성자 인스턴스를 설정하려면:
+AEM as a Cloud Service SDK(AEM SDK)는 개발자에게 Headless 적응형 양식을 만들고 테스트할 수 있는 로컬 환경을 제공합니다. AEM as a Cloud Service SDK을 사용하여 Headless 적응형 양식을 만들고 미리 볼 수 있으므로 개발과 관련된 대부분의 유효성 검사를 로컬에서 수행할 수 있습니다. 로컬 작성자 인스턴스를 설정하려면 다음 작업을 수행하십시오.
 
-1. [최신 [!DNL Adobe Experience Manager] as a Cloud Service SDK를 다운로드](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html)합니다. 게시된 날짜 열을 사용하여 최신 SDK를 정렬하고 쉽게 찾을 수 있습니다.
+1. [최신 ](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html) as a Cloud Service SDK을 다운로드[!DNL Adobe Experience Manager]합니다. 게시된 날짜 열을 사용하여 최신 SDK을 정렬하고 쉽게 찾을 수 있습니다.
 .zip 형식입니다. 지원되는 버전은 aem-sdk-2022.7.8085.20220725T140323Z-220700.zip 이상입니다.
 
    ![소프트웨어 배포 포털에서 AEM Cloud Service SDK 다운로드](assets/software-distribution.png)
@@ -75,11 +75,11 @@ AEM as a Cloud Service SDK(AEM SDK)는 개발자에게 Headless 적응형 양식
 
    >[!NOTE]
    >
-   > .jar 파일을 두 번 클릭하여 시작하지 마십시오. [오류](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/aem-runtime.html?lang=ko#troubleshooting-double-click)가 발생합니다.
+   > .jar 파일을 두 번 클릭하여 시작하지 마십시오. [오류](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/aem-runtime#troubleshooting-double-click)가 발생합니다.
 
 1. 명령 프롬프트를 엽니다.
    * Windows에서는 **관리자 권한으로 실행** 옵션을 사용하여 관리자 모드로 명령 프롬프트를 엽니다.
-   * Linux에서는 터미널 창을 루트 사용자로 열어야 합니다.
+   * Linux®에서는 터미널 창을 루트 사용자로 열어야 합니다.
 
 1. 복사된 .jar 파일이 포함된 설치 위치로 이동하고 다음 명령을 실행합니다.
 
@@ -98,15 +98,15 @@ AEM as a Cloud Service SDK(AEM SDK)는 개발자에게 Headless 적응형 양식
 
 프리릴리스 포스트픽스가 표시되지 않으면 서버를 중지하고 `[AEM SDK installation]/crx-quickstart folder`을(를) 삭제한 다음 `-r prerelease` 스위치를 사용하여 AEM SDK .jar 파일을 다시 시작하십시오. 추가 옵션은 [문제 해결](/help/troubleshooting.md)을 참조하십시오.
 
-### 2. AEM SDK에 AEM Forms 아카이브(AEM Forms Cloud Service 추가 기능) 추가 {#add-forms-archive}
+### &#x200B;2. AEM SDK에 AEM Forms 아카이브(AEM Forms Cloud Service 추가 기능) 추가 {#add-forms-archive}
 
-AEM Forms as a Cloud Service 기능(AEM Forms Cloud Service 추가 기능)에서는 로컬 개발 환경에서 Headless 적응형 양식을 만들 수 있는 도구를 제공합니다. 기능 아카이브를 설치하려면:
+AEM Forms as a Cloud Service 기능 아카이브(AEM Forms Cloud Service 추가 기능)는 로컬 개발 환경에서 Headless 적응형 양식을 만드는 도구를 제공합니다. 기능 아카이브를 설치하려면:
 
-1. [소프트웨어 배포](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?fulltext=AEM*+Forms*+add*+on*&amp;orderby=%40jcr%3Acontent%2Fjcr%3AlastModified&amp;orderby.sort=desc&amp;layout=list&amp;p.offset=0&amp;p.limit=20)에서 최신 [!DNL AEM Forms] 기능 보관(AEM Forms 추가 기능)을 다운로드하고 추출하십시오. 게시된 날짜 열을 사용하여 최신 SDK를 정렬하고 쉽게 찾을 수 있습니다. 지원되는 버전은 aem-forms-addon-2022.07.06.02-220600 이상입니다.
+1. [!DNL AEM Forms]소프트웨어 배포[에서 최신 ](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?fulltext=AEM*+Forms*+add*+on*&orderby=%40jcr%3Acontent%2Fjcr%3AlastModified&orderby.sort=desc&layout=list&p.offset=0&p.limit=20) 기능 보관(AEM Forms 추가 기능)을 다운로드하고 추출하십시오. 게시된 날짜 열을 사용하여 최신 SDK을 정렬하고 쉽게 찾을 수 있습니다. 지원되는 버전은 aem-forms-addon-2022.07.06.02-220600 이상입니다.
 
 1. crx-quickstart/install 디렉토리로 이동합니다. 폴더가 없으면 만듭니다.
 1. AEM SDK 인스턴스를 중지합니다. AEM SDK 인스턴스를 실행 중인 명령 프롬프트 창을 종료하여 AEM을 중지할 수 있습니다.
-1. 1단계에서 추출한 `aem-forms-addon-<version>.far` 파일의 [!DNL AEM Forms] 추가 기능 보관 파일을 설치 폴더로 복사합니다.
+1. 1단계에서 추출한 [!DNL AEM Forms] 파일의 `aem-forms-addon-<version>.far` 추가 기능 보관 파일을 설치 폴더로 복사합니다.
 1. 다음 명령을 사용하여 AEM SDK 인스턴스를 다시 시작합니다.
 
    `java -jar aem-author-p4502.jar -r prerelease`
@@ -227,4 +227,4 @@ Adaptive forms renderer component is a react based component. It requires a reac
     ```
  
 -->
-로컬 환경이 준비되었습니다. Headless 적응형 양식을 계속 만들 수 있습니다.
+로컬 환경이 준비되었습니다. Headless 적응형 양식을 만들 수 있습니다.

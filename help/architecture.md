@@ -9,9 +9,9 @@ level: Beginner, Intermediate
 keywords: 헤드리스, 적응형 양식, 아키텍처
 hide: false
 exl-id: ee7096d8-89e2-41e0-85e7-b26457df96fb
-source-git-commit: c46ac28e490a09d6f563c4b5673d30a53c277a69
+source-git-commit: 28792fe1690e68cd301a0de2ce8bff53fae1605f
 workflow-type: tm+mt
-source-wordcount: '918'
+source-wordcount: '904'
 ht-degree: 0%
 
 ---
@@ -25,7 +25,7 @@ Headless 적응형 양식은 기본적으로 양식 필드(텍스트 상자, 선
 
 ## 아키텍처 {#architecture}
 
-일반적인 Headless 적응형 양식 아키텍처는 Adobe Experience Manager Forms 서버, Adobe Experience Manager Forms 서버에서 호스팅되는 Headless 적응형 양식 및 채널별 양식 표현물을 위한 프론트엔드 앱(웹 사이트, 모바일 애플리케이션, JavaScript 앱, 채팅 애플리케이션 등)을 구성합니다.
+일반적인 Headless 적응형 양식 아키텍처는 Headless 적응형 양식을 호스팅하는 Adobe Experience Manager Forms 서버를 기반으로 합니다. 웹, 모바일, JavaScript, 챗봇 등 프론트엔드 앱은 각 채널의 양식을 렌더링합니다.
 
 Headless 적응형 양식 배포의 일반적인 아키텍처는 다음과 같습니다.
 
@@ -43,14 +43,14 @@ A typical Headless adaptive forms architecture constitutes an Adobe Experience M
 
 **Adobe Experience Manager 서버**: Headless 적응형 양식의 호스트 역할과 함께 Adobe Experience Manager은 다음과 같은 백엔드 기능을 제공합니다.
 
-* Headless 양식의 목록, 가져오기, 미리 채우기, 유효성 검사, 제출, 제출 상태를 추적할 RESTful API입니다.
+* Headless 양식의 제출 상태를 나열, 가져오기, 미리 채우기, 유효성 검사, 제출 및 추적할 RESTful API입니다.
 * Headless 적응형 양식을 쉽게 개발할 수 있는 시각적 편집기.
 * 서로 다른 데이터 소스로 데이터를 전송하거나 수신하는 Forms 데이터 모델.
 * 복잡한 작업을 자동화하는 워크플로우 엔진입니다.
 
 **Headless 적응형 양식**: Headless 적응형 양식은 .json 파일로 표시됩니다. JSON 구조는 양식의 구성 요소, 제한 및 구조를 정의합니다.
 
-**프론트엔드 앱**: SPA(단일 페이지 애플리케이션), 모바일 앱, JavaScript 앱과 같은 프론트엔드 앱은 Headless 적응형 양식(JSON 양식 표시)을 사용하고 클라이언트에서 양식을 렌더링합니다. Headless 적응형 양식과 함께 제공되는 React 렌더러 구성 요소를 사용하여 적응형 양식을 렌더링하거나 사용자 지정 구성 요소를 빌드하여 Headless 적응형 양식을 기본적으로 렌더링할 수 있습니다.
+**프론트엔드 앱**: SPA(단일 페이지 애플리케이션), 모바일 앱, JavaScript 앱과 같은 프론트엔드 앱은 Headless 적응형 양식(JSON 양식 표현)을 사용하고 클라이언트에서 양식을 렌더링합니다. Headless 적응형 양식과 함께 제공되는 React 렌더러 구성 요소를 사용하여 적응형 양식을 렌더링하거나 사용자 지정 구성 요소를 빌드하여 Headless 적응형 양식을 기본적으로 렌더링할 수 있습니다.
 
 <!-- ### Understanding Headless adaptive forms definition -->
 
@@ -68,7 +68,7 @@ A typical Headless adaptive forms architecture constitutes an Adobe Experience M
 * **React 바인더**: 양식 구성 요소에 상태를 추가하기 위해 컨트롤러에 후크를 제공합니다. 또한 양식을 미리 채우는 데에도 유용합니다.
 * **구성 요소 라이브러리**: React Spectrum 구성 요소를 제공하고 React Binder 모듈의 후크를 사용하여 해당 구성 요소에 상태를 추가합니다.
 
-Forms Web SDK은 양식의 다양한 필드에 적용된 제한을 확인하는 API를 제공할 뿐만 아니라 Headless 적응형 양식을 UI 프레임워크에 연결하는 후크를 제공합니다. 또한 Headless 적응형 양식&#x200B;을 애플리케이션에 통합하는 데 도움이 되는 Headless 적응형 양식용 React Renderer를 제공합니다. Web SDK의 다음 구성 요소를 사용할 수 있습니다.
+Forms Web SDK은 양식의 다양한 필드에 적용된 제한을 확인하는 API를 제공할 뿐만 아니라 Headless 적응형 양식을 UI 프레임워크에 연결하는 후크를 제공합니다. 또한 Headless 적응형 양식을 애플리케이션에 통합하는 데 도움이 되는 Headless 적응형 양식용 React 렌더러를 제공합니다. 웹 SDK의 다음 구성 요소를 사용할 수 있습니다.
 
 * **[@aemforms/af-react-components](https://www.npmjs.com/package/@aemforms/af-react-components)**
 * **[@aemforms/af-react-renderer](https://www.npmjs.com/package/@aemforms/af-react-renderer)**
@@ -76,9 +76,9 @@ Forms Web SDK은 양식의 다양한 필드에 적용된 제한을 확인하는 
 
 이러한 모든 구성 요소는 AEM Archetype에 포함됩니다. Headless 적응형 양식용 AEM Archetype 37 이상 프로젝트를 만들면 위에 나열된 라이브러리의 최신 버전이 프로젝트에 포함됩니다.
 
-* **코드 플레이그라운드**: [코드 플레이그라운드](https://experienceleague.adobe.com/landing/aem-headless-forms/developer/code.html?lang=ko)는 개발자가 Headless 적응형 Forms의 기능을 실험하고, 배우고, 테스트할 수 있도록 설계된 대화형 환경입니다.
+* **코드 플레이그라운드**: [코드 플레이그라운드](https://experienceleague.adobe.com/landing/aem-headless-forms/developer/code.html?lang=en)는 개발자가 Headless 적응형 Forms의 기능을 실험하고, 배우고, 테스트할 수 있도록 설계된 대화형 환경입니다.
 
-**응용 프로그램 시작**: Adobe은 Headless 적응형 양식을 빠르게 시작하는 데 도움이 되는 시작 응용 프로그램도 발표했습니다.
+**응용 프로그램 시작**: Adobe에서는 Headless 적응형 양식을 빠르게 시작하는 데 도움이 되는 시작 응용 프로그램도 발표했습니다.
 
 <!-- **View Library (UI Layer)**: A custom form application built in a front-end language. You can use react, Angular, Flutter, NPM, Vue.js, Ionic, BootStrap, or any other language to built front end. You can also use the Headless adaptive forms Super Component, provided out-of-the-box, inside a react application to render a Headless adaptive form. Headless adaptive forms super component makes use of OOTB react spectrum -based form components to render the Headless adaptive form. 
 
@@ -88,7 +88,7 @@ Core-Components: It enables use to render an Adaptive Form using JSON structure.
 
 **Visual Studio 코드 확장**: [Visual Studio 코드 확장](visual-studio-code-extension-for-headless-adaptive-forms.md)을 사용하여 올바른 JSON 구조를 만듭니다. JSON 구조의 구성 요소 추가, 삭제 또는 이름 바꾸기와 같은 일반적인 함수와 함께 양식의 JSON 구조에 대한 IntelliSense 지원 및 유효성 검사를 제공합니다.
 
-**HTTP 및 JavaScript API**: [HTTP API](https://opensource.adobe.com/aem-forms-af-runtime/api/)를 사용하면 Headless 양식의 목록, 가져오기, 유효성 검사, 제출, 제출 상태를 추적할 수 있습니다. [JS API](https://opensource.adobe.com/aem-forms-af-runtime/jsdocs/)를 사용하면 JavaScript 기반 UI 프레임워크에서 Headless 적응형 양식을 사용할 수 있습니다.
+**HTTP 및 JavaScript API**: [HTTP API](https://opensource.adobe.com/aem-forms-af-runtime/api/)를 사용하면 Headless 양식의 전송 상태를 나열, 가져오기, 유효성 검사, 제출 및 추적할 수 있습니다. <!-- URL is 404!! [JS APIs](https://opensource.adobe.com/aem-forms-af-runtime/jsdocs/) helps you use Headless adaptive forms with any JavaScript based UI framework. -->
 
 **JSON 수식**: JSON 구조를 쿼리하고 Headless 적응형 양식에 대한 규칙을 만드는 데 도움이 되는 양식 표현식 문법의 구현입니다. 문법은 스프레드시트와 유사한 함수와 연산자 및 [JMESPath](https://jmespath.org/) JSON 쿼리 언어의 매쉬업입니다. [플레이그라운드](https://opensource.adobe.com/json-formula/dist/index.html)를 사용하여 JSON 수식 구문과 기능을 살펴볼 수 있습니다.
 

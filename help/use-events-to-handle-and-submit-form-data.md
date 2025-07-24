@@ -1,8 +1,8 @@
 ---
 title: 이벤트를 사용하여 양식 헤드리스 적응형 양식 데이터 처리 및 제출
-description: 이벤트를 사용하여 양식 헤드리스 적응형 양식 데이터 처리 및 제출
+description: 이벤트를 사용하여 양식 Headless 적응형 양식 데이터를 처리하고 제출합니다.
 hide: false
-source-git-commit: ddd353329dfe5b47734d904b9a5e684051becc5b
+source-git-commit: 28792fe1690e68cd301a0de2ce8bff53fae1605f
 workflow-type: tm+mt
 source-wordcount: '113'
 ht-degree: 0%

@@ -9,10 +9,10 @@ role: Admin, Developer
 level: Beginner, Intermediate
 hide: false
 exl-id: bfb7e688-d2be-4aaa-ac9b-147cbd74b516
-source-git-commit: 47ac7d03c8c4fa18ac3bdcef04352fdd1cad1b16
+source-git-commit: 28792fe1690e68cd301a0de2ce8bff53fae1605f
 workflow-type: tm+mt
-source-wordcount: '133'
-ht-degree: 5%
+source-wordcount: '127'
+ht-degree: 6%
 
 ---
 
@@ -26,13 +26,13 @@ ht-degree: 5%
 
 ### 이유
 
-지원되지 않는 버전 또는 node.js 또는 NPM의 손상된 설치 때문에 발생할 수 있습니다.
+지원되지 않는 버전 또는 `node.js` 또는 `NPM`의 손상된 설치로 인해 발생할 수 있습니다.
 
 ### 솔루션
 
 1. 환경에서 [현재 Node.JS 설치를 제거](https://khushwantsehgal.wordpress.com/2022/06/28/how-to-remove-node-js-completely-from-windows-10/)합니다.
 
-1. NPM으로 Node.JS 16.13.0 이상을 설치합니다.
+1. `node.JS 16.13.0`(으)로 `NPM` 이상을 설치합니다.
 
 1. 시스템을 다시 부팅합니다.
 
