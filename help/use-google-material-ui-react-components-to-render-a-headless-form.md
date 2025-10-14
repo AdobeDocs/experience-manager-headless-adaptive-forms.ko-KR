@@ -115,7 +115,7 @@ Headless 양식 정의에 사용된 각 구성 요소 유형([fieldType](https:/
 
 서드파티 라이브러리 구성 요소를 사용하여 양식 필드를 렌더링하는 프로세스를 매핑이라고 합니다. 각([fieldType](https://opensource.adobe.com/aem-forms-af-runtime/storybook/?path=/story/reference-json-properties-fieldtype--text-input))을 타사 라이브러리의 해당 구성 요소에 매핑합니다.
 
-모든 매핑 관련 정보가 `mappings.ts` 파일에 추가됩니다. `...mappings` 파일의 `mappings.ts` 문은 [Adobe Spectrum](https://opensource.adobe.com/aem-forms-af-runtime/storybook/?path=/story/reference-json-properties-fieldtype--text-input) 구성 요소로 (`:type`fieldType[ 또는 ](https://spectrum.adobe.com/page/text-field/))을(를) 오버레이하는 기본 매핑을 참조합니다.
+모든 매핑 관련 정보가 `mappings.ts` 파일에 추가됩니다. `...mappings` 파일의 `mappings.ts` 문은 [Adobe Spectrum](https://opensource.adobe.com/aem-forms-af-runtime/storybook/?path=/story/reference-json-properties-fieldtype--text-input) 구성 요소로 (`:type`fieldType[&#x200B; 또는 &#x200B;](https://spectrum.adobe.com/page/text-field/))을(를) 오버레이하는 기본 매핑을 참조합니다.
 
 마지막 단계에서 만든 `materialtextfield` 구성 요소에 대한 매핑을 추가하려면:
 

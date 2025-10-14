@@ -63,7 +63,7 @@ AEM SDK을 설치하려면 로컬 시스템이 다음 최소 요구 사항을 �
 
 AEM as a Cloud Service SDK(AEM SDK)는 개발자에게 Headless 적응형 양식을 만들고 테스트할 수 있는 로컬 환경을 제공합니다. AEM as a Cloud Service SDK을 사용하여 Headless 적응형 양식을 만들고 미리 볼 수 있으므로 개발과 관련된 대부분의 유효성 검사를 로컬에서 수행할 수 있습니다. 로컬 작성자 인스턴스를 설정하려면 다음 작업을 수행하십시오.
 
-1. [최신 ](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html) as a Cloud Service SDK을 다운로드[!DNL Adobe Experience Manager]합니다. 게시된 날짜 열을 사용하여 최신 SDK을 정렬하고 쉽게 찾을 수 있습니다.
+1. [최신 &#x200B;](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html) as a Cloud Service SDK을 다운로드[!DNL Adobe Experience Manager]합니다. 게시된 날짜 열을 사용하여 최신 SDK을 정렬하고 쉽게 찾을 수 있습니다.
 .zip 형식입니다. 지원되는 버전은 aem-sdk-2022.7.8085.20220725T140323Z-220700.zip 이상입니다.
 
    ![소프트웨어 배포 포털에서 AEM Cloud Service SDK 다운로드](assets/software-distribution.png)
@@ -102,7 +102,7 @@ AEM as a Cloud Service SDK(AEM SDK)는 개발자에게 Headless 적응형 양식
 
 AEM Forms as a Cloud Service 기능 아카이브(AEM Forms Cloud Service 추가 기능)는 로컬 개발 환경에서 Headless 적응형 양식을 만드는 도구를 제공합니다. 기능 아카이브를 설치하려면:
 
-1. [!DNL AEM Forms]소프트웨어 배포[에서 최신 ](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?fulltext=AEM*+Forms*+add*+on*&orderby=%40jcr%3Acontent%2Fjcr%3AlastModified&orderby.sort=desc&layout=list&p.offset=0&p.limit=20) 기능 보관(AEM Forms 추가 기능)을 다운로드하고 추출하십시오. 게시된 날짜 열을 사용하여 최신 SDK을 정렬하고 쉽게 찾을 수 있습니다. 지원되는 버전은 aem-forms-addon-2022.07.06.02-220600 이상입니다.
+1. [!DNL AEM Forms]소프트웨어 배포[에서 최신 &#x200B;](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?fulltext=AEM*+Forms*+add*+on*&orderby=%40jcr%3Acontent%2Fjcr%3AlastModified&orderby.sort=desc&layout=list&p.offset=0&p.limit=20) 기능 보관(AEM Forms 추가 기능)을 다운로드하고 추출하십시오. 게시된 날짜 열을 사용하여 최신 SDK을 정렬하고 쉽게 찾을 수 있습니다. 지원되는 버전은 aem-forms-addon-2022.07.06.02-220600 이상입니다.
 
 1. crx-quickstart/install 디렉토리로 이동합니다. 폴더가 없으면 만듭니다.
 1. AEM SDK 인스턴스를 중지합니다. AEM SDK 인스턴스를 실행 중인 명령 프롬프트 창을 종료하여 AEM을 중지할 수 있습니다.

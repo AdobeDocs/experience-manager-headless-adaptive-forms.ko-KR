@@ -51,7 +51,7 @@ Experience Cloud 기술 문서를 만들거나 업데이트하는 기술 작가,
 이 저장소의 모든 문서는 GitHub 버전의 마크다운을 사용합니다. 마크다운에 익숙하지 않은 경우 다음을 참조하십시오.
 
 * [마크다운 기본 사항](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github)
-* [인쇄 가능한 마크다운 치트시트 ](https://docs.github.com/en)
+* [인쇄 가능한 마크다운 치트시트 &#x200B;](https://docs.github.com/en)
 
 ## 레이블
 
