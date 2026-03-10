@@ -9,9 +9,9 @@ level: Beginner, Intermediate
 keywords: 헤드리스, 적응형 양식, 아키텍처
 hide: false
 exl-id: ee7096d8-89e2-41e0-85e7-b26457df96fb
-source-git-commit: 28792fe1690e68cd301a0de2ce8bff53fae1605f
+source-git-commit: 780f06a39c75dbf8795ac7a971150410ed7981e9
 workflow-type: tm+mt
-source-wordcount: '904'
+source-wordcount: '994'
 ht-degree: 0%
 
 ---
@@ -50,7 +50,7 @@ A typical Headless adaptive forms architecture constitutes an Adobe Experience M
 
 **Headless 적응형 양식**: Headless 적응형 양식은 .json 파일로 표시됩니다. JSON 구조는 양식의 구성 요소, 제한 및 구조를 정의합니다.
 
-**프론트엔드 앱**: SPA(단일 페이지 애플리케이션), 모바일 앱, JavaScript 앱과 같은 프론트엔드 앱은 Headless 적응형 양식(JSON 양식 표현)을 사용하고 클라이언트에서 양식을 렌더링합니다. Headless 적응형 양식과 함께 제공되는 React 렌더러 구성 요소를 사용하여 적응형 양식을 렌더링하거나 사용자 지정 구성 요소를 빌드하여 Headless 적응형 양식을 기본적으로 렌더링할 수 있습니다.
+**프론트엔드 앱**: SPA(단일 페이지 애플리케이션), 모바일 앱, JavaScript 앱과 같은 프론트엔드 앱은 Headless 적응형 양식(JSON 양식 표현)을 사용하고 클라이언트에서 양식을 렌더링합니다. Headless 적응형 양식과 함께 제공되는 React 렌더러 구성 요소를 사용하여 적응형 양식을 렌더링하거나 사용자 지정 구성 요소를 빌드하여 Headless 적응형 양식을 기본적으로 렌더링할 수 있습니다. 기본 모바일 및 오프라인 양식 사용 사례의 경우, API를 통해 고유한 앱을 빌드하고 양식 정의를 가져오는 것이 좋습니다. [모바일 양식 모범 사례](mobile-forms-best-practices.md)를 참조하세요.
 
 <!-- ### Understanding Headless adaptive forms definition -->
 
@@ -76,7 +76,7 @@ Forms Web SDK은 양식의 다양한 필드에 적용된 제한을 확인하는 
 
 이러한 모든 구성 요소는 AEM Archetype에 포함됩니다. Headless 적응형 양식용 AEM Archetype 37 이상 프로젝트를 만들면 위에 나열된 라이브러리의 최신 버전이 프로젝트에 포함됩니다.
 
-* **코드 플레이그라운드**: [코드 플레이그라운드](https://experienceleague.adobe.com/landing/aem-headless-forms/developer/code.html?lang=ko)는 개발자가 Headless 적응형 Forms의 기능을 실험하고, 배우고, 테스트할 수 있도록 설계된 대화형 환경입니다.
+* **코드 플레이그라운드**: [코드 플레이그라운드](https://experienceleague.adobe.com/landing/aem-headless-forms/developer/code.html?lang=en)는 개발자가 Headless 적응형 Forms의 기능을 실험하고, 배우고, 테스트할 수 있도록 설계된 대화형 환경입니다.
 
 **응용 프로그램 시작**: Adobe에서는 Headless 적응형 양식을 빠르게 시작하는 데 도움이 되는 시작 응용 프로그램도 발표했습니다.
 

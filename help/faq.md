@@ -9,10 +9,10 @@ level: Beginner, Intermediate
 keywords: headless, 적응형 양식, FAQ
 hide: false
 exl-id: 5bfc307d-96a3-4007-b65f-32176ecdb710
-source-git-commit: 28792fe1690e68cd301a0de2ce8bff53fae1605f
+source-git-commit: 780f06a39c75dbf8795ac7a971150410ed7981e9
 workflow-type: tm+mt
-source-wordcount: '431'
-ht-degree: 1%
+source-wordcount: '837'
+ht-degree: 0%
 
 ---
 
@@ -84,6 +84,29 @@ You do not require a license.properties file to run AEM Cloud Service SDK.
 ## Headless AF를 위해 개발을 더 쉽게 할 플러그인이 있습니까?
 
 예 — Visual Studio 코드 확장을 사용하면 JSON에서 Headless 적응형 양식을 수동으로 작성할 수 있습니다.
+
+## 모바일 또는 오프라인 양식에 대해 권장되는 접근 방식은 무엇입니까? {#mobile-offline-forms}
+
+Headless 적응형 Forms API를 통해 나만의 네이티브 앱을 빌드하고 양식 정의를 가져오십시오. 오프라인 지원(예: 로컬 저장소 및 동기화)을 선택적으로 구현할 수 있습니다. 권장 접근 방식 및 API에 대한 링크는 [모바일 양식 모범 사례](mobile-forms-best-practices.md)를 참조하십시오.
+
+## AEM Forms에서 GraphQL 또는 Headless API를 어떻게 사용합니까?
+
+AEM Headless 적응형 Forms은 GraphQL이 아닌 **HTTP/REST API**&#x200B;를 사용합니다. 앱에서 이러한 API를 호출하여 양식을 나열하고, 양식 정의(JSON)를 가져오고, 제출 상태를 확인 및 추적합니다. 전체 참조를 위해 [Headless 적응형 양식 HTTP API](https://opensource.adobe.com/aem-forms-af-runtime/api/)를 사용하십시오. 양식을 가져오고 렌더링하는 방법은 [아키텍처](architecture.md) 및 [Headless 양식 이해](understanding-headless-forms.md)를 참조하십시오.
+
+## Adobe AEM Forms에서 React 구성 요소를 사용하여 Headless 양식을 구현하고 스타일을 지정하려면 어떻게 해야 합니까?
+
+React 구성 요소 및 CSS(또는 Material UI와 같은 UI 라이브러리)를 사용하여 Headless 양식을 구현하고 스타일을 지정할 수 있습니다. 양식 논리(상태, 유효성 검사 및 규칙)는 Forms Web SDK 및 양식 JSON에서 제공되며, 앱이 이를 렌더링하는 UI를 제공합니다.
+
+* React UI 라이브러리로 Headless 양식의 스타일을 지정하려면 [사용자 지정 React 라이브러리를 사용하여 Headless 양식 렌더링](use-google-material-ui-react-components-to-render-a-headless-form.md)을 참조하십시오.
+* 사용자 지정 React 구성 요소를 빌드하고 양식 필드에 매핑하려면 [사용자 지정 구성 요소를 사용하여 Headless 양식 렌더링](developing-for-headless-forms-using-your-own-components.md)을 참조하십시오.
+
+Headless 양식 사용 시기, 상태 관리 및 유효성 검사와 같은 개념에 대해서는 [Headless 양식 이해](understanding-headless-forms.md)를 참조하십시오.
+
+## 사용자 지정 CSS, 테마, 규칙 편집기 및 Headless 양식을 사용하여 AEM Forms을 구현하고 맞춤화하려면 어떻게 해야 합니까?
+
+**헤드리스 양식:** 스타일 및 디자인을 완전히 제어할 수 있습니다. 자체 React(또는 기타) 구성 요소와 자체 CSS를 사용하며, 기본 제공 테마는 없습니다. [사용자 지정 React 라이브러리를 사용하여 Headless 양식을 렌더링하고](use-google-material-ui-react-components-to-render-a-headless-form.md) [사용자 지정 구성 요소를 사용하여 Headless 양식을 렌더링하고](developing-for-headless-forms-using-your-own-components.md)Headless 양식을 구현하고 스타일링할 수 있습니다.
+
+**클래식 AEM Forms(테마, 규칙 편집기, 시각적 편집기):** 사용자 지정 CSS, 테마 편집기 및 규칙 편집기는 Headless가 아닌 클래식 적응형 Forms 작성 환경에 적용됩니다. 이러한 항목은 Experience League에서 [AEM Forms 설명서](https://experienceleague.adobe.com/docs/experience-manager-forms.html)를 참조하십시오.
 
 ## Headless 적응형 양식을 CRM에 연결하여 데이터를 읽거나 쓸 수 있습니까?
 

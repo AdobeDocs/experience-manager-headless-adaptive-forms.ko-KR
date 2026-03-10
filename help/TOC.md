@@ -5,9 +5,9 @@ user-guide-description: Adobe Experience Manager Headless 적응형 양식 설�
 feature: Adaptive Forms
 role: Developer
 hide: false
-source-git-commit: 28792fe1690e68cd301a0de2ce8bff53fae1605f
+source-git-commit: 780f06a39c75dbf8795ac7a971150410ed7981e9
 workflow-type: tm+mt
-source-wordcount: '146'
+source-wordcount: '195'
 ht-degree: 4%
 
 ---
@@ -18,6 +18,7 @@ ht-degree: 4%
 + [개요](overview.md)
 + [개요 테스트](overview-testing.md)
 + [아키텍처](architecture.md)
++ [헤드리스 양식 이해 - 개념 및 FAQ](understanding-headless-forms.md)
 + 빠른 설정 {#quick-setup}
    + [AEM 6.5 Forms에서 Headless 적응형 Forms 활성화](enable-headless-adaptive-forms-and-core-components.md)
    + [AEM Forms as a Cloud Service에서 Headless 적응형 Forms 활성화](enable-headless-adaptive-forms-and-core-components-on-forms-cloud-service.md)
@@ -27,11 +28,14 @@ ht-degree: 4%
 + 스타터 키트 사용 시작{#get-started}
    + [스타터 키트를 사용하여 Headless 양식 만들기 및 게시](create-and-publish-a-headless-form.md)
    + [사용자 지정 React 라이브러리를 사용하여 Headless 양식 렌더링](use-google-material-ui-react-components-to-render-a-headless-form.md)
+   + [맞춤형 구성 요소를 사용하여 Headless 양식 렌더링](developing-for-headless-forms-using-your-own-components.md)
+   + [이벤트를 사용하여 양식 데이터 처리 및 제출](use-events-to-handle-and-submit-form-data.md)
+   + [모바일 양식 우수 사례](mobile-forms-best-practices.md)
 + Headless 적응형 양식 만들기 {#authoring-headless-adaptive-forms}
    + [적응형 Forms 편집기를 사용하여 Headless 적응형 양식 만들기](create-a-headless-adaptive-form.md)
 + 개발자 참조 {#developer-reference}
-   + [개발자 포털](https://experienceleague.adobe.com/landing/aem-headless-forms/developer.html?lang=ko)
-   + [코드 플레이그라운드](https://experienceleague.adobe.com/landing/aem-headless-forms/developer/code.html?lang=ko)
+   + [개발자 포털](https://experienceleague.adobe.com/landing/aem-headless-forms/developer.html?lang=en)
+   + [코드 플레이그라운드](https://experienceleague.adobe.com/landing/aem-headless-forms/developer/code.html?lang=en)
    + [Headless 적응형 양식 API](https://opensource.adobe.com/aem-forms-af-runtime/api/)
 + [자주 묻는 질문](faq.md)
 + [문제 해결](troubleshooting.md)
