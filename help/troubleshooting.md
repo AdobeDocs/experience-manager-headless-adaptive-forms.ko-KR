@@ -7,12 +7,12 @@ feature: Adaptive Forms
 topic: Headless
 role: Admin, Developer
 level: Beginner, Intermediate
-hide: false
+index: true
 exl-id: bfb7e688-d2be-4aaa-ac9b-147cbd74b516
-source-git-commit: 28792fe1690e68cd301a0de2ce8bff53fae1605f
+source-git-commit: 86129488bec7faed87600a237ac034ca1b601187
 workflow-type: tm+mt
-source-wordcount: '127'
-ht-degree: 6%
+source-wordcount: '152'
+ht-degree: 7%
 
 ---
 
@@ -32,7 +32,7 @@ ht-degree: 6%
 
 1. 환경에서 [현재 Node.JS 설치를 제거](https://khushwantsehgal.wordpress.com/2022/06/28/how-to-remove-node-js-completely-from-windows-10/)합니다.
 
-1. `node.JS 16.13.0`(으)로 `NPM` 이상을 설치합니다.
+1. `NPM`(으)로 `node.JS 16.13.0` 이상을 설치합니다.
 
 1. 시스템을 다시 부팅합니다.
 

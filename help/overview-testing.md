@@ -10,10 +10,10 @@ keywords: Headless CMS, 적응형 양식, Headless UI, Headful CMS, 음성 지�
 hide: true
 hidefromtoc: true
 exl-id: f6a383ea-684b-479d-a15f-8ebced75635e
-source-git-commit: 28792fe1690e68cd301a0de2ce8bff53fae1605f
+source-git-commit: 86129488bec7faed87600a237ac034ca1b601187
 workflow-type: tm+mt
-source-wordcount: '328'
-ht-degree: 2%
+source-wordcount: '331'
+ht-degree: 0%
 
 ---
 
@@ -28,7 +28,7 @@ Headless 적응형 양식을 사용하면 다음 작업을 수행할 수 있습�
 * 원하는 프로그래밍 언어로 고품질 다중 채널 양식을 빌드합니다.
 * 기본적으로 양식을 데스크탑 및 모바일 앱, 웹 사이트 및 채팅 애플리케이션에 통합합니다.
 * 양식 애플리케이션을 통해 독점 UI 구성 요소를 재사용할 수 있습니다.
-* [Adobe Experience Manager Forms의 기능](https://experienceleague.adobe.com/ko/docs/experience-manager-65/content/forms/getting-started/introduction-aem-forms)을 사용하는 중입니다.
+* [Adobe Experience Manager Forms의 기능](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/forms/getting-started/introduction-aem-forms)을 사용하는 중입니다.
 
 또한 원하는 UI 프레임워크 및 프로그래밍 언어를 사용하여 양식을 렌더링할 수 있는 자체 구성 요소를 개발할 자유가 있습니다. 즉시 사용 가능한 React 구성 요소를 사용하여 Headless 적응형 양식을 렌더링할 수도 있습니다.
 
@@ -154,32 +154,31 @@ Headless 적응형 양식을 사용하면 다음 작업을 수행할 수 있습�
         <h2 style="margin-top: 10px;">Heading 3</h2>
         <p>Description 3</p>
     </div>
-    <!-- Add more cards as needed -->
-</div>
+    </div>
 
 
 
 
 <div style="display: flex; flex-wrap: wrap; justify-content: space-between; margin: 20px;">
     <div style="width: 30%; margin-bottom: 20px; border: 1px solid #ccc; border-radius: 5px; padding: 20px; box-sizing: border-box;">
-        <img src="/help/assets/01-overview-responsive-forms.jpeg" alt="이미지 1" style="width: 100%; border-radius: 5px;">
-        <h2 style="margin-top: 10px;">제목 1</h2>
-        <p>설명 1</p>
+        <img src="/help/assets/01-overview-responsive-forms.jpeg" alt="Image 1" style="width: 100%; border-radius: 5px;">
+        <h2 style="margin-top: 10px;">Heading 1</h2>
+        <p>Description 1</p>
     </div>
     <div style="width: 30%; margin-bottom: 20px; border: 1px solid #ccc; border-radius: 5px; padding: 20px; box-sizing: border-box;">
-        <img src="/help/assets/02-overview-backend-systems.jpeg" alt="이미지 2" style="width: 100%; border-radius: 5px;">
-        <h2 style="margin-top: 10px;">제목 2</h2>
-        <p>설명 2</p>
+        <img src="/help/assets/02-overview-backend-systems.jpeg" alt="Image 2" style="width: 100%; border-radius: 5px;">
+        <h2 style="margin-top: 10px;">Heading 2</h2>
+        <p>Description 2</p>
     </div>
     <div style="width: 30%; margin-bottom: 20px; border: 1px solid #ccc; border-radius: 5px; padding: 20px; box-sizing: border-box;">
-        <img src="/help/assets/03-overview-save-and-resume.jpeg" alt="이미지 3" style="width: 100%; border-radius: 5px;">
-        <h2 style="margin-top: 10px;">제목 3</h2>
-        <p>설명 3</p>
+        <img src="/help/assets/03-overview-save-and-resume.jpeg" alt="Image 3" style="width: 100%; border-radius: 5px;">
+        <h2 style="margin-top: 10px;">Heading 3</h2>
+        <p>Description 3</p>
     </div>
-    <!-- Add more cards as needed -->
 </div>
 
-—>
+-->
+<!-- Add more cards as needed -->
 
 ## Headless 적응형 양식을 사용할 수 있는 사용자는 누구입니까? {#who-can-use-headless-adaptive-forms}
 

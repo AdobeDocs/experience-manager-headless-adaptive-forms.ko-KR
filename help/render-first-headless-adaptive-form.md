@@ -4,10 +4,10 @@ description: 첫 번째 Headless 적응형 양식을 만듭니다.
 keywords: headless, 적응형 양식
 hide: true
 exl-id: 99985fed-4a34-47d6-bb6f-79f81e1cd71b
-source-git-commit: 28792fe1690e68cd301a0de2ce8bff53fae1605f
+source-git-commit: 86129488bec7faed87600a237ac034ca1b601187
 workflow-type: tm+mt
-source-wordcount: '1492'
-ht-degree: 3%
+source-wordcount: '1619'
+ht-degree: 5%
 
 ---
 
@@ -27,7 +27,7 @@ Adobe Experience Manager Headless 적응형 양식은 프론트엔드 언어에 
 
 * 로컬 컴퓨터에서 Headless 적응형 양식을 만들고 테스트할 수 있도록 [개발 환경](setup-development-environment.md)을 설정하십시오.
 * 로컬 개발 컴퓨터에 다음 소프트웨어를 설치해야 합니다.
-   * [Java 개발 키트 11](https://experience.adobe.com/#/downloads/content/software-distribution/en/general.html?1_group.propertyvalues.property=.%2Fjcr%3Acontent%2Fmetadata%2Fdc%3AsoftwareType&1_group.propertyvalues.operation=equals&1_group.propertyvalues.0_values=software-type%3Atoling&fulltext=Oracle%7E+JDK%7E+11%7E&orderby=%40jcr%3Acontent%2Fjcr%3AlastModified&orderby.sort=desc&layout=list&p.offset=0&p.limit=14)
+   * [Java 개발 키트 11](https://experience.adobe.com/#/downloads/content/software-distribution/en/general.html?1_group.propertyvalues.property=.%2Fjcr%3Acontent%2Fmetadata%2Fdc%3AsoftwareType&1_group.propertyvalues.operation=equals&1_group.propertyvalues.0_values=software-type%3Atooling&fulltext=Oracle%7E+JDK%7E+11%7E&orderby=%40jcr%3Acontent%2Fjcr%3AlastModified&orderby.sort=desc&layout=list&p.offset=0&p.limit=14)
    * [Git 최신 릴리스](https://git-scm.com/downloads). Git을 처음 사용하는 경우 [Git 설치](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git)를 참조하십시오.
    * [Node.js 16.13.0 이상](https://nodejs.org/en/download/). <!-- URL is 404! If you are new to Node.js, see [How to install Node.js](https://nodejs.dev/en/learn/how-to-install-nodejs). -->
    * [Maven 3.6 이상](https://maven.apache.org/download.cgi) Maven을 처음 사용하는 경우 [Apache Maven 설치](https://maven.apache.org/install.html)를 참조하십시오.
@@ -71,7 +71,7 @@ Archetype 프로젝트는 Maven 기반 템플릿입니다. Headless 적응형 �
    * `groupId`을(를) 설정하여 Maven groupId 및 Java Source 패키지를 정의합니다.
    * 응용 Forms을 만드는 데 필요한 Forms 관련 구성, 테마, 템플릿, 핵심 구성 요소 및 종속성을 포함하려면 `includeFormsenrollment=y` 옵션을 사용하십시오.
    * Headless 적응형 Forms 기능을 포함하는 데 필요한 Forms 핵심 구성 요소 및 종속성을 포함하려면 `includeFormsheadless=y` 옵션을 사용하십시오. 이 옵션을 활성화하면 다음 항목이 포함됩니다.
-      * **핵심 구성 요소**&#x200B;가 있는 [핵심 구성 요소가 있는 빈](https://experienceleague.adobe.com/ko/docs/experience-manager-core-components/using/introduction) 템플릿입니다.
+      * [핵심 구성 요소](https://experienceleague.adobe.com/ko/docs/experience-manager-core-components/using/introduction)가 있는 **핵심 구성 요소가 있는 빈** 템플릿입니다.
       * 프런트 엔드 React 모듈 `ui.frontend.react.forms.af`입니다. React 앱에서 Headless 적응형 양식을 렌더링하는 데 도움이 됩니다.
 
 
@@ -97,15 +97,15 @@ Archetype 프로젝트는 Maven 기반 템플릿입니다. Headless 적응형 �
    * `groupId`을(를) 설정하여 Maven groupId 및 Java Source 패키지를 정의합니다.
    * 응용 Forms을 만드는 데 필요한 Forms 관련 구성, 테마, 템플릿, 핵심 구성 요소 및 종속성을 포함하려면 `includeFormsenrollment=y` 옵션을 사용하십시오.
    * Headless 적응형 Forms 기능을 포함하는 데 필요한 Forms 핵심 구성 요소 및 종속성을 포함하려면 `includeFormsheadless=y` 옵션을 사용하십시오. 이 옵션을 활성화하면 다음 항목이 포함됩니다.
-      * **핵심 구성 요소**&#x200B;가 있는 [핵심 구성 요소가 있는 빈](https://experienceleague.adobe.com/ko/docs/experience-manager-core-components/using/introduction) 템플릿입니다.
+      * [핵심 구성 요소](https://experienceleague.adobe.com/ko/docs/experience-manager-core-components/using/introduction)가 있는 **핵심 구성 요소가 있는 빈** 템플릿입니다.
       * 프론트엔드는 모듈 `ui.frontend.react.forms.af`에 응답합니다. React 앱에서 Headless 적응형 양식을 렌더링하는 데 도움이 됩니다.
 
-명령이 완료되면 `appID`에 지정된 이름의 프로젝트 폴더가 만들어집니다. 예를 들어 값이 `appID`인 `myheadlessform`을(를) 사용하면 이름이 `myheadlessform`인 폴더가 만들어집니다. 여기에는 Archetype 기반 프로젝트가 포함되어 있습니다.
+명령이 완료되면 `appID`에 지정된 이름의 프로젝트 폴더가 만들어집니다. 예를 들어 값이 `myheadlessform`인 `appID`을(를) 사용하면 이름이 `myheadlessform`인 폴더가 만들어집니다. 여기에는 Archetype 기반 프로젝트가 포함되어 있습니다.
 
 
 ### &#x200B;2. AEM SDK에 프로젝트 배포 {#deploy-the-project-to-a-local-development-environment}
 
-프로젝트를 AEM SDK 인스턴스에 배포하면 Headless 적응형 Forms 기능, **핵심 구성 요소가 있는 빈 항목** 템플릿 및 프로젝트에 포함된 기타 리소스가 개발 환경에 추가됩니다. <!-- Deploy the project to your local development environment to locally create Headless Adaptive Forms. or deploy directly to your Forms as a Cloud Service environment. !--> AEM SDK 인스턴스에 배포하려면:
+프로젝트를 AEM SDK 인스턴스에 배포하면 Headless 적응형 Forms 기능, **핵심 구성 요소가 있는 빈 항목** 템플릿 및 프로젝트에 포함된 기타 리소스가 개발 환경에 추가됩니다. <!-- Deploy the project to your local development environment to locally create Headless Adaptive Forms. or deploy directly to your Forms as a Cloud Service environment. !--> AEM SDK 인스턴스에 배포하려면 다음을 수행하십시오.
 
 1. 명령 프롬프트를 엽니다. Windows를 사용하는 경우 관리 권한으로 명령 프롬프트를 엽니다(관리자 권한으로 명령 프롬프트 실행 또는 [Git bash 셸](https://khushwantsehgal.wordpress.com/2022/06/29/check-if-git-bash-is-running-in-administrator-mode/)).
 
@@ -125,16 +125,16 @@ Archetype 프로젝트는 Maven 기반 템플릿입니다. Headless 적응형 �
    종속성을 해결하고 프로젝트를 배포하는 데 시간이 오래 걸릴 수 있습니다. 프로젝트를 배포하지 못하는 경우 일반적인 문제 및 해결 방법에 대해서는 [문제 해결](troubleshooting.md) 문서를 참조하십시오.
 
 
-<!-- *  To learn how to deploy code to AEM as a Cloud Service, see the video in [Deploying to AEM as a Cloud Service]https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/deploying/overview.html?lang=ko#coding-against-the-right-aem-version) article : -->
+<!-- *  To learn how to deploy code to AEM as a Cloud Service, see the video in [Deploying to AEM as a Cloud Service]https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/deploying/overview.html?lang=en#coding-against-the-right-aem-version) article : -->
 
 
-### &#x200B;3. headless 적응형 양식의 JSON 스키마를 만들고 AEM SDK 인스턴스에 업로드합니다 {#create-add-json-representation-of-headless-adaptive-forms}
+### &#x200B;3. Headless 적응형 양식의 JSON 스키마를 만들고 AEM SDK 인스턴스에 업로드하십시오 {#create-add-json-representation-of-headless-adaptive-forms}
 
-Headless 적응형 Forms은 JSON 파일로 표시됩니다. [스토리북](https://opensource.adobe.com/aem-forms-af-runtime/storybook/?path=/story/reference-examples--contact)에서 샘플 양식을 가져오거나 `[Archetype Project]\ui.content\src\main\content\jcr_root\content\dam\myheadlessform\af_model_sample.json`의 Archetype 프로젝트에 포함된 샘플 양식을 사용할 수 있습니다. 이 문서는 스토리북의 [소개](https://opensource.adobe.com/aem-forms-af-runtime/storybook/?path=/story/reference-examples--introduction) 양식을 사용합니다. Headless 적응형 Forms을 빠르게 시작하는 데 도움이 되는 단일 필드 양식입니다. <!-- The [specifications](/help/assets/Headless-Adaptive-Form-Specification.pdf) document provides detailed information about various components, rules, and constraints for Headless Adaptive Forms -->
+Headless 적응형 Forms은 JSON 파일로 표시됩니다. [스토리북](https://opensource.adobe.com/aem-forms-af-runtime/storybook/?path=/story/reference-examples--contact)에서 샘플 양식을 가져오거나 `[Archetype Project]\ui.content\src\main\content\jcr_root\content\dam\myheadlessform\af_model_sample.json`의 Archetype 프로젝트에 포함된 샘플 양식을 사용할 수 있습니다. 이 문서는 스토리북의 [소개](https://opensource.adobe.com/aem-forms-af-runtime/storybook/?path=/story/reference-examples--introduction) 양식을 사용합니다. Headless 적응형 Forms을 빠르게 시작하는 데 도움이 되는 단일 필드 양식입니다. <!-- The [specifications](/help/assets/headless-adaptive-forms-specification.pdf) document provides detailed information about various components, rules, and constraints for Headless Adaptive Forms -->
 
 스키마를 만들고 업로드하려면:
 
-1. 확장명이 `.json`인 일반 텍스트 파일을 만듭니다. 예, `myfirstform.json`. 파일 시스템 또는 `\<project-name>\ui.content\src\main\content\jcr_root\content\dam\myheadlessform\<formname>.json`의 AEM Archetype 기반 프로젝트에서 원하는 위치에 파일을 만들 수 있습니다
+1. 확장명이 `.json`인 일반 텍스트 파일을 만듭니다. 예를 들어, `myfirstform.json`과 같이 입력합니다. 파일 시스템 또는 `\<project-name>\ui.content\src\main\content\jcr_root\content\dam\myheadlessform\<formname>.json`의 AEM Archetype 기반 프로젝트에서 원하는 위치에 파일을 만들 수 있습니다
 1. `.json` 파일에 다음 JSON 콘텐츠를 추가하고 저장합니다.
 
    ```JSON
@@ -166,11 +166,12 @@ Headless 적응형 Forms은 JSON 파일로 표시됩니다. [스토리북](https
 
 `.json`을(를) 업로드하는 데 실패한 경우 [AEM Archetype 프로젝트가 배포되었는지 확인](#deploy-the-project-to-a-local-development-environment)하십시오.
 
-<!-- 1. Open the [contact form](https://opensource.adobe.com/aem-forms-af-runtime/storybook/?path=/story/reference-examples--contact) and tap the [![Raw](assets/raw.png)](faq.md#storybook-example) icon on bottom-right side of the Storybook page to view the source code of the headless . 
+<!--
+1. Open the [contact form](https://opensource.adobe.com/aem-forms-af-runtime/storybook/?path=/story/reference-examples--contact) and tap the [![Raw](assets/raw.png)](faq.md#storybook-example) icon on bottom-right side of the Storybook page to view the source code of the headless . 
 
 You can use [Adaptive Forms builder extension for Visual Studio Code](/help/setup-development-environment.md#microsot-visual-studio-code-extension-for-headless-adaptive-forms) to build a JSON schema of your Headless Adaptive Forms. 
 
-You can see [Storybook](https://opensource.adobe.com/aem-forms-af-runtime/storybook/?path=/story/reference-examples--introduction) for sample JSON schemas and list of components, attributes, and properties. You can also see the [specifications document](/help/assets/Headless-Adaptive-Form-Specification.pdf) for detailed information on all the components, constraints, and methods available to define Headless Adaptive Forms.
+You can see [Storybook](https://opensource.adobe.com/aem-forms-af-runtime/storybook/?path=/story/reference-examples--introduction) for sample JSON schemas and list of components, attributes, and properties. You can also see the [specifications document](/help/assets/headless-adaptive-forms-specification.pdf) for detailed information on all the components, constraints, and methods available to define Headless Adaptive Forms.
 
 File extension of a JSON schema of Headless Adaptive Forms is .json. For example, formname.json. Create or add the file to your AEM Archetype based project. For example, `\myheadlessform\ui.content\src\main\content\jcr_root\content\dam\myheadlessform\home-loan.json` -> 
 
@@ -180,11 +181,12 @@ You can deploy the project to local development environment. It adds Headless Ad
 
     `mvn -PautoInstallPackage clean install`
 
-If you are on Windows, run the above with Administrative privileges (Run command prompt or [bash shell as an administrator](https://khushwantsehgal.wordpress.com/2022/06/29/check-if-git-bash-is-running-in-administrator-mode/)). For the complete list of commands, see [Building and Installing](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/using.html?lang=ko#building-and-installing).
-    
-<!-- *  To learn how to deploy code to AEM as a Cloud Service, see the video in [Deploying to AEM as a Cloud Service]https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/deploying/overview.html?lang=ko#coding-against-the-right-aem-version) article : -->
+If you are on Windows, run the above with Administrative privileges (Run command prompt or [bash shell as an administrator](https://khushwantsehgal.wordpress.com/2022/06/29/check-if-git-bash-is-running-in-administrator-mode/)). For the complete list of commands, see [Building and Installing](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/using.html?lang=en#building-and-installing).
+-->
 
-### &#x200B;4. 빈 핵심 구성 요소 템플릿을 기반으로 적응형 양식 만들기 {#create-adaptive-form-with-blank-with-core-components-template}
+<!-- *  To learn how to deploy code to AEM as a Cloud Service, see the video in [Deploying to AEM as a Cloud Service]https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/deploying/overview.html?lang=en#coding-against-the-right-aem-version) article : -->
+
+### &#x200B;4. 핵심 구성 요소가 포함된 빈 템플릿을 기반으로 적응형 양식 만들기 {#create-adaptive-form-with-blank-with-core-components-template}
 
 1. [AEM SDK 인스턴스](http://localhost:4502/)에 로그인합니다.
 
@@ -228,4 +230,4 @@ If you are on Windows, run the above with Administrative privileges (Run command
    1. 완료 후 브라우저 창에서 localhost:3000을(를) 열어 렌더링된 Headless 적응형 양식을 봅니다.
    1. 제출 기능을 테스트하려면 AEM Forms 서버에 로그인한 다음 **HTML에서 양식 미리 보기** 옵션을 사용하여 양식을 미리 보기 모드로 엽니다.
 
-[스토리북](https://opensource.adobe.com/aem-forms-af-runtime/storybook/)은(는) Headless Adaptive Forms의 JSON 스키마의 일부 예와 함께 다양한 Headless Adaptive Forms에 설정할 수 있는 구성 요소 및 규칙 목록을 제공합니다. [사양](/help/assets/Headless-Adaptive-Form-Specification.pdf) 문서를 참조하여 Headless 적응형 Forms과 관련된 다양한 규칙 및 속성에 대해 알아볼 수도 있습니다.
+[스토리북](https://opensource.adobe.com/aem-forms-af-runtime/storybook/)은(는) Headless Adaptive Forms의 JSON 스키마의 일부 예와 함께 다양한 Headless Adaptive Forms에 설정할 수 있는 구성 요소 및 규칙 목록을 제공합니다. [사양](/help/assets/headless-adaptive-forms-specification.pdf) 문서를 참조하여 Headless 적응형 Forms과 관련된 다양한 규칙 및 속성에 대해 알아볼 수도 있습니다.

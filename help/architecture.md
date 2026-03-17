@@ -7,9 +7,9 @@ topic: Headless
 role: Admin, Developer
 level: Beginner, Intermediate
 keywords: 헤드리스, 적응형 양식, 아키텍처
-hide: false
+index: true
 exl-id: ee7096d8-89e2-41e0-85e7-b26457df96fb
-source-git-commit: 780f06a39c75dbf8795ac7a971150410ed7981e9
+source-git-commit: 86129488bec7faed87600a237ac034ca1b601187
 workflow-type: tm+mt
 source-wordcount: '994'
 ht-degree: 0%
@@ -37,7 +37,8 @@ You can use the React renderer component shipped with Headless adaptive forms to
 
 A typical Headless adaptive forms architecture constitutes an Adobe Experience Manager Server, JSON structure of forms, various frontend apps for channel-specific form renditions.
 
-![Architecture](/help/assets/headless-af-architecture.png) -->
+![Architecture](/help/assets/headless-af-architecture.png) 
+-->
 
 ### Headless 적응형 양식 구현의 구성 요소
 
@@ -76,13 +77,15 @@ Forms Web SDK은 양식의 다양한 필드에 적용된 제한을 확인하는 
 
 이러한 모든 구성 요소는 AEM Archetype에 포함됩니다. Headless 적응형 양식용 AEM Archetype 37 이상 프로젝트를 만들면 위에 나열된 라이브러리의 최신 버전이 프로젝트에 포함됩니다.
 
-* **코드 플레이그라운드**: [코드 플레이그라운드](https://experienceleague.adobe.com/landing/aem-headless-forms/developer/code.html?lang=ko)는 개발자가 Headless 적응형 Forms의 기능을 실험하고, 배우고, 테스트할 수 있도록 설계된 대화형 환경입니다.
+* **코드 플레이그라운드**: [코드 플레이그라운드](https://experienceleague.adobe.com/landing/aem-headless-forms/developer/code.html?lang=en)는 개발자가 Headless 적응형 Forms의 기능을 실험하고, 배우고, 테스트할 수 있도록 설계된 대화형 환경입니다.
 
 **응용 프로그램 시작**: Adobe에서는 Headless 적응형 양식을 빠르게 시작하는 데 도움이 되는 시작 응용 프로그램도 발표했습니다.
 
-<!-- **View Library (UI Layer)**: A custom form application built in a front-end language. You can use react, Angular, Flutter, NPM, Vue.js, Ionic, BootStrap, or any other language to built front end. You can also use the Headless adaptive forms Super Component, provided out-of-the-box, inside a react application to render a Headless adaptive form. Headless adaptive forms super component makes use of OOTB react spectrum -based form components to render the Headless adaptive form. 
+<!-- 
+**View Library (UI Layer)**: A custom form application built in a front-end language. You can use react, Angular, Flutter, NPM, Vue.js, Ionic, BootStrap, or any other language to built front end. You can also use the Headless adaptive forms Super Component, provided out-of-the-box, inside a react application to render a Headless adaptive form. Headless adaptive forms super component makes use of OOTB react spectrum -based form components to render the Headless adaptive form. 
 
-Core-Components: It enables use to render an Adaptive Form using JSON structure. It uses rule grammar to help create dynamic field interactions. The rule grammar is based on [JSON formula](http://github.com/adobe/json-formula/). You can develop your own renderer or embed the React based Adaptive Forms renderer, provided OOTB, in your front-end app to render the form. -->
+Core-Components: It enables use to render an Adaptive Form using JSON structure. It uses rule grammar to help create dynamic field interactions. The rule grammar is based on [JSON formula](http://github.com/adobe/json-formula/). You can develop your own renderer or embed the React based Adaptive Forms renderer, provided OOTB, in your front-end app to render the form. 
+-->
 
 **스토리북**: [스토리북](https://opensource.adobe.com/aem-forms-af-runtime/storybook/)에서는 Headless 적응형 양식의 다양한 구성 요소에 대한 개요를 제공합니다. 또한 지원되는 모든 구성 요소, 해당 속성 및 제약 조건의 목록을 제공합니다.
 

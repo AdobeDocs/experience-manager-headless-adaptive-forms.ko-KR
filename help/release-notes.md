@@ -3,9 +3,9 @@ title: AEM 헤드리스 적응형 Forms 개요
 description: AEM Headless 적응형 양식에 대한 개요.
 hide: true
 exl-id: cd7c7972-376c-489f-a684-f479d92c37e7
-source-git-commit: 28792fe1690e68cd301a0de2ce8bff53fae1605f
+source-git-commit: 86129488bec7faed87600a237ac034ca1b601187
 workflow-type: tm+mt
-source-wordcount: '477'
+source-wordcount: '513'
 ht-degree: 4%
 
 ---
@@ -47,6 +47,7 @@ Headless 적응형 양식은 지속적으로 개선됩니다. 최신 개선 사�
 
 * The service was executing some event handlers twice. The issue is fixed.
 * Fixing Data Generation with different values of dataRef, name and type.
+-->
 
 <!-- ### React Renderer component -->
 
@@ -80,7 +81,7 @@ Forms Web SDK은 양식의 다양한 필드에 적용된 제약 조건의 유효
 
 ### 적응형 Forms V2 사양
 
-Headless 적응형 양식 사양은 Headless 적응형 양식을 정의하는 데 사용할 수 있는 모든 구성 요소, 제한 및 방법에 대한 자세한 정보를 제공합니다. 사양은 [PDF](/help/assets/Headless-Adaptive-Form-Specification.pdf) 형식으로 제공됩니다.
+Headless 적응형 양식 사양은 Headless 적응형 양식을 정의하는 데 사용할 수 있는 모든 구성 요소, 제한 및 방법에 대한 자세한 정보를 제공합니다. 사양은 [PDF](/help/assets/headless-adaptive-forms-specification.pdf) 형식으로 제공됩니다.
 
 ### HTTP 및 JS API
 
@@ -90,7 +91,8 @@ Headless 적응형 양식 사양은 Headless 적응형 양식을 정의하는 �
 
 올바른 JSON 구조를 만드는 데 도움이 되도록 [Visual Studio 코드 확장](visual-studio-code-extension-for-headless-adaptive-forms.md). JSON 구조의 구성 요소 추가, 삭제 또는 이름 바꾸기와 같은 일반적인 함수와 함께 양식의 JSON 구조에 대한 IntelliSense 지원 및 유효성 검사를 제공합니다.
 
-<!-- ## What's next
+<!-- 
+## What's next
 
 The following features would be available in upcoming releases:
 

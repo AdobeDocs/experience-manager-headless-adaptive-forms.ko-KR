@@ -6,11 +6,11 @@ feature: Adaptive Forms
 topic: Headless
 role: Admin, Developer
 level: Beginner, Intermediate
-hide: false
+index: true
 exl-id: cd7c7972-376c-489f-a684-f479d92c37e7
-source-git-commit: 28792fe1690e68cd301a0de2ce8bff53fae1605f
+source-git-commit: 86129488bec7faed87600a237ac034ca1b601187
 workflow-type: tm+mt
-source-wordcount: '990'
+source-wordcount: '1037'
 ht-degree: 1%
 
 ---
@@ -52,7 +52,7 @@ React 앱을 만들고 실행하려면 컴퓨터에 다음 항목이 설치되�
 
 
 
-## &#x200B;1. Headless 적응형 양식 시작 키트 설정 {#install}
+## &#x200B;1.  Headless 적응형 양식 시작 키트 설정 {#install}
 
 스타터 키트는 샘플 Headless 적응형 양식 및 해당 라이브러리가 있는 React 앱입니다. 이 키트를 사용하여 Headless 적응형 양식 및 관련 React 구성 요소를 개발하고 테스트하십시오. 다음 명령을 실행하여 Headless 적응형 양식 시작 키트를 설정합니다.
 
@@ -97,9 +97,11 @@ React 앱을 만들고 실행하려면 컴퓨터에 다음 항목이 설치되�
 
    ![](/help/assets/rename-env-file.png)
 
-   <!-- The options in the .env file help you configure source of the forms definantion (.JSON):
+   <!-- 
+    The options in the .env file help you configure source of the forms definantion (.JSON):
     *  To source forms definantion (.JSON) from an AEM Server, set USE_LOCAL_JSON option to false, use the AEM_URL option to specify URL  of your AEM Server, and set the AEM_FORM_PATH option to path of your adaptive form.
-    *  To source forms definantion (.JSON) form-model.json file included in the starter-kit, set USE_LOCAL_JSON option to false. -->
+    *  To source forms definantion (.JSON) form-model.json file included in the starter-kit, set USE_LOCAL_JSON option to false. 
+    -->
 
 1. 다음 명령을 사용하여 앱을 실행합니다.
 
@@ -116,7 +118,7 @@ React 앱을 만들고 실행하려면 컴퓨터에 다음 항목이 설치되�
 
    <!--  As you know, in a headless form the form data and logic are separate from the presentation layer and can be used by any client that can make HTTP requests, such as a mobile app, a static site, or a different web application. The form is often managed and stored on a server, which serves as the backend for the form. The client sends requests to the server to retrieve the form, submit data, and receive updated form data. This allows for greater flexibility and integration with different technologies. You can store and retrive a Headless Adaptive form on an AEM Server  -->
 
-## &#x200B;3. Headless 적응형 양식 만들기 및 렌더링{#custom}
+## &#x200B;3. 나만의 Headless 적응형 양식 만들기 및 렌더링{#custom}
 
 Headless 적응형 양식은 양식과 해당 구성 요소(예: 필드 및 버튼)를 JSON(JavaScript 개체 표기법) 형식으로 나타냅니다. JSON 형식을 사용할 경우 다양한 프로그래밍 언어에서 쉽게 구문 분석하여 사용할 수 있으므로 시스템 간에 양식 데이터를 편리하게 교환할 수 있는 장점이 있습니다. 앱에 포함된 샘플 Headless 적응형 양식을 보려면 `/react-starter-kit-aem-headless-forms/form-definations/form-model.json` 파일을 여십시오.
 

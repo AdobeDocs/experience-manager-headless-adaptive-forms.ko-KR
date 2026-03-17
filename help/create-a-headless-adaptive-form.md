@@ -6,12 +6,12 @@ feature: Adaptive Forms
 topic: Headless
 role: Admin, Developer
 level: Beginner, Intermediate
-hide: false
+index: true
 exl-id: 0214dc2e-52ce-40e9-bef3-f4f4a7ff266f
-source-git-commit: 28792fe1690e68cd301a0de2ce8bff53fae1605f
+source-git-commit: 86129488bec7faed87600a237ac034ca1b601187
 workflow-type: tm+mt
-source-wordcount: '1187'
-ht-degree: 53%
+source-wordcount: '1328'
+ht-degree: 49%
 
 ---
 
@@ -40,21 +40,21 @@ AEM Forms as a Cloud Service은 Headless 적응형 Forms을 만들기 위한 사
 
 * 핵심 구성 요소 기반 템플릿을 위한 적응형 양식 테마
 
-* 사용자를 [!DNL forms-users] 그룹에 추가합니다. [!DNL forms-users] 그룹의 구성원은 적응형 양식을 만들 수 있는 권한이 있습니다.
+* 사용자를 [!DNL forms-users] 그룹에 추가합니다. [!DNL forms-users] 그룹의 멤버는 적응형 양식을 만들 수 있는 권한이 있습니다.
 
 
 **AEM Forms as a Cloud Service의 경우**
 
-* [AEM Forms as a Cloud Service 작성자 인스턴스](https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/forms/setup-configure-migrate/setup-forms-cloud-service) 또는 [로컬 AEM Forms as a Cloud Service SDK](https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/forms/setup-configure-migrate/setup-local-development-environment) 환경에 액세스합니다.
+* [AEM Forms as a Cloud Service 작성자 인스턴스](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/setup-configure-migrate/setup-forms-cloud-service) 또는 [로컬 AEM Forms as a Cloud Service SDK](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/setup-configure-migrate/setup-local-development-environment) 환경에 액세스합니다.
 
 * **적응형 양식 서식 파일**: 서식 파일은 기본 구조를 제공하고 적응형 양식의 모양(레이아웃 및 스타일)을 정의합니다. 특정 속성과 콘텐츠 구조를 포함하는 서식이 미리 지정된 구성 요소가 있습니다. 테마를 정의하고 작업을 제출하는 옵션도 제공합니다. 테마는 모양과 느낌을 정의하고 제출 액션은 적응형 양식 제출 시 수행할 작업을 정의합니다. 예: 수집된 데이터를 데이터 소스로 보내기. 클라우드 서비스는 blank라는 OOTB 템플릿을 제공합니다.
 
    * `blank Adaptive Forms (Core Components)` 템플릿은 새로운 모든 AEM Forms as a Cloud Service 프로그램에 포함됩니다.
-   * [새 적응형 Forms(핵심 구성 요소) 템플릿을 새로 만들기](https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/create-an-adaptive-form-on-forms-cs/template-editor)할 수도 있습니다.
+   * [새 적응형 Forms(핵심 구성 요소) 템플릿을 새로 만들기](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/create-an-adaptive-form-on-forms-cs/template-editor)할 수도 있습니다.
 
 * **적응형 양식 테마**: 테마에 구성 요소 및 패널에 대한 스타일링 세부 정보가 포함됩니다. 스타일에는 배경색, 상태 색상, 투명도, 정렬과 크기와 같은 속성이 포함됩니다. 테마를 적용하면 지정된 스타일은 해당 구성 요소에 반영됩니다.  `Canvas` 템플릿은 새로운 모든 AEM Forms as a Cloud Service 프로그램에 포함됩니다.
 
-* **권한**: 사용자를 [!DNL forms-users] 그룹에 추가합니다. [!DNL forms-users] 그룹의 멤버는 적응형 양식을 만들 수 있는 권한이 있습니다. 특정 사용자 그룹에 대한 자세한 양식 목록은 [그룹 및 권한](https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/forms/setup-configure-migrate/forms-groups-privileges-tasks)을 참조하세요.
+* **권한**: 사용자를 [!DNL forms-users] 그룹에 추가합니다. [!DNL forms-users] 그룹의 멤버는 적응형 양식을 만들 수 있는 권한이 있습니다. 특정 사용자 그룹에 대한 자세한 양식 목록은 [그룹 및 권한](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/setup-configure-migrate/forms-groups-privileges-tasks)을 참조하세요.
 
 
 ## 적응형 양식 만들기 {#create-an-adaptive-form-components}
@@ -79,7 +79,7 @@ AEM Forms as a Cloud Service은 Headless 적응형 Forms을 만들기 위한 사
 
    * **양식 데이터 모델**: [양식 데이터 모델](https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/data-integration)을 통해 서로 다른 데이터 소스의 엔티티와 서비스를 적응형 양식으로 통합할 수 있습니다. 생성 중인 적응형 양식에 여러 데이터 소스에서의 데이터 가져오기 및 쓰기 작업이 포함된 경우 양식 데이터 모델을 선택합니다.
 
-   * **JSON 스키마**: [JSON 스키마](https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/create-an-adaptive-form-on-forms-cs/adaptive-form-json-schema-form-model) 적응형 Forms에서는 생성 또는 소비되는 데이터 구조를 나타내는 JSON 스키마를 연결하여 조직의 백엔드 시스템과 원활하게 통합할 수 있습니다. 이 연결을 통해 작성자는 스키마의 요소를 사용하여 적응형 양식에 콘텐츠를 동적으로 추가할 수 있습니다. 작성 중에 컨텐츠 브라우저의 데이터 모델 개체 탭에서 스키마 요소에 빠르게 액세스할 수 있습니다. 새 적응형 양식을 만들면 편집기에서 모든 필드를 자동으로 추가합니다.
+   * **JSON 스키마**: [JSON 스키마](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/create-an-adaptive-form-on-forms-cs/adaptive-form-json-schema-form-model) 적응형 Forms에서는 생성 또는 소비되는 데이터 구조를 나타내는 JSON 스키마를 연결하여 조직의 백엔드 시스템과 원활하게 통합할 수 있습니다. 이 연결을 통해 작성자는 스키마의 요소를 사용하여 적응형 양식에 콘텐츠를 동적으로 추가할 수 있습니다. 작성 중에 컨텐츠 브라우저의 데이터 모델 개체 탭에서 스키마 요소에 빠르게 액세스할 수 있습니다. 새 적응형 양식을 만들면 편집기에서 모든 필드를 자동으로 추가합니다.
 
    기본적으로 연결된 JSON 스키마의 모든 필드는 자동으로 선택되고 해당 적응형 구성 요소로 변환되어 작성 프로세스를 간소화합니다. 마법사는 확인란을 사용하여 적응형 양식에 포함할 필드를 선택적으로 선택할 수 있는 편리성을 제공합니다.
 

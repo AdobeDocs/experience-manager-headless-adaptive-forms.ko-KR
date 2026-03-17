@@ -7,15 +7,14 @@ topic: Headless
 role: Admin, Developer
 level: Beginner, Intermediate
 keywords: headless forms, headless 양식 라이브러리, 적응형 양식, 상태 관리, 유효성 검사, 디자인 시스템, SSR, CMS
-hide: false
-exl-id: a1b2c3d4-e5f6-7890-abcd-ef1234567890
-source-git-commit: 780f06a39c75dbf8795ac7a971150410ed7981e9
+index: true
+exl-id: 539da3e9-25c5-4e26-ba4e-f68cf849bca4
+source-git-commit: 86129488bec7faed87600a237ac034ca1b601187
 workflow-type: tm+mt
 source-wordcount: '2605'
 ht-degree: 0%
 
 ---
-
 
 # 헤드리스 양식 이해 - 개념 및 FAQ {#understanding-headless-forms}
 
@@ -222,5 +221,5 @@ JSON 형식의 해당 필드 형식 또는 사용자 지정 리소스 형식에 
 * [자주 묻는 질문](faq.md)
 * [Headless 양식 만들기 및 게시](create-and-publish-a-headless-form.md)
 * [Headless 적응형 양식 API](https://opensource.adobe.com/aem-forms-af-runtime/api/)
-* [코드 플레이그라운드](https://experienceleague.adobe.com/landing/aem-headless-forms/developer/code.html?lang=ko)
+* [코드 플레이그라운드](https://experienceleague.adobe.com/landing/aem-headless-forms/developer/code.html?lang=en)
 * [스토리북](https://opensource.adobe.com/aem-forms-af-runtime/storybook/)

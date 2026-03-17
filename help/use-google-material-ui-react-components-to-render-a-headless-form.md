@@ -6,11 +6,11 @@ feature: Adaptive Forms
 topic: Headless
 role: Admin, Developer
 level: Beginner, Intermediate
-hide: false
+index: true
 exl-id: 476509d5-f4c1-4d1c-b124-4c278f67b1ef
-source-git-commit: 28792fe1690e68cd301a0de2ce8bff53fae1605f
+source-git-commit: 86129488bec7faed87600a237ac034ca1b601187
 workflow-type: tm+mt
-source-wordcount: '870'
+source-wordcount: '1060'
 ht-degree: 0%
 
 ---
@@ -26,7 +26,7 @@ ht-degree: 0%
 
 이 자습서에서는 Google Material UI 구성 요소를 사용하여 사용자 지정 React 구성 요소를 사용하여 Headless 적응형 양식을 렌더링하는 방법을 보여 줍니다. 그러나 이 라이브러리에 제한되지 않으며 React 구성 요소 라이브러리를 자유롭게 사용하거나 사용자 지정 구성 요소를 개발할 수 있습니다.
 
-이 문서를 완료하면 _시작 키트를 사용하여 Headless 양식을 만들고 게시_&#x200B;하는 과정에서 만든 [문의하기](create-and-publish-a-headless-form.md) 양식이 다음과 같이 변형됩니다.
+이 문서를 완료하면 [시작 키트를 사용하여 Headless 양식을 만들고 게시](create-and-publish-a-headless-form.md)하는 과정에서 만든 _문의하기_ 양식이 다음과 같이 변형됩니다.
 
 ![](assets/headless-adaptive-form-with-google-material-ui-components.png)
 
@@ -35,7 +35,7 @@ Google Material UI 구성 요소를 사용하여 양식을 렌더링하는 것�
 
 ![](assets/headless-forms-graphics-source-main.svg)
 
-## &#x200B;1. Google Material UI 설치
+## &#x200B;1. Google 재질 UI 설치
 
 기본적으로 시작 키트는 [Adobe의 스펙트럼](https://spectrum.adobe.com/) 구성 요소를 사용합니다. [Google의 재질 UI](https://mui.com/)를 사용하도록 설정해 보겠습니다.
 
@@ -111,11 +111,11 @@ Headless 양식 정의에 사용된 각 구성 요소 유형([fieldType](https:/
 
 사용자 지정 구성 요소 `materialtextfield`이(가) 준비되었습니다. 이 사용자 지정 구성 요소를 설정하여 [fieldType: &quot;text-input&quot;](https://opensource.adobe.com/aem-forms-af-runtime/storybook/?path=/docs/adaptive-form-components-text-input-field--def)의 모든 인스턴스를 Google Material UI 텍스트 필드로 바꾸겠습니다.
 
-## &#x200B;3. Headless 양식 필드에 사용자 지정 구성 요소 매핑
+## &#x200B;3. Headless 양식 필드로 사용자 지정 구성 요소 매핑
 
 서드파티 라이브러리 구성 요소를 사용하여 양식 필드를 렌더링하는 프로세스를 매핑이라고 합니다. 각([fieldType](https://opensource.adobe.com/aem-forms-af-runtime/storybook/?path=/story/reference-json-properties-fieldtype--text-input))을 타사 라이브러리의 해당 구성 요소에 매핑합니다.
 
-모든 매핑 관련 정보가 `mappings.ts` 파일에 추가됩니다. `...mappings` 파일의 `mappings.ts` 문은 [Adobe Spectrum](https://opensource.adobe.com/aem-forms-af-runtime/storybook/?path=/story/reference-json-properties-fieldtype--text-input) 구성 요소로 (`:type`fieldType[&#x200B; 또는 &#x200B;](https://spectrum.adobe.com/page/text-field/))을(를) 오버레이하는 기본 매핑을 참조합니다.
+모든 매핑 관련 정보가 `mappings.ts` 파일에 추가됩니다. `mappings.ts` 파일의 `...mappings` 문은 [Adobe Spectrum](https://spectrum.adobe.com/page/text-field/) 구성 요소로 ([fieldType](https://opensource.adobe.com/aem-forms-af-runtime/storybook/?path=/story/reference-json-properties-fieldtype--text-input) 또는 `:type`)을(를) 오버레이하는 기본 매핑을 참조합니다.
 
 마지막 단계에서 만든 `materialtextfield` 구성 요소에 대한 매핑을 추가하려면:
 

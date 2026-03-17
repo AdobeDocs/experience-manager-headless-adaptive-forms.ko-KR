@@ -11,10 +11,10 @@ docset: CloudService
 hide: true
 hidefromtoc: true
 exl-id: 7afff771-1296-4162-84c5-c8266b94af2f
-source-git-commit: 28792fe1690e68cd301a0de2ce8bff53fae1605f
+source-git-commit: 86129488bec7faed87600a237ac034ca1b601187
 workflow-type: tm+mt
-source-wordcount: '886'
-ht-degree: 52%
+source-wordcount: '943'
+ht-degree: 51%
 
 ---
 
@@ -65,7 +65,7 @@ AEM Forms as a Cloud Service 환경을 위한 Headless 적응형 Forms을 활성
    메시지가 표시되면 자격 증명을 제공합니다. 저장소를 로컬 컴퓨터에 복제합니다.
 
 
-## &#x200B;2. Git 저장소에 적응형 양식 핵심 구성 요소 종속성 추가 {#add-adaptive-forms-core-components-dependencies}
+## &#x200B;2. Git 저장소에 적응형 Forms 핵심 구성 요소 종속성 추가 {#add-adaptive-forms-core-components-dependencies}
 
 1. 일반 텍스트 코드 편집기에서 Git 저장소 폴더를 엽니다. 예: VS 코드.
 1. 편집할 `[AEM Repository Folder]\pom.xml` 페이지를 엽니다.
@@ -282,7 +282,7 @@ AEM Forms as a Cloud Service 환경을 위한 Headless 적응형 Forms을 활성
 
 1. 파일을 저장하고 닫습니다.
 
-## &#x200B;3. Forms 핵심 구성 요소의 최신 버전을 포함하도록 프로젝트를 업데이트합니다.
+## &#x200B;3.  최신 버전의 Forms 핵심 구성 요소를 포함하도록 프로젝트를 업데이트합니다.
 
 1. 편집할 [AEM Archetype 프로젝트 폴더]/pom.xml을 엽니다.
 
@@ -303,7 +303,7 @@ AEM Forms as a Cloud Service 환경을 위한 Headless 적응형 Forms을 활성
       git push origin
       ```
 
-1. 파일이 Git 저장소에 커밋되면 [파이프라인을 실행합니다](https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-manager/content/using/code-deployment).
+1. 파일이 Git 저장소에 커밋되면 [파이프라인을 실행합니다](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-manager/content/using/code-deployment).
 
    파이프라인 실행이 성공하면 해당 환경에 대해 적응형 Forms 핵심 구성 요소가 활성화됩니다. 또한 적응형 양식(핵심 구성 요소) 템플릿 및 Canvas 3.0 테마가 Forms as a Cloud Service 환경에 추가되면 핵심 구성 요소 기반 적응형 양식을 사용자 정의하고 만들 수 있는 옵션이 제공됩니다.
 

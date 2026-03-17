@@ -7,9 +7,9 @@ topic: Headless
 role: Admin, Developer
 level: Beginner, Intermediate
 keywords: 모바일 양식, 기본 앱, 오프라인 양식, Headless API
-hide: false
-exl-id: b8e2f1a4-5c6d-4e2a-9f3b-1d4e5a6c7b8d
-source-git-commit: 780f06a39c75dbf8795ac7a971150410ed7981e9
+index: true
+exl-id: 6f25039f-61fc-4366-9e17-6b2809162c58
+source-git-commit: 86129488bec7faed87600a237ac034ca1b601187
 workflow-type: tm+mt
 source-wordcount: '330'
 ht-degree: 0%
@@ -38,4 +38,4 @@ ht-degree: 0%
 * [Headless 적응형 양식 API](https://opensource.adobe.com/aem-forms-af-runtime/api/) - 양식을 프로그래밍 방식으로 나열, 가져오기, 유효성 검사 및 제출합니다.
 * [아키텍처](architecture.md) - Headless 적응형 양식의 작동 방식과 프론트엔드 앱에서 이를 사용하는 방식.
 
-단계별 통합은 [Headless 양식 만들기 및 게시](create-and-publish-a-headless-form.md) 및 [개발자 포털](https://experienceleague.adobe.com/landing/aem-headless-forms/developer.html?lang=ko)을 참조하십시오.
+단계별 통합은 [Headless 양식 만들기 및 게시](create-and-publish-a-headless-form.md) 및 [개발자 포털](https://experienceleague.adobe.com/landing/aem-headless-forms/developer.html?lang=en)을 참조하십시오.

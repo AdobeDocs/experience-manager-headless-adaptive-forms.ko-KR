@@ -3,9 +3,9 @@ title: Headless 적응형 Forms의 알려진 문제
 description: Headless 적응형 양식의 알려진 문제.
 keywords: 헤드리스, 적응형 양식, 알려진 문제
 hide: true
-source-git-commit: 28792fe1690e68cd301a0de2ce8bff53fae1605f
+source-git-commit: 86129488bec7faed87600a237ac034ca1b601187
 workflow-type: tm+mt
-source-wordcount: '118'
+source-wordcount: '119'
 ht-degree: 16%
 
 ---
