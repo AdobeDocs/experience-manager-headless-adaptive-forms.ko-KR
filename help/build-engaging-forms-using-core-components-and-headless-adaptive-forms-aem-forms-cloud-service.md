@@ -7,8 +7,8 @@ topic-tags: develop
 exl-id: ef99ffe9-4a37-4f0a-a4d3-78976c92220f
 source-git-commit: 28792fe1690e68cd301a0de2ce8bff53fae1605f
 workflow-type: tm+mt
-source-wordcount: '2452'
-ht-degree: 56%
+source-wordcount: '2629'
+ht-degree: 55%
 
 ---
 
@@ -67,7 +67,7 @@ AEM Forms as a Cloud Service 환경을 숙지합니다.
 
    ![](/help/assets/screenshot2028113929.png){width="50%" align="left"}
 
-   환경 설정 또는 정보와 관련된 팝업을 모두 닫습니다. 사용 가능한 모든 양식이 표시됩니다.
+   환경 설정 또는 정보와 관련된 모든 팝업을 닫습니다. 사용 가능한 모든 양식이 표시됩니다.
 
 
 ## 수업 2
@@ -85,8 +85,7 @@ AEM Forms as a Cloud Service 환경을 숙지합니다.
 1. 양식의 제출 엔드포인트를 만듭니다.
 
    1. 새 브라우저 탭에서 <https://pipedream.com/requestbin>을 엽니다.
-   1. **공개 bin 만들기**&#x200B;를 클릭하고 엔드포인트 URL을 복사합니다.
-
+   1. **공개 bin 만들기**를 클릭하고 엔드포인트 URL을 복사합니다.
       ![](/help/assets/screenshot2028114329.png){width="50%" align="left"}
 
       ![](/help/assets/screenshot202023-03-0120at206.10.0020pm.png){width="50%" align="left"}
@@ -94,29 +93,23 @@ AEM Forms as a Cloud Service 환경을 숙지합니다.
 1. 마법사 인터페이스를 사용하여 적응형 양식 작성:
 
    1. 수업 1에 사용된 브라우저 탭에서 AEM Forms as Cloud Service 웹 인터페이스로 이동한 후 양식 및 문서로 이동합니다.
-
       ![](/help/assets/screenshot2028114029.png)
 
-   1. **만들기** > **적응형 양식**&#x200B;을 클릭합니다.
-
+   1. **만들기** > **적응형 양식**을 클릭합니다.
       ![](/help/assets/screenshot2028114629.png)
 
    1. 아래와 같이 템플릿 선택 화면에서 **핵심 구성 요소가 있는 빈 내용** 템플릿을 선택합니다.
-
       ![](/help/assets/screenshot202023-03-0120at206.09.1520pm.png)
 
    1. **스타일** 탭을 클릭하고 아래와 같이 **wknd-theme** 테마를 선택합니다.
-
       ![](/help/assets/screenshot202023-03-0120at206.09.2320pm.png)
 
    1. **제출** 탭을 클릭하고 **REST 끝점에 제출** 카드를 선택한 다음 아래와 같이 **URL 필드에 POST 요청** 필드에 공용 BIN을 지정합니다.
-
       ![](/help/assets/screenshot202023-03-0120at206.09.5320pm.png)
 
    1. **만들기**&#x200B;를 클릭합니다. 양식에 이름과 제목을 지정합니다. 예: **등록**. **만들기**&#x200B;를 클릭합니다.
 
    1. 적응형 양식 편집기가 열립니다. 환경 설정 또는 정보와 관련된 모든 팝업이나 대화 상자를 닫습니다. 왼쪽 레일에서 구성 요소 브라우저를 클릭하고 빈 양식의 맨 위와 맨 아래에 각각 **머리글** 및 **바닥글** 구성 요소를 추가합니다.
-
       ![](/help/assets/screenshot2028121929.png)
 
    1. 구성 요소 브라우저에서 구성 요소를 드래그 앤 드롭하여 다음과 같이 양식을 만듭니다.
@@ -127,8 +120,7 @@ AEM Forms as a Cloud Service 환경을 숙지합니다.
 
    1. **전화번호** 구성 요소를 클릭하여 팝업 메뉴가 표시되도록 합니다. 메뉴의 **공구 모양 아이콘**&#x200B;을 클릭하여 필드를 구성합니다.
 
-   1. **유효성 검사 탭**&#x200B;을 열고 **필수** 필드에 표시한 후 **완료**&#x200B;를 클릭합니다. 성공 메시지가 표시됩니다.
-
+   1. **유효성 검사 탭**&#x200B;을 열고 **필수** 필드에 표시한 후 **완료**를 클릭합니다. 성공 메시지가 표시됩니다.
       ![](/help/assets/screenshot2028123529.png){width="50%" align="left"}
 
       ![](/help/assets/screenshot2028123629.png){width="50%" align="left"}
@@ -140,11 +132,9 @@ AEM Forms as a Cloud Service 환경을 숙지합니다.
    1. 더미 데이터로 양식을 채우십시오.
 
    1. 양식을 제출합니다.
-
       ![](/help/assets/screenshot2028125729.png)
 
    1. bin 요청 탭에서 제출된 데이터를 확인합니다.
-
       ![](/help/assets/screenshot2028125829.png)
 
 1. 규칙을 사용하여 양식에 대화형 활동을 추가합니다.
@@ -247,7 +237,7 @@ AEM Forms as a Cloud Service 환경을 숙지합니다.
 
    >[!NOTE]
    >
-   > * `npm` 명령을 통해 `npm notice Run npm nstall -g npm@9.6.0`을(를) 업데이트하라는 메시지가 표시되면 메시지를 무시합니다.
+   > * `npm notice Run npm nstall -g npm@9.6.0` 명령을 통해 `npm`을(를) 업데이트하라는 메시지가 표시되면 메시지를 무시합니다.
    > * 통합 문서에서 지시하지 않은 경우 다른 `npm` 명령을 실행하지 마십시오.
 
 1. 이제 다음 명령을 실행하여 양식을 미리 봅니다.
@@ -392,7 +382,7 @@ React 스타터 프로젝트를 사용하여 로컬 저장소를 설정합니다
 
 1. 브라우저에서 AEM Forms 관리 인터페이스를 엽니다. <!-- URL is 404. Consider saying the path is for illlustration purposes only. For example, [https://author-p105303-e986623.adobeaemcloud.com/ui#/aem/aem/forms.html/content/dam/formsanddocuments](https://author-p105303-e986623.adobeaemcloud.com/ui%23/aem/aem/forms.html/content/dam/formsanddocuments). -->
 
-1. **`contactus`** 양식을 선택하고 **편집을 클릭합니다.** 적응형 양식 편집기에서 양식이 열립니다.
+1. **`contactus`** 양식을 선택하고 **편집**&#x200B;을 클릭합니다. 적응형 양식 편집기에서 양식이 열립니다.
 
 
 1. **전화번호** 필드를 선택하고 도구 모음에서 **편집 아이콘(연필 아이콘)**&#x200B;을 클릭합니다. 팝업 도구 모음이 표시되지 않으면 편집 모드로 전환합니다. 오른쪽 상단의 **편집** 단추를 클릭하고 왼쪽으로 **미리 보기** 단추를 클릭합니다.
@@ -513,7 +503,7 @@ Google Material UI를 사용하여 양식을 Headless 양식으로 렌더링
 
 1. 이 양식 렌디션에서 동일한 비즈니스 로직의 실행을 평가하려면 다음 작업을 수행하십시오.
 
-   **5% 할인을 받으려면 확인란 선택**&#x200B;을 선택합니다. 다음 옵션 **은(는) 회사 신용 카드 양식 `We.Finance`을(를) 적용하시겠습니까?**&#x200B;가 비활성화됩니다.
+   **5% 할인을 받으려면 확인란 선택**&#x200B;을 선택합니다. 다음 옵션 **회사 신용 카드 양식 `We.Finance`을(를) 적용하시겠습니까?** 이(가) 비활성화됩니다.
 
    ![](/help/assets/screenshot2028127329.png){width="50%" align="left"}
 
@@ -567,32 +557,32 @@ Headless 프로젝트의 구성 요소 변형을 업데이트합니다. Material
 
 ## 자주 묻는 질문 (FAQ)
 
-+++ 적응형 양식 마법사를 공개적으로 사용할 수 있습니까?
++++ 적응형 양식 마법사를 공개적으로 사용할 수 있습니까?  
 
 예, AEM Forms as Cloud Service에서 사용할 수 있습니다.
 
 +++
 
 
-+++ 핵심 구성 요소를 공개적으로 사용할 수 있습니까?
++++ 핵심 구성 요소를 공개적으로 사용할 수 있습니까?  
 
 예, AEM Forms as Cloud Service에서 적응형 양식 핵심 구성 요소를 사용할 수 있습니다.
 
 +++
 
-+++ Headless 양식을 공개적으로 사용할 수 있습니까?
++++ Headless 양식을 공개적으로 사용할 수 있습니까?  
 
 예, AEM Forms as Cloud Service에서 Headless 양식을 사용할 수 있습니다.
 
 +++
 
-+++ Headless 양식에 별도의 라이선스가 필요합니까?
++++ Headless 양식에 별도의 라이선스가 필요합니까?  
 
 아니요, Headless 양식은 동일한 라이선스 값 지표(양식 제출 수)를 사용합니다.
 
 +++
 
-+++ AEM 6.5 Forms에서 핵심 구성 요소 및 Headless 양식을 사용할 수 있습니까?
++++ AEM 6.5 Forms에서 핵심 구성 요소 및 Headless 양식을 사용할 수 있습니까?  
 
 예, 적응형 양식 핵심 구성 요소와 Headless 양식 모두 AEM Forms 6.5 서비스 팩 16 이상에서 사용할 수 있습니다.
 
@@ -606,12 +596,12 @@ Headless 프로젝트의 구성 요소 변형을 업데이트합니다. Material
 
 ## 리소스
 
-* [적응형 양식 핵심 구성 요소 소개](https://experienceleague.adobe.com/ko/docs/experience-manager-core-components/using/adaptive-forms/introduction)
+* [적응형 양식 핵심 구성 요소 소개](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/introduction)
 
-* [핵심 구성 요소를 사용하여 적응형 양식 만들기](https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/creating-adaptive-form-core-components)
+* [핵심 구성 요소를 사용하여 적응형 양식 만들기](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/creating-adaptive-form-core-components)
 
-* [핵심 구성 요소 기반 AF의 스타일링 업데이트](https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/using-themes-in-core-components)
+* [핵심 구성 요소 기반 AF의 스타일 업데이트](https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/using-themes-in-core-components)
 
-* [Headless 적응형 양식](https://experienceleague.adobe.com/ko/docs/experience-manager-headless-adaptive-forms/using/overview)
+* [Headless 적응형 양식](https://experienceleague.adobe.com/en/docs/experience-manager-headless-adaptive-forms/using/overview)
 
-* [Headless React 스타터 키트 사용](https://experienceleague.adobe.com/ko/docs/experience-manager-headless-adaptive-forms/using/get-started/create-and-publish-a-headless-form)
+* [Headless React 스타터 키트 사용](https://experienceleague.adobe.com/en/docs/experience-manager-headless-adaptive-forms/using/get-started/create-and-publish-a-headless-form)
