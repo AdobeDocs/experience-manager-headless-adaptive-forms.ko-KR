@@ -85,7 +85,7 @@ AEM Forms as a Cloud Service 환경을 숙지합니다.
 1. 양식의 제출 엔드포인트를 만듭니다.
 
    1. 새 브라우저 탭에서 <https://pipedream.com/requestbin>을 엽니다.
-   1. **공개 bin 만들기**를 클릭하고 엔드포인트 URL을 복사합니다.
+   1. **공개 bin 만들기**&#x200B;를 클릭하고 엔드포인트 URL을 복사합니다.
       ![](/help/assets/screenshot2028114329.png){width="50%" align="left"}
 
       ![](/help/assets/screenshot202023-03-0120at206.10.0020pm.png){width="50%" align="left"}
@@ -95,7 +95,7 @@ AEM Forms as a Cloud Service 환경을 숙지합니다.
    1. 수업 1에 사용된 브라우저 탭에서 AEM Forms as Cloud Service 웹 인터페이스로 이동한 후 양식 및 문서로 이동합니다.
       ![](/help/assets/screenshot2028114029.png)
 
-   1. **만들기** > **적응형 양식**을 클릭합니다.
+   1. **만들기** > **적응형 양식**&#x200B;을 클릭합니다.
       ![](/help/assets/screenshot2028114629.png)
 
    1. 아래와 같이 템플릿 선택 화면에서 **핵심 구성 요소가 있는 빈 내용** 템플릿을 선택합니다.
@@ -120,7 +120,7 @@ AEM Forms as a Cloud Service 환경을 숙지합니다.
 
    1. **전화번호** 구성 요소를 클릭하여 팝업 메뉴가 표시되도록 합니다. 메뉴의 **공구 모양 아이콘**&#x200B;을 클릭하여 필드를 구성합니다.
 
-   1. **유효성 검사 탭**&#x200B;을 열고 **필수** 필드에 표시한 후 **완료**를 클릭합니다. 성공 메시지가 표시됩니다.
+   1. **유효성 검사 탭**&#x200B;을 열고 **필수** 필드에 표시한 후 **완료**&#x200B;를 클릭합니다. 성공 메시지가 표시됩니다.
       ![](/help/assets/screenshot2028123529.png){width="50%" align="left"}
 
       ![](/help/assets/screenshot2028123629.png){width="50%" align="left"}
