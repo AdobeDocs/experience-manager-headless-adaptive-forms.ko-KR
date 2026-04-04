@@ -9,9 +9,8 @@ level: Beginner, Intermediate
 contentOwner: Khushwant Singh
 docset: CloudService
 hide: true
-hidefromtoc: true
 exl-id: 7afff771-1296-4162-84c5-c8266b94af2f
-source-git-commit: 86129488bec7faed87600a237ac034ca1b601187
+source-git-commit: 3af67fd41cdd1e63a460e56ef1d273c90b3954d7
 workflow-type: tm+mt
 source-wordcount: '943'
 ht-degree: 51%
@@ -303,7 +302,7 @@ AEM Forms as a Cloud Service 환경을 위한 Headless 적응형 Forms을 활성
       git push origin
       ```
 
-1. 파일이 Git 저장소에 커밋되면 [파이프라인을 실행합니다](https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-manager/content/using/code-deployment).
+1. 파일이 Git 저장소에 커밋되면 [파이프라인을 실행합니다](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-manager/content/using/code-deployment).
 
    파이프라인 실행이 성공하면 해당 환경에 대해 적응형 Forms 핵심 구성 요소가 활성화됩니다. 또한 적응형 양식(핵심 구성 요소) 템플릿 및 Canvas 3.0 테마가 Forms as a Cloud Service 환경에 추가되면 핵심 구성 요소 기반 적응형 양식을 사용자 정의하고 만들 수 있는 옵션이 제공됩니다.
 
