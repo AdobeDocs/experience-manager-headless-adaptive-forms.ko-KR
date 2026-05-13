@@ -5,10 +5,17 @@ description: 핵심 구성 요소 및 Headless를 사용하여 매력적인 양�
 seo-description: Build Engaging Forms Using Core Components and Headless
 topic-tags: develop
 exl-id: ef99ffe9-4a37-4f0a-a4d3-78976c92220f
-source-git-commit: 28792fe1690e68cd301a0de2ce8bff53fae1605f
+TQID: https://experienceleague.adobe.com/vxO7ZkfNQ001uvMujjDotL5le6Q0gYN-YGoYMThWbAs
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2:
+  - id: d095671a-1355-40aa-8b5f-06c33c68080b
+source-git-commit: 12f711845becc93305717fb0c95e82355a8e97a5
 workflow-type: tm+mt
-source-wordcount: '2629'
-ht-degree: 55%
+source-wordcount: 2629
+ht-degree: 52%
 
 ---
 
@@ -407,7 +414,8 @@ React 스타터 프로젝트를 사용하여 로컬 저장소를 설정합니다
 
    ![](/help/assets/screenshot2028120529.png)
 
-1. **react-starter-kit-aem-headless-forms** 프로젝트를 시작하는 데 사용된 명령 프롬프트 창을 열고 **CTRL+C**&#x200B;를 누른 후 **Y**&#x200B;를 입력하고 Enter 키를 눌러 npm 프로세스를 종료합니다. 다음 연습 세트와 충돌하지 않도록 npm 서버를 정지하는 것이 중요합니다.
+1. **react-starter-kit-aem-headless-forms** 프로젝트를 시작하는 데 사용되는 명령 프롬프트 창을 열고 **CTRL+C**&#x200B;를 누른 다음
+**Y**&#x200B;을(를) 입력하고 Enter 키를 눌러 npm 프로세스를 종료합니다. 다음 연습 세트와 충돌하지 않도록 npm 서버를 정지하는 것이 중요합니다.
 
 1. Visual Studio Code 및 명령 프롬프트 창을 닫습니다.
 
@@ -493,7 +501,8 @@ Google Material UI를 사용하여 양식을 Headless 양식으로 렌더링
 
    ![](/help/assets/screenshot2028127129.png)
 
-   위 명령은 로컬 개발 서버를 시작하고 Google Material UI 프론트엔드 라이브러리를 사용하여 Headless 방식으로 AEM에서 가져온 양식 정의를 렌더링합니다.
+   이 명령은 로컬 개발 서버를 시작하고 AEM에서 가져온 양식 정의를 Google을 사용하여 headless 방식으로 렌더링합니다
+자료 UI 프론트엔드 라이브러리.
 
    >[!NOTE]
    >
@@ -548,7 +557,8 @@ Headless 프로젝트의 구성 요소 변형을 업데이트합니다. Material
    ![](/help/assets/screenshot2028127729.png)
 
 
-   이 변경 사항은 AEM Forms Server의 양식 정의를 변경하지 않고 최종 사용자에게 발생하며, 고려 중인 Headless 채널에만 적용됩니다. 예를 들어 이 랩의 웹 채널.
+   이 변경 사항은 AEM Forms Server에서 양식 정의를 변경하지 않고 최종 사용자에게 발생하며 Headless에만 적용됩니다
+채널 검토 중. 예를 들어 이 랩의 웹 채널.
 
    ![](/help/assets/screenshot2028127529.png){width="50%" align="left"}
 
