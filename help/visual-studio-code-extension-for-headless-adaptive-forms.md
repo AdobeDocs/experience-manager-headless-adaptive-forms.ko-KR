@@ -9,16 +9,20 @@ level: Beginner, Intermediate
 keywords: headless, 적응형 양식, Visual Studio 코드 확장
 index: true
 exl-id: 11960e91-6c09-48d4-9d57-37537f808cd4
-source-git-commit: 86129488bec7faed87600a237ac034ca1b601187
+TQID: https://experienceleague.adobe.com/sf8qkVgbwMf2CGDsATHRYzq6idFQNFv3Os89oiCoiLU
+product_v2: id: e8f6de9b-cf88-4405-8d10-15efa08c230eid: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+level_v2: id: b5a62a22-46f7-4f0d-b151-3fc640bef588id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+source-git-commit: 12f711845becc93305717fb0c95e82355a8e97a5
 workflow-type: tm+mt
-source-wordcount: '231'
+source-wordcount: 231
 ht-degree: 0%
 
 ---
 
 # Headless 적응형 양식용 Microsoft Visual Studio 코드 확장
 
-Microsoft® Visual Studio Code를 IDE(통합 개발 환경)로 사용하는 경우 Microsoft Visual Studio Code용 응용 Forms 확장을 사용할 수 있습니다. 확장:
+® Visual Studio Code를 IDE(통합 개발 환경)로 사용하는 경우 Microsoft Visual Studio Code용 응용 Forms 확장을 사용할 수 있습니다. 확장:
 
 * 적응형 Forms에 대한 IntelliSense 기능을 Visual Studio 코드에 추가합니다.
 * Headless 적응형 양식 구성 요소에 대한 JSON 구문의 유효성을 검사하고 자동으로 완성하는 데 도움이 됩니다.

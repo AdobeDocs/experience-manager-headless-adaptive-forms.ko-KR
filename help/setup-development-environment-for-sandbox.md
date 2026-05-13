@@ -3,9 +3,14 @@ title: Forms as a Cloud Service 샌드박스를 위한 개발 환경 설정
 description: Forms as a Cloud Service 샌드박스에 대한 개발 환경을 설정합니다.
 hide: true
 exl-id: befac9ad-d2c4-4705-96fc-f0ea0ef823b8
-source-git-commit: 86129488bec7faed87600a237ac034ca1b601187
+TQID: https://experienceleague.adobe.com/r2jtS8Z3QIN99-a-z2lLLtW6tVroO3FF--CmzklJVig
+product_v2: id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+feature_v2: id: a01bfd36-4ab8-4bf8-9dc0-5b45b890552e
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554
+level_v2: id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+source-git-commit: 12f711845becc93305717fb0c95e82355a8e97a5
 workflow-type: tm+mt
-source-wordcount: '1369'
+source-wordcount: 1369
 ht-degree: 4%
 
 ---
@@ -24,9 +29,9 @@ Cloud Service에서 Headless 적응형 양식을 작성하고 테스트할 준�
 * 로컬 컴퓨터에 [Node.js 16.13.0 이상](https://nodejs.org/en/download/)을(를) 설치합니다. <!-- URL IS 404! If you are new to Node.js, see [How to install Node.js](https://nodejs.org/en/learn/how-to-install-nodejs). -->
 
 
-* AEM as a Cloud Service 프로그램 만들기: [프로그램 만들기](https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/onboarding/demo-add-on/create-program#create-program) 문서의 1-7단계에 따라 조직에 대한 프로그램을 만드십시오.
+* AEM as a Cloud Service 프로그램 만들기: [프로그램 만들기](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/onboarding/demo-add-on/create-program#create-program) 문서의 1-7단계에 따라 조직에 대한 프로그램을 만드십시오.
 
-* Cloud Service 프로그램에 대해 [프리릴리스 채널](https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/release-notes/prerelease#cloud-environments)을 사용하도록 설정합니다.
+* Cloud Service 프로그램에 대해 [프리릴리스 채널](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/release-notes/prerelease#cloud-environments)을 사용하도록 설정합니다.
 
 ## 워크플로우 설정
 
@@ -42,7 +47,7 @@ Forms as a Cloud Service 샌드박스에서 Headless 적응형 양식을 활성�
   1. <a href="https://experience.adobe.com/" > https://experience.adobe.com/ </a>에 로그인하고 <b> Experience Manager </b> 옵션을 선택합니다.
   </td>
   <td>
-    <a href="https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/onboarding/demo-add-on/create-program#create-program">
+    <a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/onboarding/demo-add-on/create-program#create-program">
       <img alt="AEM as a Cloud Service 프로그램" src="assets/cloud-manager-experience-manager.png">
     </a>
     <br>
@@ -53,7 +58,7 @@ Forms as a Cloud Service 샌드박스에서 Headless 적응형 양식을 활성�
   2. <b> Cloud Manager </b> 옵션의 경우 <b> 시작을 클릭합니다. </b> 조직에 대한 프로그램 목록이 나타납니다.
   </td>
   <td>
-    <a href="https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/onboarding/demo-add-on/create-program#create-program">
+    <a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/onboarding/demo-add-on/create-program#create-program">
       <img alt="AEM as a Cloud Service 프로그램" src="assets/cloud-manager-experience-manager-launch.png">
     </a>
     <br>
@@ -61,10 +66,10 @@ Forms as a Cloud Service 샌드박스에서 Headless 적응형 양식을 활성�
 </tr>
 <tr>
   <td>
-    &#x200B;3. 프로그램에 대해 ... 아이콘을 탭하고 <b> 프로그램 편집 </b> 옵션을 선택합니다. 대화 상자가 나타납니다. 
+    3. 프로그램에 대해 ... 아이콘을 탭하고 <b> 프로그램 편집 </b> 옵션을 선택합니다. 대화 상자가 나타납니다. 
   </td>
   <td>
-    <a href="https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/onboarding/demo-add-on/create-program#create-program">
+    <a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/onboarding/demo-add-on/create-program#create-program">
       <img alt="AEM as a Cloud Service 프로그램" src="assets/edit-program.png">
     </a>
     <br>
@@ -72,10 +77,10 @@ Forms as a Cloud Service 샌드박스에서 Headless 적응형 양식을 활성�
 </tr>
 <tr>
   <td>
-    &#x200B;4. 프로그램 편집 대화 상자에서 <b> 솔루션 및 추가 기능 탭 </b>(으)로 이동하고 <b> Forms - 디지털 등록 </b> 옵션을 선택한 다음 <b> 업데이트 </b>을(를) 탭합니다. 
+    4. 프로그램 편집 대화 상자에서 <b> 솔루션 및 추가 기능 탭 </b>(으)로 이동하고 <b> Forms - 디지털 등록 </b> 옵션을 선택한 다음 <b> 업데이트 </b>을(를) 탭합니다. 
   </td>
   <td>
-    <a href="https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/onboarding/demo-add-on/create-program#create-program">
+    <a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/onboarding/demo-add-on/create-program#create-program">
       <img alt="AEM as a Cloud Service 프로그램" src="assets/program-solution-addons.png">
     </a>
     <br>
@@ -100,7 +105,7 @@ Forms as a Cloud Service 샌드박스에서 Headless 적응형 양식을 활성�
   1. 프로그램의 파이프라인 상자에서 <b> 저장소 정보 액세스를 탭합니다. </b> 저장소 정보가 포함된 대화 상자가 나타납니다 
   </td>
   <td>
-    <a href="https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/onboarding/demo-add-on/create-program#create-program">
+    <a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/onboarding/demo-add-on/create-program#create-program">
       <img alt="AEM as a Cloud Service 프로그램" src="assets/git-repo.png">
     </a>
     <br>
@@ -117,7 +122,7 @@ Forms as a Cloud Service 샌드박스에서 Headless 적응형 양식을 활성�
 </tr>
 <tr>
   <td>
-    &#x200B;3. 로컬 시스템에서 명령 프롬프트를 열고 폴더를 만들고 다음 명령을 실행하고 요청한 저장소 자격 증명을 제공합니다.
+    3. 로컬 시스템에서 명령 프롬프트를 열고 폴더를 만들고 다음 명령을 실행하고 요청한 저장소 자격 증명을 제공합니다.
     </br>
     <code> git clone [Repository URL] </code> </br></br>
     예를 들어, </br> 
@@ -138,7 +143,7 @@ Archetype 프로젝트는 Maven 기반 템플릿입니다. Headless 적응형 �
 ®®®
 운영 체제에 따라 maven 명령을 실행하여 Experience Manager Forms as a Cloud Service 프로젝트를 생성합니다. Archetype 버전 37 이상을 사용합니다. 최신 버전의 Archetype을 찾으려면 [Archetype 설명서](https://experienceleague.adobe.com/ko/docs/experience-manager-core-components/using/developing/archetype/overview)를 참조하십시오.
 
-+++ Microsoft® Windows
++++ ® Windows
 
 1. 관리자 권한으로 명령 프롬프트를 엽니다(관리자 권한으로 명령 프롬프트 또는 bash 셸 실행).
 1. 아래 명령을 실행합니다.
@@ -224,7 +229,7 @@ Archetype 프로젝트는 Maven 기반 템플릿입니다. Headless 적응형 �
   1. <a href="https://experience.adobe.com/" > https://experience.adobe.com/ </a>에 로그인하고 <b> Experience Manager </b> 옵션을 선택합니다.
   </td>
   <td>
-    <a href="https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/onboarding/demo-add-on/create-program#create-program">
+    <a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/onboarding/demo-add-on/create-program#create-program">
       <img alt="AEM as a Cloud Service 프로그램" src="assets/cloud-manager-experience-manager.png">
     </a>
     <br>
@@ -235,7 +240,7 @@ Archetype 프로젝트는 Maven 기반 템플릿입니다. Headless 적응형 �
   2. <b> Cloud Manager </b> 옵션의 경우 <b> 시작을 클릭합니다. </b> 조직에 대한 프로그램 목록이 나타납니다. 프로그램을 엽니다. 
   </td>
   <td>
-    <a href="https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/onboarding/demo-add-on/create-program#create-program">
+    <a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/onboarding/demo-add-on/create-program#create-program">
       <img alt="AEM as a Cloud Service 프로그램" src="assets/cloud-manager-experience-manager-launch.png">
     </a>
     <br>
@@ -243,10 +248,10 @@ Archetype 프로젝트는 Maven 기반 템플릿입니다. Headless 적응형 �
 </tr>
 <tr>
   <td>
-    &#x200B;3. 파이프라인의 경우 ... 아이콘을 누르고 <b> </b> 실행 옵션을 선택합니다. 파이프라인을 실행하라는 메시지가 표시되면 <b> </b> 실행 을 탭하고 파이프라인 <b> 상태 </b>이(가) <b> 완료 </b>(으)로 변경될 때까지 기다립니다.  
+    3. 파이프라인의 경우 ... 아이콘을 누르고 <b> </b> 실행 옵션을 선택합니다. 파이프라인을 실행하라는 메시지가 표시되면 <b> </b> 실행 을 탭하고 파이프라인 <b> 상태 </b>이(가) <b> 완료 </b>(으)로 변경될 때까지 기다립니다.  
   </td>
   <td>
-    <a href="https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/onboarding/demo-add-on/create-program#create-program">
+    <a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/onboarding/demo-add-on/create-program#create-program">
       <img alt="AEM as a Cloud Service 프로그램" src="assets/run-build-pipeline.png">
     </a>
     <br>

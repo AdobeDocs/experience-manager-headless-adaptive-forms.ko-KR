@@ -9,9 +9,14 @@ level: Beginner, Intermediate
 keywords: Headless CMS, 적응형 양식, Headless UI, Headful CMS, 음성 지원, alexa, 챗봇, WhatsApp 아키텍처
 hide: true
 exl-id: f6a383ea-684b-479d-a15f-8ebced75635e
-source-git-commit: 3af67fd41cdd1e63a460e56ef1d273c90b3954d7
+TQID: https://experienceleague.adobe.com/HMhHwfjQTZe2BaoMbMilfOJ0-GZrZsHTGjTBqeU-ORM
+product_v2: id: e8f6de9b-cf88-4405-8d10-15efa08c230eid: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+feature_v2: id: a01bfd36-4ab8-4bf8-9dc0-5b45b890552eid: f013e6ab-27b8-4645-b5a7-31ffa474d04f
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+level_v2: id: b5a62a22-46f7-4f0d-b151-3fc640bef588id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+source-git-commit: cc2553bb4b16ea8c31664c227921c4e91d1c7a62
 workflow-type: tm+mt
-source-wordcount: '331'
+source-wordcount: 331
 ht-degree: 0%
 
 ---
@@ -27,7 +32,7 @@ Headless 적응형 양식을 사용하면 다음 작업을 수행할 수 있습�
 * 원하는 프로그래밍 언어로 고품질 다중 채널 양식을 빌드합니다.
 * 기본적으로 양식을 데스크탑 및 모바일 앱, 웹 사이트 및 채팅 애플리케이션에 통합합니다.
 * 양식 애플리케이션을 통해 독점 UI 구성 요소를 재사용할 수 있습니다.
-* [Adobe Experience Manager Forms의 기능](https://experienceleague.adobe.com/ko/docs/experience-manager-65/content/forms/getting-started/introduction-aem-forms)을 사용하는 중입니다.
+* [Adobe Experience Manager Forms의 기능](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/forms/getting-started/introduction-aem-forms)을 사용하는 중입니다.
 
 또한 원하는 UI 프레임워크 및 프로그래밍 언어를 사용하여 양식을 렌더링할 수 있는 자체 구성 요소를 개발할 자유가 있습니다. 즉시 사용 가능한 React 구성 요소를 사용하여 Headless 적응형 양식을 렌더링할 수도 있습니다.
 
