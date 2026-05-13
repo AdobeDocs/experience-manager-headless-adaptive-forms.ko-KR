@@ -606,12 +606,12 @@ Headless 프로젝트의 구성 요소 변형을 업데이트합니다. Material
 
 ## 리소스
 
-* [적응형 양식 핵심 구성 요소 소개](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/introduction)
+* [적응형 양식 핵심 구성 요소 소개](https://experienceleague.adobe.com/ko/docs/experience-manager-core-components/using/adaptive-forms/introduction)
 
-* [핵심 구성 요소를 사용하여 적응형 양식 만들기](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/creating-adaptive-form-core-components)
+* [핵심 구성 요소를 사용하여 적응형 양식 만들기](https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/creating-adaptive-form-core-components)
 
 * [핵심 구성 요소 기반 AF의 스타일 업데이트](https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/using-themes-in-core-components)
 
-* [Headless 적응형 양식](https://experienceleague.adobe.com/en/docs/experience-manager-headless-adaptive-forms/using/overview)
+* [Headless 적응형 양식](https://experienceleague.adobe.com/ko/docs/experience-manager-headless-adaptive-forms/using/overview)
 
-* [Headless React 스타터 키트 사용](https://experienceleague.adobe.com/en/docs/experience-manager-headless-adaptive-forms/using/get-started/create-and-publish-a-headless-form)
+* [Headless React 스타터 키트 사용](https://experienceleague.adobe.com/ko/docs/experience-manager-headless-adaptive-forms/using/get-started/create-and-publish-a-headless-form)

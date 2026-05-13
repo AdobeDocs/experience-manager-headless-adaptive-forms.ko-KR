@@ -137,7 +137,7 @@ Archetype 프로젝트는 Maven 기반 템플릿입니다. Headless 적응형 �
    종속성을 해결하고 프로젝트를 배포하는 데 시간이 오래 걸릴 수 있습니다. 프로젝트를 배포하지 못하는 경우 일반적인 문제 및 해결 방법에 대해서는 [문제 해결](troubleshooting.md) 문서를 참조하십시오.
 
 
-<!-- *  To learn how to deploy code to AEM as a Cloud Service, see the video in [Deploying to AEM as a Cloud Service]https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/deploying/overview.html?lang=en#coding-against-the-right-aem-version) article : -->
+<!-- *  To learn how to deploy code to AEM as a Cloud Service, see the video in [Deploying to AEM as a Cloud Service]https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/deploying/overview.html?lang=ko#coding-against-the-right-aem-version) article : -->
 
 
 ### &#x200B;3. Headless 적응형 양식의 JSON 스키마를 만들고 AEM SDK 인스턴스에 업로드하십시오 {#create-add-json-representation-of-headless-adaptive-forms}
@@ -193,10 +193,10 @@ You can deploy the project to local development environment. It adds Headless Ad
 
     `mvn -PautoInstallPackage clean install`
 
-If you are on Windows, run the above with Administrative privileges (Run command prompt or [bash shell as an administrator](https://khushwantsehgal.wordpress.com/2022/06/29/check-if-git-bash-is-running-in-administrator-mode/)). For the complete list of commands, see [Building and Installing](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/using.html?lang=en#building-and-installing).
+If you are on Windows, run the above with Administrative privileges (Run command prompt or [bash shell as an administrator](https://khushwantsehgal.wordpress.com/2022/06/29/check-if-git-bash-is-running-in-administrator-mode/)). For the complete list of commands, see [Building and Installing](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/using.html?lang=ko#building-and-installing).
 -->
 
-<!-- *  To learn how to deploy code to AEM as a Cloud Service, see the video in [Deploying to AEM as a Cloud Service]https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/deploying/overview.html?lang=en#coding-against-the-right-aem-version) article : -->
+<!-- *  To learn how to deploy code to AEM as a Cloud Service, see the video in [Deploying to AEM as a Cloud Service]https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/deploying/overview.html?lang=ko#coding-against-the-right-aem-version) article : -->
 
 ### &#x200B;4. 핵심 구성 요소가 포함된 빈 템플릿을 기반으로 적응형 양식 만들기 {#create-adaptive-form-with-blank-with-core-components-template}
 

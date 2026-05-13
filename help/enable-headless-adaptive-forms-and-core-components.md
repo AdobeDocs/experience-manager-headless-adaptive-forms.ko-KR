@@ -116,7 +116,7 @@ AEM Archetype 41 또는 [이후](https://github.com/adobe/aem-project-archetype)
 
    AEM Archetype 프로젝트가 빌드되면 AEM 패키지가 생성됩니다. 패키지는 [AEM Archetype 프로젝트 폴더]\all\target\[appid].all-[버전].zip에서 찾을 수 있습니다.
 
-1. [패키지 관리자](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/sites/administering/contentmanagement/package-manager)를 사용하여 모든 작성자 및 게시 인스턴스에 [AEM Archetype 프로젝트 폴더]\all\target\[appid].all-[버전].zip 패키지를 배포하십시오.
+1. [패키지 관리자](https://experienceleague.adobe.com/ko/docs/experience-manager-65/content/sites/administering/contentmanagement/package-manager)를 사용하여 모든 작성자 및 게시 인스턴스에 [AEM Archetype 프로젝트 폴더]\all\target\[appid].all-[버전].zip 패키지를 배포하십시오.
 
 >[!NOTE]
 >
