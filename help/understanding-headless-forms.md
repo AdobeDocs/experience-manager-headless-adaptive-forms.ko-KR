@@ -221,5 +221,5 @@ JSON 형식의 해당 필드 형식 또는 사용자 지정 리소스 형식에 
 * [자주 묻는 질문](faq.md)
 * [Headless 양식 만들기 및 게시](create-and-publish-a-headless-form.md)
 * [Headless 적응형 양식 API](https://opensource.adobe.com/aem-forms-af-runtime/api/)
-* [코드 플레이그라운드](https://experienceleague.adobe.com/landing/aem-headless-forms/developer/code.html?lang=ko)
+* [코드 플레이그라운드](https://experienceleague.adobe.com/landing/aem-headless-forms/developer/code.html?lang=en)
 * [스토리북](https://opensource.adobe.com/aem-forms-af-runtime/storybook/)
