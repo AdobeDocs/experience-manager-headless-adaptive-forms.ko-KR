@@ -10,9 +10,15 @@ topic-tags: develop
 hide: true
 exl-id: 07a71aac-de38-4839-b8d6-b47c3f575eb3
 TQID: https://experienceleague.adobe.com/akgLAvLprxdXwMCXmwobbeFDvQF0rPR2qiENi3dLLDM
-product_v2: id: e8f6de9b-cf88-4405-8d10-15efa08c230eid: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
-role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-level_v2: id: b5a62a22-46f7-4f0d-b151-3fc640bef588id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+product_v2:
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+level_v2:
+  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+  - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
 source-git-commit: 33435b2ff6c7ff5c936f9256889d1f85f977adfe
 workflow-type: tm+mt
 source-wordcount: 2301
@@ -92,7 +98,7 @@ AEM 6.5 Forms 환경에 익숙해집니다.
    1. 새 브라우저 탭에서 <https://pipedream.com/requestbin>을 엽니다.
       ![](/help/assets/screenshot2028114329.png){width="50%"}
 
-   1. **공개 bin 만들기**를 클릭하고 엔드포인트 URL을 복사합니다.
+   1. **공개 bin 만들기**&#x200B;를 클릭하고 엔드포인트 URL을 복사합니다.
       ![](/help/assets/screenshot202023-03-0120at206.10.0020pm.png){width="50%"}
 
    이 특정 끝점은 데이터를 제출하고 볼 수 있는 예제입니다. 실제 프로덕션에서는 자체 엔드포인트 또는 데이터 소스를 사용하여 캡처된 데이터를 저장합니다.
@@ -101,10 +107,10 @@ AEM 6.5 Forms 환경에 익숙해집니다.
 
    1. 1단원에서 사용하는 브라우저 탭에서 AEM Forms 웹 인터페이스로 이동하여 **Forms** > **Forms 및 문서**&#x200B;로 이동합니다.
 
-   1. **만들기**를 클릭하고 적응형 양식을 선택합니다.
+   1. **만들기**&#x200B;를 클릭하고 적응형 양식을 선택합니다.
       ![](/help/assets/creating-adaptive-form-6-5.png){width="50%"}
 
-   1. 아래 표시된 템플릿 선택 화면에서 **핵심 구성 요소로 빈 항목** 템플릿을 선택하고 **다음**을 클릭합니다.
+   1. 아래 표시된 템플릿 선택 화면에서 **핵심 구성 요소로 빈 항목** 템플릿을 선택하고 **다음**&#x200B;을 클릭합니다.
       ![](/help/assets/creating-adaptive-form-6-5-select-blank-template.png){width="50%"}
 
    1. `Contact us`을(를) 양식의 **제목**(으)로 지정하십시오. 양식의 **이름**&#x200B;이(가) `contact-us`인지 확인하십시오.
@@ -369,7 +375,7 @@ React 스타터 프로젝트를 사용하여 로컬 저장소를 설정합니다
 
    ![](/help/assets/headless-adaptive-form.png)
 
-1. **react-starter-kit-aem-headless-forms** 프로젝트를 시작하는 데 사용되는 명령 프롬프트 창을 열고 **CTRL+C**를 누른 다음
+1. **react-starter-kit-aem-headless-forms** 프로젝트를 시작하는 데 사용되는 명령 프롬프트 창을 열고 **CTRL+C**&#x200B;를 누른 다음
 **Y**&#x200B;을(를) 입력하고 Enter 키를 눌러 npm 프로세스를 종료합니다. 다음 연습 세트와 충돌하지 않도록 npm 서버를 정지하는 것이 중요합니다.
 
 1. Visual Studio Code 및 명령 프롬프트 창을 닫습니다.
