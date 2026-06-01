@@ -12,9 +12,9 @@ role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
 topic_v2:
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
-source-git-commit: 12f711845becc93305717fb0c95e82355a8e97a5
+source-git-commit: 33435b2ff6c7ff5c936f9256889d1f85f977adfe
 workflow-type: tm+mt
-source-wordcount: 2629
+source-wordcount: 2589
 ht-degree: 52%
 
 ---
@@ -66,13 +66,13 @@ AEM Forms as a Cloud Service 환경을 숙지합니다.
 1. 브라우저를 열고 Cloud Service 작성 환경의 URL을 입력합니다. <!-- URL is 404! EXPLAIN THE URL IS FOR ILLUSTRATION PURPOSES ONLY? For example: [https://author-p105303-e986623.adobeaemcloud.com/ui#/aem/aem/start.html](https://author-p105303-e986623.adobeaemcloud.com/ui%23/aem/aem/start.html) -->
 
 1. Cloud Service 작성자 환경에 로그인합니다.
-   ![](/help/assets/screenshot2028113829.png){width="50%" align="left"}
+   ![](/help/assets/screenshot2028113829.png){width="50%"}
 
 1. AEM Forms UI로 이동하려면 **Forms > Forms 및 문서**&#x200B;를 클릭합니다.
 
 
 
-   ![](/help/assets/screenshot2028113929.png){width="50%" align="left"}
+   ![](/help/assets/screenshot2028113929.png){width="50%"}
 
    환경 설정 또는 정보와 관련된 모든 팝업을 닫습니다. 사용 가능한 모든 양식이 표시됩니다.
 
@@ -93,9 +93,9 @@ AEM Forms as a Cloud Service 환경을 숙지합니다.
 
    1. 새 브라우저 탭에서 <https://pipedream.com/requestbin>을 엽니다.
    1. **공개 bin 만들기**&#x200B;를 클릭하고 엔드포인트 URL을 복사합니다.
-      ![](/help/assets/screenshot2028114329.png){width="50%" align="left"}
+      ![](/help/assets/screenshot2028114329.png){width="50%"}
 
-      ![](/help/assets/screenshot202023-03-0120at206.10.0020pm.png){width="50%" align="left"}
+      ![](/help/assets/screenshot202023-03-0120at206.10.0020pm.png){width="50%"}
 
 1. 마법사 인터페이스를 사용하여 적응형 양식 작성:
 
@@ -116,21 +116,21 @@ AEM Forms as a Cloud Service 환경을 숙지합니다.
 
    1. **만들기**&#x200B;를 클릭합니다. 양식에 이름과 제목을 지정합니다. 예: **등록**. **만들기**&#x200B;를 클릭합니다.
 
-   1. 적응형 양식 편집기가 열립니다. 환경 설정 또는 정보와 관련된 모든 팝업이나 대화 상자를 닫습니다. 왼쪽 레일에서 구성 요소 브라우저를 클릭하고 빈 양식의 맨 위와 맨 아래에 각각 **머리글** 및 **바닥글** 구성 요소를 추가합니다.
+   1. 적응형 양식 편집기가 열립니다. 환경 설정 또는 정보에 대한 팝업이나 대화 상자를 모두 닫습니다. 왼쪽 레일에서 구성 요소 브라우저를 클릭하고 빈 양식의 맨 위와 맨 아래에 각각 **머리글** 및 **바닥글** 구성 요소를 추가합니다.
       ![](/help/assets/screenshot2028121929.png)
 
    1. 구성 요소 브라우저에서 구성 요소를 드래그 앤 드롭하여 다음과 같이 양식을 만듭니다.
 
-      ![](/help/assets/screenshot2028115129.png){width="50%" align="left"}
+      ![](/help/assets/screenshot2028115129.png){width="50%"}
 
 1. 양식에 유효성 검사 추가:
 
    1. **전화번호** 구성 요소를 클릭하여 팝업 메뉴가 표시되도록 합니다. 메뉴의 **공구 모양 아이콘**&#x200B;을 클릭하여 필드를 구성합니다.
 
-   1. **유효성 검사 탭**&#x200B;을 열고 **필수** 필드에 표시한 후 **완료**&#x200B;를 클릭합니다. 성공 메시지가 표시됩니다.
-      ![](/help/assets/screenshot2028123529.png){width="50%" align="left"}
+   1. **유효성 검사 탭**&#x200B;을 열고 **필수** 필드에 표시를 한 다음 **완료**&#x200B;를 클릭합니다. 성공 메시지가 표시됩니다.
+      ![](/help/assets/screenshot2028123529.png){width="50%"}
 
-      ![](/help/assets/screenshot2028123629.png){width="50%" align="left"}
+      ![](/help/assets/screenshot2028123629.png){width="50%"}
 
 1. 양식을 미리 보고 제출합니다.
 
@@ -183,7 +183,7 @@ AEM Forms as a Cloud Service 환경을 숙지합니다.
 
 1. 관리자 권한으로 명령 프롬프트 또는 셸 열기.
 
-   ![](/help/assets/screenshot2028115829.png){width="50%" align="left"}
+   ![](/help/assets/screenshot2028115829.png){width="50%"}
 
 1. 명령 프롬프트에서 다음 명령을 사용하여 **c:\git** 폴더로 이동합니다
 
@@ -209,15 +209,15 @@ AEM Forms as a Cloud Service 환경을 숙지합니다.
 
 1. **상위 폴더에 있는 모든 파일의 작성자 신뢰**&#x200B;를 선택하고 **예, 작성자를 신뢰함**&#x200B;을 클릭합니다.
 
-   ![](/help/assets/screenshot2028116229.png){width="50%" align="left"}
+   ![](/help/assets/screenshot2028116229.png){width="50%"}
 
 1. 클라우드 서비스 게시 환경에서 호스팅되는 양식을 렌더링하려면 `env_template` 파일의 이름을 바꿉니다.  파일 이름을 바꾸려면 **env_template** 파일을 마우스 오른쪽 버튼으로 클릭하고 **이름 바꾸기** 옵션을 선택합니다.
 
-   ![](/help/assets/screenshot2028116429.png){width="50%" align="left"}
+   ![](/help/assets/screenshot2028116429.png){width="50%"}
 
    </br>
 
-   ![](/help/assets/screenshot2028116529.png){width="50%" align="left"}
+   ![](/help/assets/screenshot2028116529.png){width="50%"}
 
 1. .env 파일에서 변수에 대해 다음 값을 설정하고 파일을 저장합니다.
 
@@ -225,7 +225,7 @@ AEM Forms as a Cloud Service 환경을 숙지합니다.
 
    * **AEM_ADAPTIVE_FORM**: 양식의 경로를 지정합니다. 예를 들어 양식 경로가 `/content/forms/af/registration`인 경우 이 변수의 값은 `registration`이 됩니다.
 
-     ![](/help/assets/screenshot2028116429.png){width="50%" align="left"}
+     ![](/help/assets/screenshot2028116429.png){width="50%"}
 
 1. AEM 환경에서 로컬 사용자를 만듭니다.
 
@@ -265,12 +265,12 @@ AEM Forms as a Cloud Service 환경을 숙지합니다.
    >`npm run live` 명령을 3~4분 이상 실행한 후 브라우저에서 빈 화면이 나타나면 브라우저 URL의 `localhost`을(를) 127.0.0.1(으)로 변경하고 **Enter**&#x200B;를 누르십시오.
 
 
-   ![](/help/assets/screenshot2028115129.png){width="50%" align="left"}
+   ![](/help/assets/screenshot2028115129.png){width="50%"}
 
 
 1. Visual Studio Code에서 `PROJECT\src\site\_variables.scss` 파일을 엽니다. `$error` 색상은 빨간색입니다.
 
-   ![](/help/assets/screenshot2028120729.png){width="50%" align="left"}
+   ![](/help/assets/screenshot2028120729.png){width="50%"}
 
 1. 브라우저에서 양식을 제출하면 **이름** 필드에 빨간색이 표시됩니다.
 
@@ -278,7 +278,7 @@ AEM Forms as a Cloud Service 환경을 숙지합니다.
 
 1. **$error** 색상을 **#5736eb**&#x200B;로 설정하고 파일을 저장합니다.
 
-   ![](/help/assets/screenshot2028120729.png){width="50%" align="left"}
+   ![](/help/assets/screenshot2028120729.png){width="50%"}
 
 1. 브라우저를 새로 고치고 양식을 제출합니다. 이름 필드의 오류 색상이 그에 따라 변경되었습니다.
 
@@ -303,7 +303,7 @@ React 스타터 프로젝트를 사용하여 로컬 저장소를 설정합니다
 
 1. 관리자 권한을 사용해 명령 프롬프트를 엽니다.
 
-   ![](/help/assets/screenshot2028115829.png){width="50%" align="left"}
+   ![](/help/assets/screenshot2028115829.png){width="50%"}
 
 1. 명령 프롬프트에서 다음 명령을 사용하여 **c:\git** 폴더로 이동합니다
 
@@ -332,13 +332,13 @@ React 스타터 프로젝트를 사용하여 로컬 저장소를 설정합니다
 
    Visual Studio Code 창이 열립니다.
 
-   ![](/help/assets/screenshot2028117429.png){width="50%" align="left"}
+   ![](/help/assets/screenshot2028117429.png){width="50%"}
 
 클라우드 서비스 게시 환경에서 호스팅되는 양식을 렌더링하려면 다음과 같이 합니다.
 
 1. env_template 파일의 이름을 .env 파일로 바꿉니다. 이름을 바꾸려면 **env_template** 파일을 마우스 오른쪽 버튼으로 클릭하고 **이름 바꾸기** 옵션을 선택합니다.
 
-   ![](/help/assets/screenshot2028117629.png){width="50%" align="left"}
+   ![](/help/assets/screenshot2028117629.png){width="50%"}
 
    ![](/help/assets/screenshot2028117729.png)
 
@@ -436,7 +436,7 @@ Google Material UI를 사용하여 양식을 Headless 양식으로 렌더링
 
 1. 관리자 권한을 사용해 명령 프롬프트를 엽니다.
 
-   ![](/help/assets/screenshot2028115829.png){width="50%" align="left"}
+   ![](/help/assets/screenshot2028115829.png){width="50%"}
 
 
 1. 명령 프롬프트에서 다음 명령을 사용하여 **c:\git** 폴더로 이동합니다.
@@ -475,7 +475,7 @@ Google Material UI를 사용하여 양식을 Headless 양식으로 렌더링
 
 1. **env_template** 파일의 이름을 **.env** 파일로 바꿉니다. 이름을 바꾸려면 **env_template** 파일을 마우스 오른쪽 버튼으로 클릭하고 **이름 바꾸기**&#x200B;를 선택합니다.
 
-   ![](/help/assets/screenshot2028126629.png){width="50%" align="left"}
+   ![](/help/assets/screenshot2028126629.png){width="50%"}
 
 1. .env 파일의 변수에 대해 다음 값을 설정합니다. 변수를 업데이트한 후 파일을 저장합니다. **CTRL + S** 스위치 조합을 사용하여 파일을 저장합니다.
 
@@ -514,7 +514,7 @@ Google Material UI를 사용하여 양식을 Headless 양식으로 렌더링
 
    **5% 할인을 받으려면 확인란 선택**&#x200B;을 선택합니다. 다음 옵션 **회사 신용 카드 양식 `We.Finance`을(를) 적용하시겠습니까?** 이(가) 비활성화됩니다.
 
-   ![](/help/assets/screenshot2028127329.png){width="50%" align="left"}
+   ![](/help/assets/screenshot2028127329.png){width="50%"}
 
 ## 수업 6
 
@@ -560,7 +560,7 @@ Headless 프로젝트의 구성 요소 변형을 업데이트합니다. Material
    이 변경 사항은 AEM Forms Server에서 양식 정의를 변경하지 않고 최종 사용자에게 발생하며 Headless에만 적용됩니다
 채널 검토 중. 예를 들어 이 랩의 웹 채널.
 
-   ![](/help/assets/screenshot2028127529.png){width="50%" align="left"}
+   ![](/help/assets/screenshot2028127529.png){width="50%"}
 
 
 1. Visual Studio Code 및 명령 프롬프트 창을 닫습니다.

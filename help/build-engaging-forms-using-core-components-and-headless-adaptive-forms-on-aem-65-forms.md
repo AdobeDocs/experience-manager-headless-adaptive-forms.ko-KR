@@ -19,9 +19,9 @@ role_v2:
 level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
-source-git-commit: 12f711845becc93305717fb0c95e82355a8e97a5
+source-git-commit: 33435b2ff6c7ff5c936f9256889d1f85f977adfe
 workflow-type: tm+mt
-source-wordcount: 2311
+source-wordcount: 2301
 ht-degree: 39%
 
 ---
@@ -71,15 +71,15 @@ AEM 6.5 Forms 환경에 익숙해집니다.
 
 1. 로그인한 후 AEM Forms UI로 이동합니다. **Forms**&#x200B;를 클릭합니다.
 
-   ![](/help/assets/screenshot2028113829.png){width="50%" align="left"}
+   ![](/help/assets/screenshot2028113829.png){width="50%"}
 
 1. **양식 및 문서**&#x200B;를 클릭합니다. 환경 설정 또는 정보와 관련된 모든 팝업을 닫습니다.
 
-   ![](/help/assets/screenshot2028113929.png){width="50%" align="left"}
+   ![](/help/assets/screenshot2028113929.png){width="50%"}
 
    사용 가능한 모든 양식이 표시됩니다.
 
-   ![](/help/assets/screenshot2028114029.png){width="50%" align="left"}
+   ![](/help/assets/screenshot2028114029.png){width="50%"}
 
 ## 수업 2
 
@@ -96,10 +96,10 @@ AEM 6.5 Forms 환경에 익숙해집니다.
 1. 양식의 제출 엔드포인트를 만듭니다.
 
    1. 새 브라우저 탭에서 <https://pipedream.com/requestbin>을 엽니다.
-      ![](/help/assets/screenshot2028114329.png){width="50%" align="left"}
+      ![](/help/assets/screenshot2028114329.png){width="50%"}
 
    1. **공개 bin 만들기**&#x200B;를 클릭하고 엔드포인트 URL을 복사합니다.
-      ![](/help/assets/screenshot202023-03-0120at206.10.0020pm.png){width="50%" align="left"}
+      ![](/help/assets/screenshot202023-03-0120at206.10.0020pm.png){width="50%"}
 
    이 특정 끝점은 데이터를 제출하고 볼 수 있는 예제입니다. 실제 프로덕션에서는 자체 엔드포인트 또는 데이터 소스를 사용하여 캡처된 데이터를 저장합니다.
 
@@ -108,13 +108,13 @@ AEM 6.5 Forms 환경에 익숙해집니다.
    1. 1단원에서 사용하는 브라우저 탭에서 AEM Forms 웹 인터페이스로 이동하여 **Forms** > **Forms 및 문서**&#x200B;로 이동합니다.
 
    1. **만들기**&#x200B;를 클릭하고 적응형 양식을 선택합니다.
-      ![](/help/assets/creating-adaptive-form-6-5.png){width="50%" align="left"}
+      ![](/help/assets/creating-adaptive-form-6-5.png){width="50%"}
 
    1. 아래 표시된 템플릿 선택 화면에서 **핵심 구성 요소로 빈 항목** 템플릿을 선택하고 **다음**&#x200B;을 클릭합니다.
-      ![](/help/assets/creating-adaptive-form-6-5-select-blank-template.png){width="50%" align="left"}
+      ![](/help/assets/creating-adaptive-form-6-5-select-blank-template.png){width="50%"}
 
-   1. `Contact us`을(를) 양식의 **제목**(으)로 지정하십시오. 양식의 **Name**&#x200B;이(가) `contact-us`인지 확인하십시오.
-      ![](/help/assets/creating-adaptive-form-65-specify-title.png){width="50%" align="left"}
+   1. `Contact us`을(를) 양식의 **제목**(으)로 지정하십시오. 양식의 **이름**&#x200B;이(가) `contact-us`인지 확인하십시오.
+      ![](/help/assets/creating-adaptive-form-65-specify-title.png){width="50%"}
 
    1. **만들기**&#x200B;를 클릭합니다. 대화 상자가 표시됩니다.
 
@@ -122,11 +122,11 @@ AEM 6.5 Forms 환경에 익숙해집니다.
 
    1. 구성 요소 브라우저를 열고 패널 구성 요소를 화면 가운데로 끌어서 놓습니다.
 
-      ![](/help/assets/lab65-add-panel.png){width="50%" align="left"}
+      ![](/help/assets/lab65-add-panel.png){width="50%"}
 
    1. 구성 요소 브라우저에서 구성 요소를 드래그 앤 드롭하여 다음과 같이 양식을 만듭니다.
 
-      ![](/help/assets/contact-us-headless-adaptive-form.png){width="50%" align="left"}
+      ![](/help/assets/contact-us-headless-adaptive-form.png){width="50%"}
 
 
    1. 콘텐츠 브라우저를 열고 가이드 컨테이너 속성 아이콘을 클릭한 다음 **제출** 탭을 엽니다.
@@ -135,7 +135,7 @@ AEM 6.5 Forms 환경에 익숙해집니다.
 
    1. **POST 요청 활성화** 옵션을 선택하고 **POST 요청에 대한 URL** 텍스트 상자에 2단원에서 만든 REST 끝점을 지정한 다음 **완료** 아이콘을 클릭합니다.
 
-      ![](/help/assets/configure-submit-action.png){width="50%" align="left"}
+      ![](/help/assets/configure-submit-action.png){width="50%"}
 
 1. 적응형 양식 게시:
 
@@ -159,7 +159,7 @@ AEM 6.5 Forms 환경에 익숙해집니다.
 
 1. 관리자 권한으로 명령 프롬프트 또는 셸 열기.
 
-   ![](/help/assets/screenshot2028115829.png){width="50%" align="left"}
+   ![](/help/assets/screenshot2028115829.png){width="50%"}
 
 1. 명령 프롬프트에서 다음 명령을 사용하여 `c:\git` 폴더로 이동합니다.
 
@@ -182,19 +182,19 @@ AEM 6.5 Forms 환경에 익숙해집니다.
    code .
    ```
 
-   ![](/help/assets/screenshot2028126029.png){width="50%" align="left"}
+   ![](/help/assets/screenshot2028126029.png){width="50%"}
 
 1. **상위 폴더에 있는 모든 파일의 작성자 신뢰**&#x200B;를 선택하고 **예, 작성자를 신뢰함**&#x200B;을 클릭합니다.
 
-   ![](/help/assets/screenshot2028116229.png){width="50%" align="left"}
+   ![](/help/assets/screenshot2028116229.png){width="50%"}
 
 1. `env_template` 파일의 이름을 .env로 바꿉니다.  파일 이름을 바꾸려면 **env_template** 파일을 마우스 오른쪽 버튼으로 클릭하고 **이름 바꾸기** 옵션을 선택합니다.
 
-   ![](/help/assets/screenshot2028116429.png){width="30%" align="left"}
+   ![](/help/assets/screenshot2028116429.png){width="30%"}
 
    </br>
 
-   ![](/help/assets/screenshot2028116529.png){width="50%" align="left"}
+   ![](/help/assets/screenshot2028116529.png){width="50%"}
 
 1. .env 파일에서 변수에 대해 다음 값을 설정하고 파일을 저장합니다.
 
@@ -235,12 +235,12 @@ AEM 6.5 Forms 환경에 익숙해집니다.
    >`npm run live` 명령을 3~4분 이상 실행한 후 브라우저에서 빈 화면이 나타나면 브라우저 URL의 `localhost`을(를) 127.0.0.1(으)로 변경하고 **Enter**&#x200B;를 누르십시오.
 
 
-   ![](/help/assets/contact-us-headless-adaptive-form-with-canvas-theme.png){width="50%" align="left"}
+   ![](/help/assets/contact-us-headless-adaptive-form-with-canvas-theme.png){width="50%"}
 
 
 1. Visual Studio Code에서 `PROJECT\src\site\_variables.scss` 파일을 엽니다. `$error` 색상은 빨간색입니다.
 
-   ![](/help/assets/screenshot2028120729.png){width="50%" align="left"}
+   ![](/help/assets/screenshot2028120729.png){width="50%"}
 
 1. 브라우저에서 양식을 제출하면 **이름** 필드에 빨간색이 표시됩니다.
 
@@ -271,7 +271,7 @@ React 스타터 프로젝트를 사용하여 로컬 저장소를 설정합니다
 
 1. 관리자 권한을 사용해 명령 프롬프트를 엽니다.
 
-   ![](/help/assets/screenshot2028115829.png){width="30%" align="left"}
+   ![](/help/assets/screenshot2028115829.png){width="30%"}
 
 1. 명령 프롬프트에서 다음 명령을 사용하여 `c:\git` 폴더로 이동합니다.
 
@@ -300,13 +300,13 @@ React 스타터 프로젝트를 사용하여 로컬 저장소를 설정합니다
 
    Visual Studio Code 창이 열립니다.
 
-   ![](/help/assets/screenshot2028117429.png){width="50%" align="left"}
+   ![](/help/assets/screenshot2028117429.png){width="50%"}
 
 게시 환경에서 호스팅된 양식을 렌더링하려면 다음을 수행하십시오.
 
 1. env_template 파일의 이름을 .env 파일로 바꿉니다. 이름을 바꾸려면 **env_template** 파일을 마우스 오른쪽 버튼으로 클릭하고 **이름 바꾸기** 옵션을 선택합니다.
 
-   ![](/help/assets/screenshot2028117629.png){width="30%" align="left"}
+   ![](/help/assets/screenshot2028117629.png){width="30%"}
 
    ![](/help/assets/screenshot2028117729.png)
 
@@ -355,7 +355,7 @@ React 스타터 프로젝트를 사용하여 로컬 저장소를 설정합니다
 
 1. **연락처 번호** 필드를 선택하고 도구 모음에서 **편집 아이콘(연필 아이콘)을 클릭합니다**. 팝업 도구 모음이 표시되지 않으면 편집 모드로 전환합니다. **미리 보기** 단추 왼쪽 상단의 **편집** 단추를 클릭합니다.
 
-   ![](/help/assets/change-field-title.png){width="50%" align="left"}
+   ![](/help/assets/change-field-title.png){width="50%"}
 
 1. 레이블을 **휴대폰 번호**(으)로 변경하십시오. 양식의 빈 공간을 클릭하면 양식의 변경 사항이 저장됩니다.
 
@@ -397,7 +397,7 @@ Google Material UI를 사용하여 양식을 Headless 양식으로 렌더링
 
 1. 관리자 권한을 사용해 명령 프롬프트를 엽니다.
 
-   ![](/help/assets/screenshot2028115829.png){width="30%" align="left"}
+   ![](/help/assets/screenshot2028115829.png){width="30%"}
 
 1. 명령 프롬프트에서 다음 명령을 사용하여 `c:\git` 폴더로 이동합니다.
 
@@ -435,7 +435,7 @@ Google Material UI를 사용하여 양식을 Headless 양식으로 렌더링
 
 1. **env_template** 파일의 이름을 **.env** 파일로 바꿉니다. 이름을 바꾸려면 **env_template** 파일을 마우스 오른쪽 버튼으로 클릭하고 **이름 바꾸기**&#x200B;를 선택합니다.
 
-   ![](/help/assets/screenshot2028126629.png){width="30%" align="left"}
+   ![](/help/assets/screenshot2028126629.png){width="30%"}
 
 1. .env 파일의 변수에 대해 다음 값을 설정합니다. 변수를 업데이트한 후 파일을 저장합니다. **CTRL + S** 스위치 조합을 사용하여 파일을 저장합니다.
 
@@ -506,7 +506,7 @@ Headless 프로젝트의 구성 요소 변형을 업데이트합니다. Material
 
 1. 브라우저를 자동으로 새로 고치지 않는 경우 새로 고침하여 텍스트 입력 구성 요소가 다른 변형을 사용하는지 확인합니다.
 
-   ![](/help/assets/screenshot2028127729.png){width="50%" align="left"}
+   ![](/help/assets/screenshot2028127729.png){width="50%"}
 
 
    이 변경 사항은 AEM Forms Server에서 양식 정의를 변경하지 않고 최종 사용자에게 발생하며 Headless에만 적용됩니다
