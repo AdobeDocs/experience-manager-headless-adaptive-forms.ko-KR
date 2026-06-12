@@ -6,12 +6,9 @@ seo-description: Build Engaging Forms Using Core Components and Headless
 topic-tags: develop
 exl-id: ef99ffe9-4a37-4f0a-a4d3-78976c92220f
 TQID: https://experienceleague.adobe.com/vxO7ZkfNQ001uvMujjDotL5le6Q0gYN-YGoYMThWbAs
-product_v2:
-  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
-role_v2:
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-topic_v2:
-  - id: d095671a-1355-40aa-8b5f-06c33c68080b
+product_v2: id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+role_v2: id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2: id: d095671a-1355-40aa-8b5f-06c33c68080b
 source-git-commit: 33435b2ff6c7ff5c936f9256889d1f85f977adfe
 workflow-type: tm+mt
 source-wordcount: 2589
@@ -92,7 +89,7 @@ AEM Forms as a Cloud Service 환경을 숙지합니다.
 1. 양식의 제출 엔드포인트를 만듭니다.
 
    1. 새 브라우저 탭에서 <https://pipedream.com/requestbin>을 엽니다.
-   1. **공개 bin 만들기**&#x200B;를 클릭하고 엔드포인트 URL을 복사합니다.
+   1. **공개 bin 만들기**를 클릭하고 엔드포인트 URL을 복사합니다.
       ![](/help/assets/screenshot2028114329.png){width="50%"}
 
       ![](/help/assets/screenshot202023-03-0120at206.10.0020pm.png){width="50%"}
@@ -102,7 +99,7 @@ AEM Forms as a Cloud Service 환경을 숙지합니다.
    1. 수업 1에 사용된 브라우저 탭에서 AEM Forms as Cloud Service 웹 인터페이스로 이동한 후 양식 및 문서로 이동합니다.
       ![](/help/assets/screenshot2028114029.png)
 
-   1. **만들기** > **적응형 양식**&#x200B;을 클릭합니다.
+   1. **만들기** > **적응형 양식**을 클릭합니다.
       ![](/help/assets/screenshot2028114629.png)
 
    1. 아래와 같이 템플릿 선택 화면에서 **핵심 구성 요소가 있는 빈 내용** 템플릿을 선택합니다.
@@ -127,7 +124,7 @@ AEM Forms as a Cloud Service 환경을 숙지합니다.
 
    1. **전화번호** 구성 요소를 클릭하여 팝업 메뉴가 표시되도록 합니다. 메뉴의 **공구 모양 아이콘**&#x200B;을 클릭하여 필드를 구성합니다.
 
-   1. **유효성 검사 탭**&#x200B;을 열고 **필수** 필드에 표시를 한 다음 **완료**&#x200B;를 클릭합니다. 성공 메시지가 표시됩니다.
+   1. **유효성 검사 탭**&#x200B;을 열고 **필수** 필드에 표시를 한 다음 **완료**를 클릭합니다. 성공 메시지가 표시됩니다.
       ![](/help/assets/screenshot2028123529.png){width="50%"}
 
       ![](/help/assets/screenshot2028123629.png){width="50%"}
@@ -414,7 +411,7 @@ React 스타터 프로젝트를 사용하여 로컬 저장소를 설정합니다
 
    ![](/help/assets/screenshot2028120529.png)
 
-1. **react-starter-kit-aem-headless-forms** 프로젝트를 시작하는 데 사용되는 명령 프롬프트 창을 열고 **CTRL+C**&#x200B;를 누른 다음
+1. **react-starter-kit-aem-headless-forms** 프로젝트를 시작하는 데 사용되는 명령 프롬프트 창을 열고 **CTRL+C**를 누른 다음
 **Y**&#x200B;을(를) 입력하고 Enter 키를 눌러 npm 프로세스를 종료합니다. 다음 연습 세트와 충돌하지 않도록 npm 서버를 정지하는 것이 중요합니다.
 
 1. Visual Studio Code 및 명령 프롬프트 창을 닫습니다.
@@ -606,12 +603,12 @@ Headless 프로젝트의 구성 요소 변형을 업데이트합니다. Material
 
 ## 리소스
 
-* [적응형 양식 핵심 구성 요소 소개](https://experienceleague.adobe.com/ko/docs/experience-manager-core-components/using/adaptive-forms/introduction)
+* [적응형 양식 핵심 구성 요소 소개](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/introduction)
 
-* [핵심 구성 요소를 사용하여 적응형 양식 만들기](https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/creating-adaptive-form-core-components)
+* [핵심 구성 요소를 사용하여 적응형 양식 만들기](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/creating-adaptive-form-core-components)
 
 * [핵심 구성 요소 기반 AF의 스타일 업데이트](https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/using-themes-in-core-components)
 
-* [Headless 적응형 양식](https://experienceleague.adobe.com/ko/docs/experience-manager-headless-adaptive-forms/using/overview)
+* [Headless 적응형 양식](https://experienceleague.adobe.com/en/docs/experience-manager-headless-adaptive-forms/using/overview)
 
-* [Headless React 스타터 키트 사용](https://experienceleague.adobe.com/ko/docs/experience-manager-headless-adaptive-forms/using/get-started/create-and-publish-a-headless-form)
+* [Headless React 스타터 키트 사용](https://experienceleague.adobe.com/en/docs/experience-manager-headless-adaptive-forms/using/get-started/create-and-publish-a-headless-form)
