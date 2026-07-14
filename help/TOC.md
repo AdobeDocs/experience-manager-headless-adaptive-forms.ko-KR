@@ -5,7 +5,8 @@ user-guide-description: Adobe Experience Manager Headless 적응형 양식 설�
 feature: Adaptive Forms
 role: Developer
 index: true
-source-git-commit: 3af67fd41cdd1e63a460e56ef1d273c90b3954d7
+nudge: true
+source-git-commit: 2b4840d39f7e98684003a941e96f45dede196f23
 workflow-type: tm+mt
 source-wordcount: '195'
 ht-degree: 4%
@@ -34,8 +35,8 @@ ht-degree: 4%
 + Headless 적응형 양식 만들기 {#authoring-headless-adaptive-forms}
    + [적응형 Forms 편집기를 사용하여 Headless 적응형 양식 만들기](create-a-headless-adaptive-form.md)
 + 개발자 참조 {#developer-reference}
-   + [개발자 포털](https://experienceleague.adobe.com/landing/aem-headless-forms/developer.html?lang=ko)
-   + [코드 플레이그라운드](https://experienceleague.adobe.com/landing/aem-headless-forms/developer/code.html?lang=ko)
+   + [개발자 포털](https://experienceleague.adobe.com/landing/aem-headless-forms/developer.html?lang=en)
+   + [코드 플레이그라운드](https://experienceleague.adobe.com/landing/aem-headless-forms/developer/code.html?lang=en)
    + [Headless 적응형 양식 API](https://opensource.adobe.com/aem-forms-af-runtime/api/)
 + [자주 묻는 질문](faq.md)
 + [문제 해결](troubleshooting.md)
