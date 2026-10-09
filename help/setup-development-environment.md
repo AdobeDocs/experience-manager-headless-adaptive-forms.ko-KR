@@ -3,13 +3,14 @@ title: AEM Headless 적응형 양식을 위한 개발 환경 설정
 description: AEM Headless 적응형 양식을 위한 개발 환경 설정
 hide: true
 exl-id: fd92f057-1217-42f8-a454-1bc7e3827e01
-source-git-commit: 893f0428c08e6216cb293ab2f4c427b7d1c26060
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+source-git-commit: b34afbc4f692b81838ad6947895c9b347dff6d62
 workflow-type: tm+mt
-source-wordcount: '810'
+source-wordcount: '805'
 ht-degree: 3%
-
 ---
-
 
 # 로컬 개발 환경 설정 {#headless-adaptive-forms-setup-development-environment}
 
@@ -78,7 +79,7 @@ AEM as a Cloud Service SDK(AEM SDK)는 개발자에게 Headless 적응형 양식
 
    >[!NOTE]
    >
-   > .jar 파일을 두 번 클릭하여 시작하지 마십시오. [오류](https://experienceleague.adobe.com/ko/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/aem-runtime#troubleshooting-double-click)가 발생합니다.
+   > .jar 파일을 두 번 클릭하여 시작하지 마십시오. [오류](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/aem-runtime#troubleshooting-double-click)가 발생합니다.
 
 1. 명령 프롬프트를 엽니다.
    * Windows에서는 **관리자 권한으로 실행** 옵션을 사용하여 관리자 모드로 명령 프롬프트를 엽니다.
