@@ -3,13 +3,17 @@ title: 이벤트를 사용하여 양식 헤드리스 적응형 양식 데이터 
 description: 이벤트를 사용하여 양식 Headless 적응형 양식 데이터를 처리하고 제출합니다.
 hide: true
 exl-id: f80a0d44-fa76-4df7-883e-3f5d0384a2a5
-source-git-commit: 3af67fd41cdd1e63a460e56ef1d273c90b3954d7
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: b34afbc4f692b81838ad6947895c9b347dff6d62
 workflow-type: tm+mt
 source-wordcount: '113'
 ht-degree: 0%
-
 ---
-
 # 이벤트를 사용하여 양식 헤드리스 적응형 양식 데이터 처리 및 제출 {#using-events}
 
 지금까지 [사용자 지정 Headless 적응형 양식을 만들고](create-and-publish-a-headless-form.md) [사용자 지정 React 구성 요소를 사용하여 양식을 스타일링하는 방법](use-google-material-ui-react-components-to-render-a-headless-form.md)에 대해 알아보았습니다. 이 문서에서는 이벤트를 사용하여 사용자 입력 데이터를 유지하고 데이터 저장소에 제출하는 데 중점을 둡니다.
